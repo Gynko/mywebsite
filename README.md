@@ -16,6 +16,9 @@
 3. Menu mobile: type "dropdown"
 4. Menu desktop: type "flowchart"
 5. Portfolio/dev: one small project with async + Api
+6. Animation of menus, transitions
+7. React optimizations, testing
+8. Typescript it all
 
 ## 3. Packages
 

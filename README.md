@@ -17,7 +17,8 @@
 4. Menu desktop: type "flowchart"
 5. Portfolio/dev: one small project with async + Api
 6. Articles: javascript, react, web dev
-7. Future feature: Articles with search @Algolia Api
+7. Articles: colored code integration => https://github.com/Gynko/ColoredCodeEditor
+8. Future feature: Articles with search @Algolia Api
 
 ## 3. Packages
 

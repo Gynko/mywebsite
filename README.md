@@ -7,7 +7,7 @@
 
 ## 1. Design
 
-![FigmaV1](https://i.ibb.co/8gjSPJb/Home.png)
+![FigmaV1](https://i.ibb.co/MRfdD8r/Designs.png)
 
 ## 2. List of features
 

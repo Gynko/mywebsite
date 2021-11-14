@@ -24,3 +24,5 @@
 
 1. Tailwind Css
 2. React Router
+3. Storybook
+4. Typescript

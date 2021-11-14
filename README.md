@@ -15,8 +15,9 @@
 2. Light and Dark mode
 3. Menu mobile: type "dropdown"
 4. Menu desktop: type "flowchart"
-5. Portfolio / dev: one small project with async + Api
-6. Future feature: Articles with Algolia search possibilities
+5. Portfolio/dev: one small project with async + Api
+6. Articles about learning js and react
+7. Future feature: Articles with Algolia search Api
 
 ## 3. Packages
 

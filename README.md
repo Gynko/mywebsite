@@ -5,6 +5,7 @@
 - [2. Features](#2-features)
 - [3. Packages](#3-packages)
 - [4. Roadmap](#4-roadmap)
+  - [4.1. Cutting into components](#41-cutting-into-components)
 
 ## 1. Design
 
@@ -12,7 +13,7 @@
 
 ## 2. Features
 
-1. Responsivity: mobile and desktop - inbetweens later?
+1. Responsivity
 2. Light and Dark mode
 3. Menu mobile: type "dropdown"
 4. Menu desktop: type "flowchart"
@@ -32,3 +33,6 @@
 1. Cut the app into basic components, from "atoms" to "molecules" to "entities" = Menu Link < Navbar < Page. No advanced styling. Make them "purely functional", in a way that would allow later dispatching them to different persons in a team.
 2. Implement responsivity?
 3. Dispatch the basic components into branches that could be undertook by a team member.
+
+### 4.1. Cutting into components
+

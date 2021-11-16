@@ -4,6 +4,7 @@
 - [1. Design](#1-design)
 - [2. Features](#2-features)
 - [3. Packages](#3-packages)
+- [4. Roadmap](#4-roadmap)
 
 ## 1. Design
 
@@ -22,6 +23,11 @@
 
 ## 3. Packages
 
-1. Tailwind Css
+1. Vanilla Css
 2. React Router
 3. Typescript
+
+## 4. Roadmap
+
+1. Cut the app into components, from "atoms" to "molecules" to "entities" = Menu Link < Navbar < Page
+2. Implement responsivity

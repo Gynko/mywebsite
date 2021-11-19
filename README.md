@@ -21,11 +21,12 @@
 6. Animation of menus, transitions
 7. React optimizations, testing
 8. Typescript it all
+9. SEO
 
 ## 3. Packages
 
 1. Vanilla Css
-2. React Router
+2. React Router v6
 3. Typescript
 
 ## 4. Roadmap

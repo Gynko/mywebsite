@@ -6,12 +6,13 @@ import { ReactComponent as MailIcon } from "../../assets/icons/email.svg";
 function Header() {
   return (
     <header className="header">
-      <LightIcon />
-      <NavButton label="Home" />
-      <NavButton label="Portfolio" />
-      <NavButton label="Articles" />
-      <NavButton label="About me" />
-      <MailIcon />
+      <LightIcon className="header-icons" />
+      <div className="header-links-container">
+        <NavButton label="Portfolio" />
+        <NavButton label="Articles" />
+        <NavButton label="About me" />
+      </div>
+      <MailIcon className="header-icons" />
     </header>
   );
 }

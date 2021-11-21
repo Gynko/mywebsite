@@ -4,33 +4,3 @@
   font-family: "Autour One", cursive;
   color: #322e36;
 }
-
-@media (min-width: 20rem) {
-  .navig {
-    padding: 0 0.5rem;
-  }
-}
-
-@media (min-width: 576px) {
-  .navig {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .navig {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .navig {
-    padding: 1.5rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .navig {
-    padding: 1.5rem;
-  }
-}

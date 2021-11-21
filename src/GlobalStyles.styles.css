@@ -1,11 +1,11 @@
 *,
-::before,
-::after {
-  box-sizing: border-box;
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 html {
-  line-sizing: normal;
+  box-sizing: border-box;
 }
 
 body {

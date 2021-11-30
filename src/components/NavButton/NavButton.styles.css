@@ -1,9 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Autour+One&display=swap");
+.nav-link {
+  text-decoration: none;
+  border: 1px black solid;
+  padding: 0 0.5rem;
+  margin: 0 0.5rem;
+}
 
-.navig-button {
-  font-family: "Autour One", cursive;
-  text-align: center;
-  list-style-type: none;
+.nav-link:visited {
+  text-decoration: none;
+  color: black;
 }
 
 @media screen and (min-width: 20em) {

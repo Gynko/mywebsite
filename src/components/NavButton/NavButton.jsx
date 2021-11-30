@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 function NavButton({ to, label }) {
   return (
-    <li className="navig-button">
-      <Link to={to}>{label}</Link>
-    </li>
+    <Link className="nav-link" to={to}>
+      {label}
+    </Link>
   );
 }
 

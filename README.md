@@ -5,7 +5,7 @@
 - [2. Features](#2-features)
 - [3. Packages](#3-packages)
 - [4. Roadmap](#4-roadmap)
-  - [4.1. Cutting into components](#41-cutting-into-components)
+  - [4.1. Phase 1: minimum functional website](#41-phase-1-minimum-functional-website)
 
 ## 1. Design
 
@@ -31,9 +31,16 @@
 
 ## 4. Roadmap
 
-1. Cut the app into basic components, from "atoms" to "molecules" to "entities" = Menu Link < Navbar < Page. No advanced styling. Make them "purely functional", in a way that would allow later dispatching them to different persons in a team.
-2. Implement responsivity?
-3. Dispatch the basic components into branches that could be undertook by a team member.
+### 4.1. Phase 1: minimum functional website
 
-### 4.1. Cutting into components
+Goal: Having a skeleton in place, with routing and base elements, which can afterward be cut in pieces that could be worked on independently. As if in a team.
+
+No fancy Css. Purely "functional". Minimum content.
+
+1. Add header mobile and the links. 
+2. Add header desktop and the links.
+3. Add Home + Extra sections that can be reached by the header links: articles, message me, cheat sheets
+4. Create simple media queries that link mobile and desktop versions.
+5. Add routing, create theroutes: home + link to extra section.
+
 

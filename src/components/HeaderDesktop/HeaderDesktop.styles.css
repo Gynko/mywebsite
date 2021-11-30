@@ -1,0 +1,37 @@
+.header-desktop-container {
+  background-color: #eedee8;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+}
+.header-desktop-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  max-width: 30rem;
+}
+
+.header-desktop-links-container {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media screen and (min-width: 20em) {
+  .header-desktop-container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 45em) {
+  .header-desktop-container {
+    display: flex;
+  }
+}

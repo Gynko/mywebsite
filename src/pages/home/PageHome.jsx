@@ -1,17 +1,16 @@
-import Header from "../../components/Header/Header";
-import Me from "../../assets/pictures/me.png";
+import HeaderDesktop from "../../components/HeaderDesktop/HeaderDesktop";
+import HeaderMobile from "../../components/HeaderMobile/HeaderMobile";
 import "./PageHome.styles.css";
-import Picture from "../../components/Picture/Picture";
 
 function PageHome() {
   return (
     <div className="page-container">
-      <Header />
+      <HeaderMobile />
+      <HeaderDesktop />
       <div className="content">
-        <Picture path={Me} sizeX={"12rem"} alt="me" />
-        <p className="content-text content-text-title">Yoann Godiet</p>
+        <p className="content-text content-text-title">The dev' Rabbit Hole</p>
         <p className="content-text content-text-subtext">
-          Frontend. React. Art
+          A journey inside of Frontend Wonderland
         </p>
       </div>
     </div>

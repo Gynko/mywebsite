@@ -1,7 +1,7 @@
 import "./NavButton.styles.css";
 
 function NavButton({ label }) {
-  return <nav className="navig">{label}</nav>;
+  return <li className="navig-button">{label}</li>;
 }
 
 export default NavButton;

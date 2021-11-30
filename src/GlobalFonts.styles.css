@@ -2,3 +2,8 @@
   font-family: "Autour One", cursive;
   src: local("./assets/fonts/AutourOne-Regular.ttf");
 }
+
+@font-face {
+  font-family: "Stylish-Regular", cursive;
+  src: local("./assets/fonts/Stylish-Regular.ttf");
+}

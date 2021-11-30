@@ -1,13 +1,9 @@
-import PageHome from "./pages/home/PageHome";
 import "./GlobalStyles.styles.css";
 import "./GlobalFonts.styles.css";
+import Routing from "./Routing/Routing";
 
 function App() {
-  return (
-    <>
-      <PageHome />
-    </>
-  );
+  return <Routing />;
 }
 
 export default App;

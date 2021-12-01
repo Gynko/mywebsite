@@ -4,6 +4,16 @@ import "./HeaderMobile.styles.css";
 function HeaderMobile() {
   return (
     <header className="header-mobile-container">
+      <div className="header-mobile-menu-categories-container">
+        <ul className="header-mobile-menu-categories">
+          <li className="header-mobile-menu-categories-item">Javascript</li>
+          <li className="header-mobile-menu-categories-item">Css</li>
+          <li className="header-mobile-menu-categories-item">React</li>
+          <li className="header-mobile-menu-categories-item">
+            Svg & Animation
+          </li>
+        </ul>
+      </div>
       <nav className="header-mobile-nav">
         <ul className="header-mobile-links-container">
           <li className="header-mobile-li">

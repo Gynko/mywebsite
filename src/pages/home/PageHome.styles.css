@@ -1,5 +1,18 @@
-.content-text {
-  font-family: "Stylish-Regular", cursive;
+.page-container {
+  height: Calc(100vh - 3rem);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-home-title {
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+  color: black;
+  font-family: "Autour One", cursive;
 }
 
 @media screen and (min-width: 20em) {

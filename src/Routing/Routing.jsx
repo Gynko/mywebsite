@@ -9,13 +9,13 @@ import ContactMe from "../pages/ContactMe/ContactMe";
 function Routing() {
   return (
     <BrowserRouter>
-      <HeaderMobile />
       <HeaderDesktop />
       <Routes>
         <Route path="/" element={<PageHome />} />
         <Route path="/knowledge-base" element={<KnowledgeBase />} />
         <Route path="/contact-me" element={<ContactMe />} />
       </Routes>
+      <HeaderMobile />
     </BrowserRouter>
   );
 }

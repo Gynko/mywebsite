@@ -1,6 +1,7 @@
 import IconCheatSheet from "../Icons/IconCheatSheet";
 import IconDevTopics from "../Icons/IconDevTopics";
 import IconFlowchart from "../Icons/IconFlowchart";
+import IconJavascript from "../Icons/IconJavacript";
 import IconMenuMobile from "../Icons/IconMenuMobile";
 import IconPortfolio from "../Icons/IconPortfolio";
 import "./HeaderMobile.styles.css";

@@ -1,36 +1,47 @@
-import { Link } from "react-router-dom";
+import IconCheatSheet from "../Icons/IconCheatSheet";
+import IconDevTopics from "../Icons/IconDevTopics";
+import IconFlowchart from "../Icons/IconFlowchart";
+import IconMenuMobile from "../Icons/IconMenuMobile";
+import IconPortfolio from "../Icons/IconPortfolio";
 import "./HeaderMobile.styles.css";
 
 function HeaderMobile() {
   return (
-    <header className="header-mobile-container">
-      <div className="header-mobile-menu-categories-container">
-        <ul className="header-mobile-menu-categories">
-          <li className="header-mobile-menu-categories-item">Javascript</li>
-          <li className="header-mobile-menu-categories-item">Css</li>
-          <li className="header-mobile-menu-categories-item">React</li>
-          <li className="header-mobile-menu-categories-item">
-            Svg & Animation
-          </li>
-        </ul>
-      </div>
-      <nav className="header-mobile-nav">
-        <ul className="header-mobile-links-container">
-          <li className="header-mobile-li">
-            <svg
-              width="auto"
-              height="50"
-              viewBox="0 0 25 25"
-              preserveAspectRatio="xMidYMid meet"
-              fill="#ffffff"
-            >
-              <path d="M0 0h24v24H0z" fill="none" />
-              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
-            </svg>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <div className="header-mobile-container-all">
+      <header className="header-mobile-container">
+        <nav className="header-mobile-nav">
+          <ul className="header-mobile-links-container">
+            <li className="header-mobile-li">
+              <IconMenuMobile />
+            </li>
+          </ul>
+          <ul className="header-mobile-menu-categories">
+            <div className="header-mobile-submenus-container">
+              <li className="header-mobile-submenus header-skillMap">
+                <IconFlowchart />
+                Skill Map
+              </li>
+              <li className="header-mobile-submenus header-devtopics">
+                <IconDevTopics /> Dev Topics
+              </li>
+              <li className="header-mobile-submenus header-cheatsheets">
+                <IconCheatSheet />
+                Cheat sheets
+              </li>
+              <li className="header-mobile-submenus header-portfolio">
+                <IconPortfolio />
+                Portfolio
+              </li>
+            </div>
+            <ul className="header-mobile-devtopics-options">
+              <li className="devtopic-option">Javascript</li>
+              <li className="devtopic-option">Css</li>
+              <li className="devtopic-option">React</li>
+            </ul>
+          </ul>
+        </nav>
+      </header>
+    </div>
   );
 }
 

@@ -7,3 +7,13 @@
   font-family: "Stylish-Regular", cursive;
   src: local("./assets/fonts/Stylish-Regular.ttf");
 }
+
+@font-face {
+  font-family: "OpenSans-Regular", cursive;
+  src: local("./assets/fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans-Bold", cursive;
+  src: local("./assets/fonts/OpenSans-Bold.ttf");
+}

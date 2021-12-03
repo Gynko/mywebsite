@@ -1,7 +1,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
@@ -10,7 +10,6 @@ html {
 
 body {
   margin: 0;
-  background-color: #4a406a;
   color: white;
 }
 

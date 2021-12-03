@@ -1,44 +1,27 @@
-import IconCheatSheet from "../Icons/IconCheatSheet";
-import IconDevTopics from "../Icons/IconDevTopics";
-import IconFlowchart from "../Icons/IconFlowchart";
-import IconJavascript from "../Icons/IconJavacript";
-import IconMenuMobile from "../Icons/IconMenuMobile";
-import IconPortfolio from "../Icons/IconPortfolio";
+import IconBrainConnect from "../Icons/IconBrainConnect";
+import IconMail from "../Icons/IconMail";
 import "./HeaderMobile.styles.css";
 
 function HeaderMobile() {
   return (
-    <div className="header-mobile-container-all">
-      <header className="header-mobile-container">
+    <div className="header-mobile-container">
+      <header className="header-mobile-header">
         <nav className="header-mobile-nav">
-          <ul className="header-mobile-links-container">
+          <ul className="header-mobile-ul">
             <li className="header-mobile-li">
-              <IconMenuMobile />
+              <IconBrainConnect />
             </li>
-          </ul>
-          <ul className="header-mobile-menu-categories">
-            <div className="header-mobile-submenus-container">
-              <li className="header-mobile-submenus header-skillMap">
-                <IconFlowchart />
-                Skill Map
-              </li>
-              <li className="header-mobile-submenus header-devtopics">
-                <IconDevTopics /> Dev Topics
-              </li>
-              <li className="header-mobile-submenus header-cheatsheets">
-                <IconCheatSheet />
-                Cheat sheets
-              </li>
-              <li className="header-mobile-submenus header-portfolio">
-                <IconPortfolio />
-                Portfolio
-              </li>
-            </div>
-            <ul className="header-mobile-devtopics-options">
-              <li className="devtopic-option">Javascript</li>
-              <li className="devtopic-option">Css</li>
-              <li className="devtopic-option">React</li>
-            </ul>
+            <li className="header-mobile-li">
+              <input
+                className="header-mobile-li header-mobile-searchinput"
+                type="search"
+                name="Search"
+                placeholder="search"
+              ></input>
+            </li>
+            <li className="header-mobile-li">
+              <IconMail />
+            </li>
           </ul>
         </nav>
       </header>

@@ -1,19 +1,23 @@
 @font-face {
-  font-family: "Autour One", cursive;
-  src: local("./assets/fonts/AutourOne-Regular.ttf");
+  font-family: "BungeeInline-Regular";
+  src: local("BungeeInline-Regular"),
+    url("./assets/fonts/BungeeInline-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Stylish-Regular", cursive;
-  src: local("./assets/fonts/Stylish-Regular.ttf");
+  font-family: "Berkshire Swash";
+  src: local("Berkshire Swash"),
+    url("./assets/fonts/BerkshireSwash-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "OpenSans-Regular", cursive;
-  src: local("./assets/fonts/OpenSans-Regular.ttf");
+  font-family: "OpenSans-Regular";
+  src: local("OpenSans-Regular"),
+    url("./assets/fonts/OpenSans-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "OpenSans-Bold", cursive;
-  src: local("./assets/fonts/OpenSans-Bold.ttf");
+  font-family: "OpenSans-Bold";
+  src: local("OpenSans-Bold"),
+    url("./assets/fonts/OpenSans-Bold.ttf") format("truetype");
 }

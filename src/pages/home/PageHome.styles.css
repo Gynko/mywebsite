@@ -1,18 +1,40 @@
-.page-container {
-  height: Calc(100vh - 3rem);
+.page-home-container {
+  background-color: #262034;
+  width: 100vw;
+  height: Calc(100vh - 5.5rem);
   display: flex;
   flex-direction: column;
-  align-content: center;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .page-home-title {
-  font-size: 1.5rem;
-  padding: 0;
+  color: #e063ae;
+  font-family: "Berkshire Swash", cursive;
+  font-weight: 400;
   margin: 0;
-  color: #aba8a8;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 0;
+  font-size: 1.75rem;
+}
+
+.page-home-undertext {
+  font-family: "BungeeInline-Regular";
+  color: #f4ae44;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.12rem;
+  margin: 0;
+  padding: 0;
+}
+
+.page-home-description {
+  font-family: "OpenSans-Regular", cursive;
+  color: #f3dab3;
+  font-weight: 400;
+  margin: 2rem 0 0 0;
+  padding: 0;
+  font-size: 0.9rem;
+  text-align: center;
 }
 
 @media screen and (min-width: 20em) {

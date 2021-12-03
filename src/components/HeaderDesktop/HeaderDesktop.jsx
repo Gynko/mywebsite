@@ -1,7 +1,5 @@
-import NavButton from "../NavButton/NavButton";
 import "./HeaderDesktop.styles.css";
 
-import { Link } from "react-router-dom";
 import IconBrainConnect from "../Icons/IconBrainConnect";
 import IconMail from "../Icons/IconMail";
 

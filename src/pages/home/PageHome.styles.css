@@ -1,7 +1,6 @@
 .page-home-container {
   background-color: #262034;
   width: 100vw;
-  height: Calc(100vh - 5.5rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,7 +37,13 @@
 }
 
 @media screen and (min-width: 20em) {
+  .page-home-container {
+    height: Calc(100vh - 5.5rem);
+  }
 }
 
 @media screen and (min-width: 45em) {
+  .page-home-container {
+    height: Calc(100vh - 5.5rem);
+  }
 }

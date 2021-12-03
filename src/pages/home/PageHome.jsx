@@ -6,10 +6,11 @@ function PageHome() {
     <div className="page-home-container">
       <IconRabbitHole />
       <h1 className="page-home-title">The dev Rabbit Hole</h1>
-      <h2 className="page-home-undertext">Webdev is a.maze.ing</h2>
+      <h2 className="page-home-undertext">webdev is a-maze-ing</h2>
       <main className="page-home-description">
-        Cheat Sheets <br />
-        for dev stuff
+        Welcome to
+        <br />
+        Cheat Sheets Wonderland
       </main>
     </div>
   );

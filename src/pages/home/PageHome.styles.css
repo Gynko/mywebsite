@@ -13,11 +13,11 @@
   font-weight: 400;
   margin: 0;
   padding: 0;
-  font-size: 1.75rem;
+  font-size: 2rem;
 }
 
 .page-home-undertext {
-  font-family: "BungeeInline-Regular";
+  font-family: "Bungee-Regular";
   color: #f4ae44;
   font-weight: 400;
   font-size: 1rem;
@@ -27,12 +27,12 @@
 }
 
 .page-home-description {
-  font-family: "OpenSans-Regular", cursive;
+  font-family: "OpenSans-Bold";
   color: #f3dab3;
   font-weight: 400;
   margin: 2rem 0 0 0;
-  padding: 0;
-  font-size: 0.9rem;
+  padding-top: 2rem;
+  font-size: 1rem;
   text-align: center;
 }
 

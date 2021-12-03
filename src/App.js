@@ -3,7 +3,7 @@ import "./GlobalFonts.styles.css";
 import "./GlobalVariables.styles.css";
 
 import "./assets/fonts/BerkshireSwash-Regular.ttf";
-import "./assets/fonts/BungeeInline-Regular.ttf";
+import "./assets/fonts/Bungee-Regular.ttf";
 import "./assets/fonts/OpenSans-Regular.ttf";
 import "./assets/fonts/OpenSans-Bold.ttf";
 

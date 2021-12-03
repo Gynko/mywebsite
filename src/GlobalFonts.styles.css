@@ -1,7 +1,7 @@
 @font-face {
-  font-family: "BungeeInline-Regular";
-  src: local("BungeeInline-Regular"),
-    url("./assets/fonts/BungeeInline-Regular.ttf") format("truetype");
+  font-family: "Bungee-Regular";
+  src: local("Bungee-Regular"),
+    url("./assets/fonts/Bungee-Regular.ttf") format("truetype");
 }
 
 @font-face {

@@ -18,6 +18,7 @@ function HeaderDesktop() {
               <li className="header-desktop-li">Css</li>
               <li className="header-desktop-li">Js</li>
               <li className="header-desktop-li">React</li>
+              <li className="header-desktop-li">More</li>
             </ul>
             <input
               className="header-desktop-searchinput"

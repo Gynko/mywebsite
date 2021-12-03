@@ -9,6 +9,7 @@
 
 .page-home-title {
   color: #f554b5;
+  -webkit-text-stroke: 1px#f554b5;
   font-family: "Milonga-Regular";
   font-weight: 400;
   margin: 0;

@@ -18,9 +18,9 @@ function PageHome() {
         </p>
       </main>
       <footer className="footer">
-        Made with Love & Compassion by Yoann Godiet.
+        Made with Love & Compassion by Yoann Godiet,
         <br />
-        Frontend React developer i Sandefjord.
+        Frontend React developer in Sandefjord, Norway.
       </footer>
     </div>
   );

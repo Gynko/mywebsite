@@ -46,8 +46,9 @@
 }
 .header-desktop-li:hover {
   text-decoration: underline;
-  color: blanchedalmond;
+  text-decoration-thickness: 3px;
   cursor: pointer;
+  color: #f554b5;
 }
 .header-desktop-searchinput {
   background-color: #b4a8bc;

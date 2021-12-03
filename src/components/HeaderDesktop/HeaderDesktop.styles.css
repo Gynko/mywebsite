@@ -44,6 +44,11 @@
   font-weight: 400;
   color: #f4ae44;
 }
+.header-desktop-li:hover {
+  text-decoration: underline;
+  color: blanchedalmond;
+  cursor: pointer;
+}
 .header-desktop-searchinput {
   background-color: #b4a8bc;
   height: 2rem;
@@ -58,6 +63,9 @@
 .icon-mail-desktop {
   margin-left: auto;
   margin-right: 1rem;
+}
+.icon-mail-desktop:hover {
+  cursor: pointer;
 }
 .header-desktop-searchinput::placeholder {
   color: #1f1c18;

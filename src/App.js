@@ -7,6 +7,7 @@ import "./assets/fonts/Bungee-Regular.ttf";
 import "./assets/fonts/OpenSans-Regular.ttf";
 import "./assets/fonts/OpenSans-Bold.ttf";
 import "./assets/fonts/Milonga-Regular.ttf";
+import "./assets/fonts/BungeeInline-Regular.ttf";
 
 import Routing from "./Routing/Routing";
 

@@ -27,3 +27,9 @@
   src: local("Milonga-Regular"),
     url("./assets/fonts/Milonga-Regular.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "BungeeInline-Regular";
+  src: local("BungeeInline-Regular"),
+    url("./assets/fonts/BungeeInline-Regular.ttf") format("truetype");
+}

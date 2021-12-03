@@ -8,12 +8,11 @@
 }
 
 .page-home-title {
-  color: #e063ae;
+  color: #f554b5;
   font-family: "Milonga-Regular";
   font-weight: 400;
   margin: 0;
   padding: 0;
-  font-size: 1.6rem;
   text-align: center;
 }
 
@@ -21,39 +20,32 @@
   font-family: "Bungee-Regular";
   color: #f4ae44;
   font-weight: 400;
-  font-size: 1.2rem;
-  line-height: 1.2rem;
-  letter-spacing: 0.12rem;
-  margin: 0;
-  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-top: 2rem;
 }
 
-.page-home-description {
-  font-family: "Bungee-Regular";
-  color: #f3dab3;
-  font-weight: 400;
-  padding-top: 2rem;
-  font-size: 1.5rem;
-  text-align: center;
-  line-height: 1.9rem;
-}
 .page-home-undertext-accentcolor {
-  color: #c73c3c;
+  color: #ef4a4a;
+  font-family: "Bungee-Regular";
 }
-.maze1 {
-  font-size: 1.8rem;
+.undertext1 {
+  font-family: "OpenSans-Bold";
+  margin: 0;
+  padding: 0;
+  font-size: 1.3rem;
 }
-.maze2 {
-  font-size: 2rem;
-}
-.maze3 {
-  font-size: 1.7rem;
-}
-.maze4 {
-  font-size: 1.55rem;
-}
-.maze5 {
-  font-size: 1.45rem;
+.undertext2 {
+  font-family: "BungeeInline-Regular";
+  font-size: 3.22rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  display: block;
+  line-height: 2.5rem;
 }
 .footer {
   font-family: "OpenSans-Regular";
@@ -74,8 +66,21 @@
 }
 
 @media screen and (min-width: 20em) {
+  .page-home-title {
+    font-size: 3rem;
+  }
   .page-home-container {
     height: Calc(100vh - 5.5rem);
+  }
+  .undertext1 {
+    font-size: 1.06rem;
+    padding: 0;
+    margin: 0;
+  }
+  .undertext2 {
+    font-size: 2.35rem;
+    padding: 0;
+    margin: 0;
   }
   .footer {
     display: none;
@@ -86,9 +91,15 @@
   .page-home-title {
     font-size: 4rem;
   }
-  .page-home-undertext {
-    font-size: 3rem;
-    margin-top: 1rem;
+  .undertext1 {
+    font-size: 1.05rem;
+    padding: 0;
+    margin: 0;
+  }
+  .undertext2 {
+    font-size: 2.35rem;
+    padding: 0;
+    margin: 0;
   }
   .page-home-container {
     height: Calc(100vh - 5.5rem);

@@ -21,3 +21,9 @@
   src: local("OpenSans-Bold"),
     url("./assets/fonts/OpenSans-Bold.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Milonga-Regular";
+  src: local("Milonga-Regular"),
+    url("./assets/fonts/Milonga-Regular.ttf") format("truetype");
+}

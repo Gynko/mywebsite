@@ -26,9 +26,9 @@ function HeaderDesktop() {
             ></input>
           </div>
         </nav>
-        <div className="icon-mail-desktop">
+        <adress className="icon-mail-desktop">
           <IconMail />
-        </div>
+        </adress>
       </header>
     </div>
   );

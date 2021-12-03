@@ -6,6 +6,7 @@ import "./assets/fonts/BerkshireSwash-Regular.ttf";
 import "./assets/fonts/Bungee-Regular.ttf";
 import "./assets/fonts/OpenSans-Regular.ttf";
 import "./assets/fonts/OpenSans-Bold.ttf";
+import "./assets/fonts/Milonga-Regular.ttf";
 
 import Routing from "./Routing/Routing";
 

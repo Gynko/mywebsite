@@ -3,11 +3,11 @@
 Cheat Sheets Wonderland is a website that contains learning materials about various web development topics.
 
 ## Table of Content <!-- omit in toc -->
-- [1. 1.Base Features](#1-1base-features)
+- [1. Base Features](#1-base-features)
 - [2. Future features](#2-future-features)
 - [3. Packages](#3-packages)
 
-## 1. 1.Base Features
+## 1. Base Features
 
 1. Responsivity
 2. Menu mobile: type "dropdown"
@@ -21,7 +21,6 @@ Cheat Sheets Wonderland is a website that contains learning materials about vari
    
 ## 2. Future features
 1. NextJs
-2. 
 
 ## 3. Packages
 

@@ -103,13 +103,20 @@
 @media screen and (min-width: 45em) {
   .page-home-container {
     margin-top: var(--header-desktop-height);
+    margin-bottom: var(--footer-desktop-height);
     width: 100vw;
     min-height: Calc(
       100vh - var(--footer-desktop-height) - var(--footer-desktop-height)
     );
   }
   .containerlogo {
-    padding-top: 15rem;
+    margin: 0;
+    padding-top: Calc(
+      (
+          100vh - 35rem - var(--footer-desktop-height) -
+            var(--header-desktop-height)
+        ) / 2
+    );
   }
   .page-home-title {
     font-size: 4rem;

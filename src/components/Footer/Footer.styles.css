@@ -1,0 +1,32 @@
+.footer-container {
+  background-color: #211728;
+}
+.footer-text {
+  color: #f8c8c8;
+  text-align: center;
+}
+
+@media screen and (min-width: 20em) {
+  .footer-container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 45em) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: var(--footer-desktop-height);
+    width: 100vw;
+  }
+  .footer-text {
+    font-size: 1.1rem;
+    margin: 0;
+  }
+}

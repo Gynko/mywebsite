@@ -1,19 +1,32 @@
 .page-home-container {
   background-color: #251f32;
-  width: 100vw;
+}
+.containerlogo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  align-content: center;
 }
-
+.section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.section1-text {
+  color: white;
+  text-align: center;
+}
+.section1-highlight {
+  color: white;
+}
 .page-home-title {
   color: #f554b5;
   -webkit-text-stroke: 1px#f554b5;
   font-family: "Milonga-Regular";
   font-weight: 400;
-  margin: 0;
-  padding: 0;
   text-align: center;
 }
 
@@ -26,86 +39,99 @@
   justify-content: center;
   align-items: center;
   align-content: center;
-  padding-top: 2rem;
 }
-
 .page-home-undertext-accentcolor {
   color: #ef4a4a;
   font-family: "Bungee-Regular";
 }
 .undertext1 {
   font-family: "OpenSans-Bold";
-  margin: 0;
-  padding: 0;
-  font-size: 1.3rem;
 }
 .undertext2 {
   font-family: "BungeeInline-Regular";
-  font-size: 3.22rem;
   font-weight: 400;
-  margin: 0;
-  padding: 0;
-  display: block;
-  line-height: 2.5rem;
 }
-.footer {
-  font-family: "OpenSans-Regular";
-  color: rgb(68, 67, 67);
-  position: absolute;
-  bottom: 0;
-  width: 100vw;
-  height: 3rem;
-  background-color: #13101a;
-  color: #c5b398;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  text-align: center;
-  font-size: 0.75rem;
+.undertext3 {
+  font-family: "BungeeInline-Regular";
+  font-weight: 400;
 }
 
 @media screen and (min-width: 20em) {
-  .page-home-title {
-    font-size: 3rem;
-  }
   .page-home-container {
-    height: Calc(100vh - 5.5rem);
+    width: 100vw;
+    min-height: Calc(100vh - var(--header-mobile-height));
+    margin-bottom: var(--header-mobile-height);
+  }
+  .containerlogo {
+    padding-top: Calc((100vh - 5.5rem - 30rem) / 2);
+  }
+  .page-home-undertext {
+    padding-top: 5rem;
+  }
+
+  .page-home-title {
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
   }
   .undertext1 {
-    font-size: 1.06rem;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    font-size: 1rem;
   }
   .undertext2 {
-    font-size: 2.35rem;
-    padding: 0;
+    font-size: 2rem;
     margin: 0;
+    padding: 0;
+    line-height: 2.5rem;
   }
-  .footer {
-    display: none;
+  .undertext3 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5rem;
+  }
+  .section1-text {
+    font-size: 1rem;
+    max-width: 25rem;
+    font-size: 1.5rem;
+    text-align: justify;
+    margin: 0 0.5rem;
   }
 }
 
 @media screen and (min-width: 45em) {
+  .page-home-container {
+    margin-top: var(--header-desktop-height);
+    width: 100vw;
+    min-height: Calc(
+      100vh - var(--footer-desktop-height) - var(--footer-desktop-height)
+    );
+  }
+  .containerlogo {
+    padding-top: 15rem;
+  }
   .page-home-title {
     font-size: 4rem;
   }
+  .page-home-undertext {
+    padding-top: 2rem;
+  }
   .undertext1 {
-    font-size: 1.05rem;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    font-size: 1.3rem;
   }
   .undertext2 {
-    font-size: 2.35rem;
-    padding: 0;
+    font-size: 3.2rem;
+    padding: 0.5rem 0 0 0;
     margin: 0;
+    line-height: 2.5rem;
   }
-  .page-home-container {
-    height: Calc(100vh - 5.5rem);
-  }
-  .footer {
-    display: flex;
+  .undertext3 {
+    font-size: 4rem;
+    padding: 0.8rem 0 0 0;
+    margin: 0;
+    line-height: 3rem;
   }
 }

@@ -12,7 +12,7 @@ function PageHome() {
           Wonderland
         </h1>
         <main className="page-home-undertext">
-          <p className="undertext1">Because web development is an</p>
+          <p className="undertext1">Because web development can be an</p>
           <p className="undertext2">
             a<span className="page-home-undertext-accentcolor">-</span>
             maze<span className="page-home-undertext-accentcolor">-</span>

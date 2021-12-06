@@ -15,9 +15,10 @@ Cheat Sheets Wonderland is a website that contains learning materials about vari
 4. Plan for adding several languages - french, norwegian..
 5. Js spec indexation in Algolia + Search everything
 6. 1-2 Animated, interactable Cheat Sheets about js/css/react
-7. Animation of menus, transitions
-8. React optimizations, testing
-9. Typescript it all
+7. Using the CanIUse api
+8. Animation of menus, transitions
+9. React optimizations, testing
+10. Typescript it all
    
 ## 2. Future features
 1. NextJs

@@ -81,6 +81,7 @@
   }
   .page-home-title {
     font-size: 4rem;
+    padding-top: 1.2rem;
   }
   .page-home-undertext {
     padding: 1rem 0 2.2rem 0;
@@ -88,7 +89,7 @@
 
   .undertext1 {
     margin: 0;
-    padding: 0;
+    padding-bottom: 1rem;
     font-size: 1.27rem;
   }
   .undertext2 {

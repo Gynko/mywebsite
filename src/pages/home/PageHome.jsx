@@ -25,7 +25,13 @@ function PageHome() {
             </p>
             <p className="undertext undertext3">Rabbit hole</p>
           </main>
-          <Button name="Hello" value="he" label="Choose a topic" />
+          <Button
+            name="Hello"
+            value="he"
+            label="Choose a topic"
+            link="true"
+            to="/topics-map"
+          />
         </div>
       </div>
       <Footer />

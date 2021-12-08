@@ -1,4 +1,5 @@
 import "./HeaderDesktop.styles.css";
+import { Link } from "react-router-dom";
 
 import IconBrainConnect from "../Icons/IconBrainConnect";
 import IconMail from "../Icons/IconMail";
@@ -11,7 +12,9 @@ function HeaderDesktop() {
           <div className="header-desktop-allbutmail">
             <ul className="header-desktop-ul">
               <li className="header-desktop-li">
-                <IconBrainConnect />
+                <Link to="/">
+                  <IconBrainConnect />
+                </Link>
               </li>
               <li className="header-desktop-li">Css</li>
               <li className="header-desktop-li">Js</li>

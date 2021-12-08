@@ -1,0 +1,20 @@
+.page-container {
+  background-color: var(--color-background);
+}
+
+@media screen and (min-width: 20em) {
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: Calc(100vh - var(--header-mobile-height));
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 45em) {
+  .page-container {
+    padding-top: var(--header-desktop-height);
+    width: 100vw;
+  }
+}

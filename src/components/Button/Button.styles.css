@@ -1,0 +1,6 @@
+.button {
+  border: none;
+  font-family: var(--font-uppercase);
+  background: var(--color-title-pink);
+  color: var(--color-button-text);
+}

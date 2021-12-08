@@ -196,3 +196,7 @@ category: legacy browsers
   box-sizing: border-box;
   padding: 0;
 }
+
+ul {
+  list-style-type: none;
+}

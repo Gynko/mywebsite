@@ -1,5 +1,6 @@
 .footer-container {
   background-color: #211728;
+  flex-direction: column;
 }
 .footer-text {
   color: #f8c8c8;
@@ -15,10 +16,6 @@
 @media screen and (min-width: 45em) {
   .footer-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     position: fixed;
     right: 0;
     bottom: 0;

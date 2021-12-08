@@ -1,6 +1,7 @@
 import "./GlobalStyles.styles.css";
 import "./GlobalFonts.styles.css";
 import "./GlobalVariables.styles.css";
+import "./GlobalUtilities.styles.css";
 
 import "./assets/fonts/BerkshireSwash-Regular.ttf";
 import "./assets/fonts/OpenSans-Regular.ttf";

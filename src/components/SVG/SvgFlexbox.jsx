@@ -3,7 +3,7 @@ function SvgFlexbox() {
     <svg
       id="Flexbox"
       xmlns="http://www.w3.org/2000/svg"
-      width={301.13}
+      width="100%"
       height={286.69}
       viewBox="0 0 301.13 286.69"
     >

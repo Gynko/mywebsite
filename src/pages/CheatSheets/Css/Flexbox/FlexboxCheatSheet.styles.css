@@ -4,18 +4,6 @@
   justify-content: flex-start;
   align-items: center;
 }
-
-.cheat-sheet-title-container {
-  background-color: #bb3585;
-  display: flex;
-  justify-content: center;
-}
-
-.cheat-sheet-title {
-  font-family: "Bungee-Regular";
-  font-weight: 400;
-  color: white;
-}
 .cheat-sheet-options-container {
   display: flex;
   flex-direction: row;
@@ -23,12 +11,17 @@
 @media screen and (min-width: 20em) {
   .cheat-sheet-container {
     height: Calc(100vh - var(--header-mobile-height));
-  }
-  .cheat-sheet-title-container {
-    height: 3rem;
     width: 100vw;
+    padding: 0 0.2rem;
   }
   .cheat-sheet-title {
     line-height: 0.5rem;
+  }
+  .cheat-sheet-options-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0.3rem 0;
   }
 }

@@ -1,30 +1,41 @@
+import { useState } from "react";
+
+import ButtonActionable from "../../../../components/ButtonActionable/ButtonActionable";
 import Footer from "../../../../components/Footer/Footer";
 import PageContainer from "../../../../components/PageContainer/PageContainer";
 import SvgFlexbox from "../../../../components/SVG/SvgFlexbox";
+import TitleHeader from "../../../../components/TitleHeader/TitleHeader";
 import "./FlexboxCheatSheet.styles.css";
 
 function FlexboxCheatSheet() {
+  const [terminologyCat, setTerminologyCatOn] = useState(false);
+
+  function terminology() {
+    setTerminologyCatOn(!terminologyCat);
+  }
   return (
     <PageContainer>
       <div className="cheat-sheet-container">
-        <div className="cheat-sheet-title-container">
-          <h1 className="cheat-sheet-title">Flexbox</h1>
-        </div>
+        <TitleHeader title="flexbox" />
         <div className="cheat-sheet-options-container">
-          <button>Terminology</button>
-          <button>Properties</button>
+          <ButtonActionable
+            label="Terminology"
+            color="yellow"
+            onClick={terminology}
+          />
+          <ButtonActionable label="Properties" color="yellow" />
         </div>
-        <div className="cheat-sheet-options-container">
-          <button>Name</button>
-          <button>Axis</button>
-          <button>Size</button>
-          <button>
-            Start
-            <br />
-            End
-          </button>
-        </div>
-        <SvgFlexbox />
+        {terminologyCat === false ? null : (
+          <>
+            <div className="cheat-sheet-options-container">
+              <ButtonActionable label="Name" color="white" />
+              <ButtonActionable label="Axis" color="redish" />
+              <ButtonActionable label="Size" color="green" />
+              <ButtonActionable label="Start End" color="blue" />
+            </div>
+            <SvgFlexbox />
+          </>
+        )}
       </div>
       <Footer />
     </PageContainer>

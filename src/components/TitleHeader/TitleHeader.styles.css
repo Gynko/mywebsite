@@ -1,0 +1,21 @@
+.titleheader-container {
+  background-color: #bb3585;
+  display: flex;
+  justify-content: center;
+}
+
+.titleheader-title {
+  font-family: "Bungee-Regular";
+  font-weight: 400;
+  color: white;
+}
+
+@media screen and (min-width: 20em) {
+  .titleheader-container {
+    height: 3rem;
+    width: 100vw;
+  }
+  .titleheader-title {
+    line-height: 0.5rem;
+  }
+}

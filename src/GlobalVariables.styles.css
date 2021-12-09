@@ -5,10 +5,19 @@
   --font-uppercase: "Bungee-Regular";
 
   --color-title-pink: #f554b5;
+
   --color-text-yellow: #f4ae44;
   --color-text-accent: #ef4a4a;
+
   --color-background: #251f32;
-  --color-button-text: #1c1a1c;
+
+  --color-button-actionable-bg: #322e3c;
+  --color-button-black: #1c1a1c;
+  --color-button-white: white;
+  --color-button-yellow: #f4ae44;
+  --color-button-redish: #ffa9a9;
+  --color-button-green: #31df4d;
+  --color-button-blue: #52c1ff;
 
   --header-mobile-height: 5.5rem;
   --header-desktop-height: 5.5rem;

@@ -1,7 +1,7 @@
 import "./PageHome.styles.css";
 import IconRabbitHole from "../../components/Icons/IconRabbitHole";
 import Footer from "../../components/Footer/Footer";
-import Button from "../../components/Button/Button";
+import ButtonLink from "../../components/ButtonLink/ButtonLink";
 import PageContainer from "../../components/PageContainer/PageContainer";
 
 function PageHome() {
@@ -25,7 +25,7 @@ function PageHome() {
             </p>
             <p className="undertext undertext3">Rabbit hole</p>
           </main>
-          <Button
+          <ButtonLink
             name="Hello"
             value="he"
             label="Choose a topic"

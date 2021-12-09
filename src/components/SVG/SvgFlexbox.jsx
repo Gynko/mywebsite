@@ -1,4 +1,6 @@
-function SvgFlexbox() {
+import "./SvgFlexbox.styles.css";
+
+function SvgFlexbox({ name, axis, size, startend }) {
   return (
     <svg
       id="Flexbox"
@@ -39,7 +41,7 @@ function SvgFlexbox() {
           fill: "#f4ae44",
         }}
       />
-      <g id="StartEnd">
+      <g id={`StartEnd-${startend}`}>
         <text
           id="CrossStartEnd_Text_CrossEnd"
           transform="translate(0 175.71)"
@@ -319,7 +321,7 @@ function SvgFlexbox() {
           </tspan>
         </text>
       </g>
-      <g id="Size">
+      <g id={`Size-${size}`}>
         <polyline
           id="Size-Text-Cross"
           points="275.12 90.95 284.07 90.95 284.07 177.95 275.07 177.95"
@@ -419,7 +421,7 @@ function SvgFlexbox() {
           }}
         />
       </g>
-      <g id="Axis">
+      <g id={`Axis-${axis}`}>
         <text
           transform="translate(153.12 13.76)"
           style={{
@@ -601,7 +603,7 @@ function SvgFlexbox() {
           </tspan>
         </text>
       </g>
-      <g id="Name">
+      <g id={`Name-${name}`}>
         <text
           transform="translate(101.15 105)"
           style={{

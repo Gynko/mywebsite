@@ -71,14 +71,14 @@
     max-width: 30rem;
   }
   .cheat-sheet-svg {
-    width: 30rem;
+    max-width: 100rem;
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: center;
     padding: 1rem 0;
     max-height: Calc(
-      100vh - var(--header-mobile-height) - var(--footer-desktop-height) -
+      100vh - var(--header-desktop-height) - var(--footer-desktop-height) -
         (var(--button-actionable-mobile-height) * 3) - 0.8rem
     );
   }

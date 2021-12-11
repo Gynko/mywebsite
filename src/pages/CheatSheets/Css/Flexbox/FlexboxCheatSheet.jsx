@@ -29,21 +29,22 @@ function FlexboxCheatSheet() {
   function termiStartEndToggle() {
     setTermiStartEnd(!termiStartEnd);
   }
+
   return (
     <PageContainer>
       <div className="cheat-sheet-container">
         <TitleHeader title="flexbox" />
-        <div className="cheat-sheet-options-container">
-          <ButtonActionable
-            label="Terminology"
-            color="yellow"
-            onClick={terminology}
-          />
-          <ButtonActionable label="Properties" color="yellow" />
-        </div>
-        {terminologyCat === false ? null : (
-          <>
-            <div className="cheat-sheet-options-container">
+        <div className="cheat-sheet-title-options">
+          <div className="cheat-sheet-options-container">
+            <ButtonActionable
+              label="Terminology"
+              color="yellow"
+              onClick={terminology}
+            />
+            <ButtonActionable label="Properties" color="yellow" />
+          </div>
+          {terminologyCat === false ? null : (
+            <div className="cheat-sheet-sub-options-container">
               <ButtonActionable
                 label="Name"
                 color="white"
@@ -65,15 +66,17 @@ function FlexboxCheatSheet() {
                 onClick={termiStartEndToggle}
               />
             </div>
-            <div className="cheat-sheet-svg">
-              <SvgFlexbox
-                name={termiName}
-                axis={termiAxis}
-                size={termiSize}
-                startend={termiStartEnd}
-              />
-            </div>
-          </>
+          )}
+        </div>
+        {terminologyCat === false ? null : (
+          <div className="cheat-sheet-svg">
+            <SvgFlexbox
+              name={termiName}
+              axis={termiAxis}
+              size={termiSize}
+              startend={termiStartEnd}
+            />
+          </div>
         )}
       </div>
       <Footer />

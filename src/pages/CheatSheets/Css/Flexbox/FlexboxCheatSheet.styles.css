@@ -8,24 +8,78 @@
   display: flex;
   flex-direction: row;
 }
+.cheat-sheet-title {
+  line-height: 0.5rem;
+}
 
 @media screen and (min-width: 20em) {
   .cheat-sheet-container {
     height: Calc(100vh - var(--header-mobile-height));
     width: 100vw;
-    padding: 0 0.2rem;
+    align-self: center;
   }
-  .cheat-sheet-title {
-    line-height: 0.5rem;
+  .cheat-sheet-title-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20rem;
+    padding-top: 0.1rem;
   }
   .cheat-sheet-options-container {
-    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 0.3rem 0;
+    margin-top: 0.3rem;
+    height: 3rem;
+  }
+  .cheat-sheet-sub-options-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 0.4rem;
+    height: 3rem;
   }
   .cheat-sheet-svg {
-    margin-top: 1.2rem;
+    min-width: 20em;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    height: Calc(
+      100vh - var(--header-mobile-height) -
+        var(--button-actionable-mobile-height) * 3 - 0.3rem
+    );
+  }
+}
+
+@media screen and (min-width: 45em) {
+  .cheat-sheet-container {
+    min-height: Calc(100vh - var(--header-desktop-height));
+    max-width: 100rem;
+    align-self: center;
+  }
+  .cheat-sheet-title-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+  }
+  .cheat-sheet-options-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 30rem;
+  }
+  .cheat-sheet-svg {
+    width: 30rem;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    max-height: Calc(
+      100vh - var(--header-mobile-height) - var(--footer-desktop-height) -
+        (var(--button-actionable-mobile-height) * 3) - 0.8rem
+    );
   }
 }

@@ -1,15 +1,19 @@
-#StartEnd-false {
+.StartEnd-false {
   display: none;
 }
 
-#Size-false {
+.Size-false {
   display: none;
 }
 
-#Axis-false {
+.Axis-false {
   display: none;
 }
 
-#Name-false {
+.Name-false {
   display: none;
+}
+
+.svg-flexbox {
+  height: 100%;
 }

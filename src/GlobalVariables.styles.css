@@ -21,6 +21,11 @@
 
   --header-mobile-height: 5.5rem;
   --header-desktop-height: 5.5rem;
-  --footer-desktop-height: 5.5rem;
+
   --content-desktop-height: 5.5rem;
+
+  --footer-desktop-height: 5.5rem;
+
+  --title-header-mobile-height: 3rem;
+  --button-actionable-mobile-height: 3rem;
 }

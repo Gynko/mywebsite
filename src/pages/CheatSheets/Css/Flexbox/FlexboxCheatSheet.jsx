@@ -37,33 +37,38 @@ function FlexboxCheatSheet() {
         <div className="cheat-sheet-title-options">
           <div className="cheat-sheet-options-container">
             <ButtonActionable
-              label="Terminology"
+              value="terminology"
               color="yellow"
               onClick={terminology}
+              activated={terminologyCat}
             />
-            <ButtonActionable label="Properties" color="yellow" />
+            <ButtonActionable value="Properties" color="yellow" />
           </div>
           {terminologyCat === false ? null : (
             <div className="cheat-sheet-sub-options-container">
               <ButtonActionable
-                label="Name"
+                value="name"
                 color="white"
                 onClick={termiNameToggle}
+                activated={termiName}
               />
               <ButtonActionable
-                label="Axis"
+                value="axis"
                 color="redish"
                 onClick={termiAxisToggle}
+                activated={termiAxis}
               />
               <ButtonActionable
-                label="Size"
+                value="size"
                 color="green"
                 onClick={termiSizeToggle}
+                activated={termiSize}
               />
               <ButtonActionable
-                label="Start End"
+                value="start-end"
                 color="blue"
                 onClick={termiStartEndToggle}
+                activated={termiStartEnd}
               />
             </div>
           )}

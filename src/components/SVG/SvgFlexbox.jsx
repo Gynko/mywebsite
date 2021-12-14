@@ -6,12 +6,8 @@ function SvgFlexbox({ name, axis, size, startend }) {
       id="Layer_1"
       data-name="Layer 1"
       xmlns="http://www.w3.org/2000/svg"
-      width="auto"
-      height="auto"
       viewBox="0 0 308.34 294.4"
       className="svg-flexbox"
-      x="0"
-      y="0"
       preserveAspectRatio="xMidYMid meet"
     >
       <g className={`Size-${size}`}>

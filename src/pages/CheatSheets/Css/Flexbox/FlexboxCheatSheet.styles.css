@@ -22,21 +22,21 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: flex-start;
     width: 20rem;
-    padding-top: 0.1rem;
   }
   .cheat-sheet-options-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 0.3rem;
+    margin: 0.3rem 0;
     height: 3rem;
   }
   .cheat-sheet-sub-options-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 0.4rem;
+
     height: 3rem;
   }
   .cheat-sheet-svg {

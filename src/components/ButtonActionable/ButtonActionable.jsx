@@ -1,13 +1,23 @@
 import "./ButtonActionable.styles.css";
 
-function ButtonActionable({ label, color, onClick, ...otherProps }) {
-  return (
+function ButtonActionable({ color, onClick, value, activated, ...otherProps }) {
+  return activated === false ? (
     <button
       onClick={onClick}
       className={`button-actionable button-actionable-${color}`}
+      value={value}
       {...otherProps}
     >
-      {label}
+      {value}
+    </button>
+  ) : (
+    <button
+      onClick={onClick}
+      className={`button-actionable button-actionable-${color} button-actionable-${value}-active`}
+      value={value}
+      {...otherProps}
+    >
+      {value}
     </button>
   );
 }

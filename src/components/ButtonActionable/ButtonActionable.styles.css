@@ -3,12 +3,8 @@
   border: 2px var(--color-button-actionable-bg) solid;
   font-family: "Bungee-Regular";
 }
-
 .button-actionable-yellow {
   color: var(--color-button-yellow);
-}
-.button-actionable-yellow:focus {
-  border: 2px var(--color-button-yellow) solid;
 }
 .button-actionable-white {
   color: var(--color-button-white);
@@ -23,6 +19,21 @@
   color: var(--color-button-blue);
 }
 
+.button-actionable-terminology-active {
+  border: 2px var(--color-button-yellow) solid;
+}
+.button-actionable-name-active {
+  border: 2px var(--color-button-white) solid;
+}
+.button-actionable-axis-active {
+  border: 2px var(--color-button-redish) solid;
+}
+.button-actionable-size-active {
+  border: 2px var(--color-button-green) solid;
+}
+.button-actionable-start-end-active {
+  border: 2px var(--color-button-blue) solid;
+}
 @media screen and (min-width: 20em) {
   .button-actionable {
     font-size: 1rem;

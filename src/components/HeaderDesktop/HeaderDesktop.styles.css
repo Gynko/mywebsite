@@ -15,7 +15,7 @@
   align-items: center;
   justify-content: center;
 }
-.header-desktop-allbutmail {
+.header-desktop-all-but-mail-icon {
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -81,7 +81,7 @@
     width: 100%;
     height: 100%;
   }
-  .header-desktop-allbutmail {
+  .header-desktop-all-but-mail-icon {
     width: Calc(100vw - 12rem);
     max-width: 40rem;
   }

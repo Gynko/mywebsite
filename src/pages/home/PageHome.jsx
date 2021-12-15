@@ -10,20 +10,22 @@ function PageHome() {
       <div className="home-allbutfooter-container">
         <div className="home-logo-title-container">
           <IconRabbitHole />
-          <h1 className="page-home-title">
+          <h1 className="home-title">
             Cheat Sheets <br />
             Wonderland
           </h1>
         </div>
-        <div className="home-undertext-button-container">
-          <main className="flex-center-hv page-home-undertext">
-            <p className="undertext1">Because web development can be an</p>
-            <p className="undertext undertext2">
-              a<span className="page-home-undertext-accentcolor">-</span>
-              maze<span className="page-home-undertext-accentcolor">-</span>
+        <div className="home-undertext-container">
+          <main className="home-undertext-main">
+            <p className="home-undertext-normal home-undertext-1">
+              Because web development can be an
+            </p>
+            <p className="home-undertext-big home-undertext-2">
+              a<span className="home-undertext-accentcolor">-</span>
+              Maze<span className="home-undertext-accentcolor">-</span>
               ing
             </p>
-            <p className="undertext undertext3">Rabbit hole</p>
+            <p className="home-undertext-big home-undertext-3">Rabbit hole</p>
           </main>
           <ButtonLink
             name="Hello"

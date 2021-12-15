@@ -9,7 +9,7 @@ function HeaderDesktop() {
     <div className="header-desktop-container">
       <header className="header-desktop-header">
         <nav className="header-desktop-nav">
-          <div className="header-desktop-allbutmail">
+          <div className="header-desktop-all-but-mail-icon">
             <ul className="header-desktop-ul">
               <li className="header-desktop-li">
                 <Link to="/">

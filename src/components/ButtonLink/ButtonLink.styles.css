@@ -1,13 +1,9 @@
-.button-link-main {
-  border: none;
-  font-family: var(--font-uppercase);
-  background: var(--color-title-pink);
-  color: var(--color-background);
-  border-radius: 5px;
-}
-
 .button-link {
   text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-family: var(--font-uppercase);
+  background: var(--color-title-pink);
   color: var(--color-background);
 }
 
@@ -17,22 +13,22 @@
 }
 
 @media screen and (min-width: 20em) {
-  .button-main {
+  .button-link {
     font-size: 1rem;
+    padding: 0 0.4rem;
   }
 }
 
 @media screen and (min-width: 45em) {
-  .button-main {
+  .button-link {
     font-size: 1.5rem;
   }
-  .button-main:hover {
+  .button-link:hover {
     background-color: var(--color-text-yellow);
     transform: scale(1.1);
     transition: transform 0.25s, background-color 0.25s;
   }
-
-  .button-main:not(:hover) {
+  .button-link:not(:hover) {
     background: var(--color-title-pink);
     color: var(--color-background);
     transform: scale(1);

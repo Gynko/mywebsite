@@ -1,55 +1,27 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect } from "react";
 
 import "./SvgFlexbox.styles.css";
 
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-import { Draggable } from "gsap/Draggable";
-import { EaselPlugin } from "gsap/EaselPlugin";
-import { MotionPathPlugin } from "gsap/MotionPathPlugin";
-import { PixiPlugin } from "gsap/PixiPlugin";
-import { TextPlugin } from "gsap/TextPlugin";
-import { Flip } from "gsap/Flip";
-import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
-import { GSDevTools } from "gsap/GSDevTools";
-import { InertiaPlugin } from "gsap/InertiaPlugin";
-import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
-import { MotionPathHelper } from "gsap/MotionPathHelper";
-import { Physics2DPlugin } from "gsap/Physics2DPlugin";
-import { PhysicsPropsPlugin } from "gsap/PhysicsPropsPlugin";
-import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
-import { SplitText } from "gsap/SplitText";
-
-gsap.registerPlugin(
-  ScrollTrigger,
-  ScrollToPlugin,
-  Draggable,
-  EaselPlugin,
-  MotionPathPlugin,
-  PixiPlugin,
-  TextPlugin,
-  Flip,
-  DrawSVGPlugin,
-  GSDevTools,
-  InertiaPlugin,
-  MorphSVGPlugin,
-  MotionPathHelper,
-  Physics2DPlugin,
-  PhysicsPropsPlugin,
-  ScrambleTextPlugin,
-  SplitText
-);
 
 function SvgFlexbox({ name, axis, size, startend }) {
+  const tl = gsap.timeline();
   useEffect(() => {
-    gsap.set(".flexbox-term-size", { transformOrigin: "50% 50%" });
-    gsap.from(".flexbox-term-size", {
-      duration: 1,
-      x: 30,
-      ease: "elastic",
+    gsap.set(".size-up", { opacity: 0 });
+    gsap.set(".size-right", { opacity: 0 });
+    tl.to(".size-up", {
+      duration: 0.5,
+      opacity: 1,
     });
-  });
+    tl.to(".size-right", {
+      duration: 0.5,
+      opacity: 1,
+    });
+    return function cleanup() {
+      tl.kill();
+    };
+  }, [size]);
 
   return (
     <svg
@@ -60,529 +32,541 @@ function SvgFlexbox({ name, axis, size, startend }) {
       className="svg-flexbox"
       preserveAspectRatio="xMidYMid meet"
     >
-      <g className={`flexbox-term-size Size-${size}`}>
-        <polyline
-          id="Size-Text-Cross"
-          points="235.9 98.95 244.85 98.95 244.85 184.95 235.85 184.95"
-          style={{
-            fill: "none",
-            stroke: "#31df4d",
-            strokeMiterlimit: 10,
-            strokeWidth: 4,
-          }}
-        />
-        <polygon
-          id="Size-Arrow-RightUp"
-          points="232.43 98.74 240 104.74 240 92.74 232.43 98.74"
-          style={{
-            fill: "#31df4d",
-          }}
-        />
-        <polygon
-          id="Size-Arrow-RightDown"
-          points="232.43 184.74 240 190.74 240 178.74 232.43 184.74"
-          style={{
-            fill: "#31df4d",
-          }}
-        />
-        <polyline
-          id="Size-Text-Cross-2"
-          data-name="Size-Text-Cross"
-          points="75 89.91 75 80.95 233 80.95 233 89.95"
-          style={{
-            fill: "none",
-            stroke: "#31df4d",
-            strokeMiterlimit: 10,
-            strokeWidth: 4,
-          }}
-        />
-        <polygon
-          id="Size-Arrow-RightDown-2"
-          data-name="Size-Arrow-RightDown"
-          points="232.64 97.52 238.64 89.95 226.64 89.95 232.64 97.52"
-          style={{
-            fill: "#31df4d",
-          }}
-        />
-        <polygon
-          id="Size-Arrow-RightDown-3"
-          data-name="Size-Arrow-RightDown"
-          points="74.64 97.52 80.64 89.95 68.64 89.95 74.64 97.52"
-          style={{
-            fill: "#31df4d",
-          }}
-        />
-        <text
-          id="Size-Text-Main"
-          transform="translate(69.47 60.41)"
-          style={{
-            fontSize: 16,
-            fill: "#31df4d",
-            fontFamily: "Bungee-Regular, Bungee",
-          }}
-        >
-          {"main"}
-          <tspan x={2.94} y={16}>
-            {"size"}
-          </tspan>
-        </text>
-        <text
-          id="Size-Text-Cross-3"
-          data-name="Size-Text-Cross"
-          transform="translate(249.78 108.71)"
-          style={{
-            fontSize: 16,
-            fill: "#31df4d",
-            fontFamily: "Bungee-Regular, Bungee",
-          }}
-        >
-          {"c"}
-          <tspan
-            x={10.05}
-            y={0}
+      <g className={`Size-${size}`}>
+        <g className="size-right">
+          <polyline
+            id="Size-Text-Cross"
+            points="235.898 98.953 244.853 98.953 244.853 184.953 235.853 184.953"
             style={{
-              letterSpacing: "-0.00494384765625em",
+              fill: "none",
+              stroke: "#31df4d",
+              strokeMiterlimit: 10,
+              strokeWidth: 4,
+            }}
+          />
+          <polygon
+            id="Size-Arrow-RightUp"
+            points="232.433 98.736 240 104.736 240 92.736 232.433 98.736"
+            style={{
+              fill: "#31df4d",
+            }}
+          />
+          <text
+            id="Size-Text-Cross-2"
+            data-name="Size-Text-Cross"
+            transform="translate(249.78 108.705)"
+            style={{
+              fontSize: 16,
+              fill: "#31df4d",
+              fontFamily: "Bungee-Regular, Bungee",
             }}
           >
-            {"r"}
-          </tspan>
-          <tspan
-            x={21.86}
-            y={0}
+            {"c"}
+            <tspan
+              x={10.048}
+              y={0}
+              style={{
+                letterSpacing: "-0.00494384765625em",
+              }}
+            >
+              {"r"}
+            </tspan>
+            <tspan
+              x={21.856}
+              y={0}
+              style={{
+                letterSpacing: "-0.00006103515625em",
+              }}
+            >
+              {"o"}
+            </tspan>
+            <tspan
+              x={33.647}
+              y={0}
+              style={{
+                letterSpacing: "-0.0050048828125em",
+              }}
+            >
+              {"s"}
+            </tspan>
+            <tspan x={43.968} y={0}>
+              {"s"}
+            </tspan>
+            <tspan x={6.632} y={16}>
+              {"size"}
+            </tspan>
+          </text>
+          <polygon
+            id="Size-Arrow-RightDown"
+            points="232.433 184.736 240 190.736 240 178.736 232.433 184.736"
             style={{
-              letterSpacing: "-0.00006103515625em",
+              fill: "#31df4d",
+            }}
+          />
+        </g>
+        <g className="size-up">
+          <polyline
+            id="Size-Text-Cross-3"
+            data-name="Size-Text-Cross"
+            points="75 89.908 75 80.953 233 80.953 233 89.953"
+            style={{
+              fill: "none",
+              stroke: "#31df4d",
+              strokeMiterlimit: 10,
+              strokeWidth: 4,
+            }}
+          />
+          <polygon
+            id="Size-Arrow-RightDown-2"
+            data-name="Size-Arrow-RightDown"
+            points="232.643 97.519 238.643 89.953 226.643 89.953 232.643 97.519"
+            style={{
+              fill: "#31df4d",
+            }}
+          />
+          <text
+            id="Size-Text-Main"
+            transform="translate(69.467 60.412)"
+            style={{
+              fontSize: 16,
+              fill: "#31df4d",
+              fontFamily: "Bungee-Regular, Bungee",
             }}
           >
-            {"o"}
-          </tspan>
-          <tspan
-            x={33.65}
-            y={0}
+            {"main"}
+            <tspan x={2.944} y={16}>
+              {"size"}
+            </tspan>
+          </text>
+          <polygon
+            id="Size-Arrow-RightDown-3"
+            data-name="Size-Arrow-RightDown"
+            points="74.643 97.519 80.643 89.953 68.643 89.953 74.643 97.519"
             style={{
-              letterSpacing: "-0.0050048828125em",
+              fill: "#31df4d",
             }}
-          >
-            {"s"}
-          </tspan>
-          <tspan x={43.97} y={0}>
-            {"s"}
-          </tspan>
-          <tspan x={6.63} y={16}>
-            {"size"}
-          </tspan>
-        </text>
+          />
+        </g>
       </g>
       <g className={`flexbox-term-axis Axis-${axis}`}>
-        <polygon
-          id="CrossStartEnd_Arrow-Down"
-          points="299 135.71 299 148.27 308.34 142.21 299 135.71"
-          style={{
-            fill: "#ffa9a9",
-          }}
-        />
-        <text
-          transform="translate(127.32 13.76)"
-          style={{
-            fontSize: 16,
-            fill: "#ffa9a9",
-            fontFamily: "Bungee-Regular, Bungee",
-          }}
-        >
-          {"C"}
-          <tspan
-            x={10.05}
-            y={0}
+        <g id="Axis-Cross">
+          <text
+            transform="translate(127.316 13.76)"
             style={{
-              letterSpacing: "-0.004974365234375em",
+              fontSize: 16,
+              fill: "#ffa9a9",
+              fontFamily: "Bungee-Regular, Bungee",
             }}
           >
-            {"R"}
-          </tspan>
-          <tspan x={21.86} y={0}>
-            {"O"}
-          </tspan>
-          <tspan
-            x={33.65}
-            y={0}
+            {"C"}
+            <tspan
+              x={10.048}
+              y={0}
+              style={{
+                letterSpacing: "-0.004974365234375em",
+              }}
+            >
+              {"R"}
+            </tspan>
+            <tspan x={21.856} y={0}>
+              {"O"}
+            </tspan>
+            <tspan
+              x={33.648}
+              y={0}
+              style={{
+                letterSpacing: "-0.0050048828125em",
+              }}
+            >
+              {"S"}
+            </tspan>
+            <tspan
+              x={43.968}
+              y={0}
+              style={{
+                letterSpacing: "0.000030517578125em",
+              }}
+            >
+              {"S"}
+            </tspan>
+            <tspan x={5.408} y={16}>
+              {"axis"}
+            </tspan>
+          </text>
+          <line
+            id="CrossStartEnd_Arrow-DownLine"
+            x1={153.853}
+            y1={31.953}
+            x2={153.853}
+            y2={271.659}
             style={{
-              letterSpacing: "-0.0050048828125em",
+              fill: "none",
+              stroke: "#ffa9a9",
+              strokeMiterlimit: 10,
+              strokeWidth: 4,
+            }}
+          />
+          <polygon
+            points="159.853 271.659 153.853 283.659 147.853 271.659 159.853 271.659"
+            style={{
+              fill: "#ffa9a9",
+            }}
+          />
+        </g>
+        <g id="Axis-main">
+          <polygon
+            id="CrossStartEnd_Arrow-Down"
+            points="299 135.705 299 148.269 308.344 142.205 299 135.705"
+            style={{
+              fill: "#ffa9a9",
+            }}
+          />
+          <text
+            transform="translate(4.806 138.505)"
+            style={{
+              fontSize: "16.865280151367188px",
+              fill: "#ffa9a9",
+              fontFamily: "Bungee-Regular, Bungee",
             }}
           >
-            {"S"}
-          </tspan>
-          <tspan
-            x={43.97}
-            y={0}
+            {"main"}
+          </text>
+          <line
+            id="CrossStartEnd_Arrow-DownLine-2"
+            data-name="CrossStartEnd_Arrow-DownLine"
+            x1={300.706}
+            y1={141.806}
+            y2={141.806}
             style={{
-              letterSpacing: "0.000030517578125em",
+              fill: "none",
+              stroke: "#ffa9a9",
+              strokeMiterlimit: 10,
+              strokeWidth: 4,
+            }}
+          />
+          <text
+            transform="translate(7.797 157.76)"
+            style={{
+              fontSize: 16,
+              fill: "#ffa9a9",
+              fontFamily: "Bungee-Regular, Bungee",
             }}
           >
-            {"S"}
-          </tspan>
-          <tspan x={5.41} y={16}>
             {"axis"}
-          </tspan>
-        </text>
-        <text
-          transform="translate(4.81 138.5)"
-          style={{
-            fontSize: "16.86528205871582px",
-            fill: "#ffa9a9",
-            fontFamily: "Bungee-Regular, Bungee",
-          }}
-        >
-          {"main"}
-        </text>
-        <line
-          id="CrossStartEnd_Arrow-DownLine"
-          x1={153.85}
-          y1={31.95}
-          x2={153.85}
-          y2={271.66}
-          style={{
-            fill: "none",
-            stroke: "#ffa9a9",
-            strokeMiterlimit: 10,
-            strokeWidth: 4,
-          }}
-        />
-        <line
-          id="CrossStartEnd_Arrow-DownLine-2"
-          data-name="CrossStartEnd_Arrow-DownLine"
-          x1={300.71}
-          y1={141.81}
-          y2={141.81}
-          style={{
-            fill: "none",
-            stroke: "#ffa9a9",
-            strokeMiterlimit: 10,
-            strokeWidth: 4,
-          }}
-        />
-        <polygon
-          points="159.85 271.66 153.85 283.66 147.85 271.66 159.85 271.66"
-          style={{
-            fill: "#ffa9a9",
-          }}
-        />
-        <text
-          transform="translate(7.8 157.76)"
-          style={{
-            fontSize: 16,
-            fill: "#ffa9a9",
-            fontFamily: "Bungee-Regular, Bungee",
-          }}
-        >
-          {"axis"}
-        </text>
+          </text>
+        </g>
       </g>
       <g className={`flexbox-term-startend StartEnd-${startend}`}>
-        <text
-          id="CrossStartEnd_Text_CrossEnd"
-          transform="translate(2.39 94.41)"
-          style={{
-            fontSize: 16,
-            fill: "#44b5f4",
-            fontFamily: "Bungee-Regular, Bungee",
-          }}
-        >
-          {"c"}
-          <tspan
-            x={10.05}
-            y={0}
+        <g id="Startend-left">
+          <text
+            id="CrossStartEnd_Text_CrossEnd"
+            transform="translate(2.389 94.412)"
             style={{
-              letterSpacing: "-0.00494384765625em",
+              fontSize: 16,
+              fill: "#44b5f4",
+              fontFamily: "Bungee-Regular, Bungee",
             }}
           >
-            {"r"}
-          </tspan>
-          <tspan
-            x={21.86}
-            y={0}
+            {"c"}
+            <tspan
+              x={10.048}
+              y={0}
+              style={{
+                letterSpacing: "-0.00494384765625em",
+              }}
+            >
+              {"r"}
+            </tspan>
+            <tspan
+              x={21.856}
+              y={0}
+              style={{
+                letterSpacing: "-0.00006103515625em",
+              }}
+            >
+              {"o"}
+            </tspan>
+            <tspan
+              x={33.647}
+              y={0}
+              style={{
+                letterSpacing: "-0.0050048828125em",
+              }}
+            >
+              {"s"}
+            </tspan>
+            <tspan x={43.968} y={0}>
+              {"s"}
+            </tspan>
+          </text>
+          <line
+            id="CrossStartEnd_Arrow-DownLine-3"
+            data-name="CrossStartEnd_Arrow-DownLine"
+            y1={98.659}
+            x2={62.853}
+            y2={98.659}
             style={{
-              letterSpacing: "-0.00006103515625em",
+              fill: "none",
+              stroke: "#44b5f4",
+              strokeMiterlimit: 10,
+              strokeWidth: 4,
+            }}
+          />
+          <text
+            id="CrossStartEnd-Text-CrossStart"
+            transform="translate(2.389 180.061)"
+            style={{
+              fontSize: 16,
+              fill: "#44b5f4",
+              fontFamily: "Bungee-Regular, Bungee",
             }}
           >
-            {"o"}
-          </tspan>
-          <tspan
-            x={33.65}
-            y={0}
+            {"c"}
+            <tspan
+              x={10.048}
+              y={0}
+              style={{
+                letterSpacing: "-0.00494384765625em",
+              }}
+            >
+              {"r"}
+            </tspan>
+            <tspan
+              x={21.856}
+              y={0}
+              style={{
+                letterSpacing: "-0.00006103515625em",
+              }}
+            >
+              {"o"}
+            </tspan>
+            <tspan
+              x={33.647}
+              y={0}
+              style={{
+                letterSpacing: "-0.0050048828125em",
+              }}
+            >
+              {"s"}
+            </tspan>
+            <tspan x={43.968} y={0}>
+              {"s"}
+            </tspan>
+          </text>
+          <text
+            id="CrossStartEnd-Text-CrossStart-2"
+            data-name="CrossStartEnd-Text-CrossStart"
+            transform="translate(3.813 115.061)"
             style={{
-              letterSpacing: "-0.0050048828125em",
-            }}
-          >
-            {"s"}
-          </tspan>
-          <tspan x={43.97} y={0}>
-            {"s"}
-          </tspan>
-        </text>
-        <line
-          id="CrossStartEnd_Arrow-DownLine-3"
-          data-name="CrossStartEnd_Arrow-DownLine"
-          y1={98.66}
-          x2={62.85}
-          y2={98.66}
-          style={{
-            fill: "none",
-            stroke: "#44b5f4",
-            strokeMiterlimit: 10,
-            strokeWidth: 4,
-          }}
-        />
-        <text
-          id="CrossStartEnd-Text-CrossStart"
-          transform="translate(2.39 180.06)"
-          style={{
-            fontSize: 16,
-            fill: "#44b5f4",
-            fontFamily: "Bungee-Regular, Bungee",
-          }}
-        >
-          {"c"}
-          <tspan
-            x={10.05}
-            y={0}
-            style={{
-              letterSpacing: "-0.00494384765625em",
-            }}
-          >
-            {"r"}
-          </tspan>
-          <tspan
-            x={21.86}
-            y={0}
-            style={{
-              letterSpacing: "-0.00006103515625em",
-            }}
-          >
-            {"o"}
-          </tspan>
-          <tspan
-            x={33.65}
-            y={0}
-            style={{
-              letterSpacing: "-0.0050048828125em",
-            }}
-          >
-            {"s"}
-          </tspan>
-          <tspan x={43.97} y={0}>
-            {"s"}
-          </tspan>
-        </text>
-        <text
-          id="CrossStartEnd-Text-CrossStart-2"
-          data-name="CrossStartEnd-Text-CrossStart"
-          transform="translate(3.81 115.06)"
-          style={{
-            fontSize: 16,
-            fill: "#44b5f4",
-            fontFamily: "Bungee-Regular, Bungee",
-            letterSpacing: "-0.00994873046875em",
-          }}
-        >
-          {"s"}
-          <tspan
-            x={10.24}
-            y={0}
-            style={{
-              letterSpacing: "-0.0400390625em",
-            }}
-          >
-            {"t"}
-          </tspan>
-          <tspan
-            x={20.1}
-            y={0}
-            style={{
-              letterSpacing: "0.00006103515625em",
-            }}
-          >
-            {"a"}
-          </tspan>
-          <tspan
-            x={31.78}
-            y={0}
-            style={{
-              letterSpacing: "-0.030029296875em",
-            }}
-          >
-            {"r"}
-          </tspan>
-          <tspan
-            x={43.18}
-            y={0}
-            style={{
-              letterSpacing: "-0.010009765625em",
-            }}
-          >
-            {"t"}
-          </tspan>
-        </text>
-        <text
-          id="CrossStartEnd-Text-MainStart"
-          transform="translate(208.37 263.74)"
-          style={{
-            fontSize: 16,
-            fill: "#44b5f4",
-            fontFamily: "Bungee-Regular, Bungee",
-          }}
-        >
-          {"Main"}
-          <tspan x={6.27} y={16}>
-            {"END"}
-          </tspan>
-        </text>
-        <polygon
-          points="62.85 92.66 74.85 98.66 62.85 104.66 62.85 92.66"
-          style={{
-            fill: "#44b5f4",
-          }}
-        />
-        <line
-          id="CrossStartEnd_Arrow-DownLine-4"
-          data-name="CrossStartEnd_Arrow-DownLine"
-          y1={184.66}
-          x2={62.85}
-          y2={184.66}
-          style={{
-            fill: "none",
-            stroke: "#44b5f4",
-            strokeMiterlimit: 10,
-            strokeWidth: 4,
-          }}
-        />
-        <polygon
-          points="62.85 178.66 74.85 184.66 62.85 190.66 62.85 178.66"
-          style={{
-            fill: "#44b5f4",
-          }}
-        />
-        <line
-          id="CrossStartEnd_Arrow-DownLine-5"
-          data-name="CrossStartEnd_Arrow-DownLine"
-          x1={231.85}
-          y1={249.95}
-          x2={231.85}
-          y2={198.66}
-          style={{
-            fill: "none",
-            stroke: "#44b5f4",
-            strokeMiterlimit: 10,
-            strokeWidth: 4,
-          }}
-        />
-        <polygon
-          points="225.85 198.66 231.85 186.66 237.85 198.66 225.85 198.66"
-          style={{
-            fill: "#44b5f4",
-          }}
-        />
-        <text
-          id="CrossStartEnd-Text-MainStart-2"
-          data-name="CrossStartEnd-Text-MainStart"
-          transform="translate(52.37 263.74)"
-          style={{
-            fontSize: 16,
-            fill: "#44b5f4",
-            fontFamily: "Bungee-Regular, Bungee",
-          }}
-        >
-          {"Main"}
-          <tspan
-            x={-3.26}
-            y={16}
-            style={{
-              letterSpacing: "-0.010009765625em",
+              fontSize: 16,
+              fill: "#44b5f4",
+              fontFamily: "Bungee-Regular, Bungee",
+              letterSpacing: "-0.00994873046875em",
             }}
           >
             {"s"}
-          </tspan>
-          <tspan
-            x={6.98}
-            y={16}
+            <tspan
+              x={10.24}
+              y={0}
+              style={{
+                letterSpacing: "-0.0400390625em",
+              }}
+            >
+              {"t"}
+            </tspan>
+            <tspan
+              x={20.096}
+              y={0}
+              style={{
+                letterSpacing: "0.00006103515625em",
+              }}
+            >
+              {"a"}
+            </tspan>
+            <tspan
+              x={31.776}
+              y={0}
+              style={{
+                letterSpacing: "-0.030029296875em",
+              }}
+            >
+              {"r"}
+            </tspan>
+            <tspan
+              x={43.184}
+              y={0}
+              style={{
+                letterSpacing: "-0.010009765625em",
+              }}
+            >
+              {"t"}
+            </tspan>
+          </text>
+          <polygon
+            points="62.853 92.659 74.853 98.659 62.853 104.659 62.853 92.659"
             style={{
-              letterSpacing: "-0.03997802734375em",
+              fill: "#44b5f4",
+            }}
+          />
+          <line
+            id="CrossStartEnd_Arrow-DownLine-4"
+            data-name="CrossStartEnd_Arrow-DownLine"
+            y1={184.659}
+            x2={62.853}
+            y2={184.659}
+            style={{
+              fill: "none",
+              stroke: "#44b5f4",
+              strokeMiterlimit: 10,
+              strokeWidth: 4,
+            }}
+          />
+          <polygon
+            points="62.853 178.659 74.853 184.659 62.853 190.659 62.853 178.659"
+            style={{
+              fill: "#44b5f4",
+            }}
+          />
+          <text
+            id="CrossStartEnd_Text_CrossEnd-2"
+            data-name="CrossStartEnd_Text_CrossEnd"
+            transform="translate(12.349 200.412)"
+            style={{
+              fontSize: 16,
+              fill: "#44b5f4",
+              fontFamily: "Bungee-Regular, Bungee",
             }}
           >
-            {"t"}
-          </tspan>
-          <tspan x={16.83} y={16}>
-            {"a"}
-          </tspan>
-          <tspan
-            x={28.51}
-            y={16}
+            {"end"}
+          </text>
+        </g>
+        <g id="Startend-down">
+          <text
+            id="CrossStartEnd-Text-MainStart"
+            transform="translate(208.367 263.742)"
             style={{
-              letterSpacing: "-0.02996826171875em",
+              fontSize: 16,
+              fill: "#44b5f4",
+              fontFamily: "Bungee-Regular, Bungee",
             }}
           >
-            {"r"}
-          </tspan>
-          <tspan
-            x={39.92}
-            y={16}
+            {"Main"}
+            <tspan x={6.272} y={16}>
+              {"END"}
+            </tspan>
+          </text>
+          <line
+            id="CrossStartEnd_Arrow-DownLine-5"
+            data-name="CrossStartEnd_Arrow-DownLine"
+            x1={231.853}
+            y1={249.953}
+            x2={231.853}
+            y2={198.659}
             style={{
-              letterSpacing: "-0.010009765625em",
+              fill: "none",
+              stroke: "#44b5f4",
+              strokeMiterlimit: 10,
+              strokeWidth: 4,
+            }}
+          />
+          <polygon
+            points="225.853 198.659 231.853 186.659 237.853 198.659 225.853 198.659"
+            style={{
+              fill: "#44b5f4",
+            }}
+          />
+          <text
+            id="CrossStartEnd-Text-MainStart-2"
+            data-name="CrossStartEnd-Text-MainStart"
+            transform="translate(52.367 263.742)"
+            style={{
+              fontSize: 16,
+              fill: "#44b5f4",
+              fontFamily: "Bungee-Regular, Bungee",
             }}
           >
-            {"t"}
-          </tspan>
-        </text>
-        <line
-          id="CrossStartEnd_Arrow-DownLine-6"
-          data-name="CrossStartEnd_Arrow-DownLine"
-          x1={75.85}
-          y1={249.95}
-          x2={75.85}
-          y2={198.66}
-          style={{
-            fill: "none",
-            stroke: "#44b5f4",
-            strokeMiterlimit: 10,
-            strokeWidth: 4,
-          }}
-        />
-        <polygon
-          points="69.85 198.66 75.85 186.66 81.85 198.66 69.85 198.66"
-          style={{
-            fill: "#44b5f4",
-          }}
-        />
-        <text
-          id="CrossStartEnd_Text_CrossEnd-2"
-          data-name="CrossStartEnd_Text_CrossEnd"
-          transform="translate(12.35 200.41)"
-          style={{
-            fontSize: 16,
-            fill: "#44b5f4",
-            fontFamily: "Bungee-Regular, Bungee",
-          }}
-        >
-          {"end"}
-        </text>
+            {"Main"}
+            <tspan
+              x={-3.264}
+              y={16}
+              style={{
+                letterSpacing: "-0.010009765625em",
+              }}
+            >
+              {"s"}
+            </tspan>
+            <tspan
+              x={6.976}
+              y={16}
+              style={{
+                letterSpacing: "-0.03997802734375em",
+              }}
+            >
+              {"t"}
+            </tspan>
+            <tspan x={16.832} y={16}>
+              {"a"}
+            </tspan>
+            <tspan
+              x={28.512}
+              y={16}
+              style={{
+                letterSpacing: "-0.02996826171875em",
+              }}
+            >
+              {"r"}
+            </tspan>
+            <tspan
+              x={39.92}
+              y={16}
+              style={{
+                letterSpacing: "-0.010009765625em",
+              }}
+            >
+              {"t"}
+            </tspan>
+          </text>
+          <line
+            id="CrossStartEnd_Arrow-DownLine-6"
+            data-name="CrossStartEnd_Arrow-DownLine"
+            x1={75.853}
+            y1={249.953}
+            x2={75.853}
+            y2={198.659}
+            style={{
+              fill: "none",
+              stroke: "#44b5f4",
+              strokeMiterlimit: 10,
+              strokeWidth: 4,
+            }}
+          />
+          <polygon
+            points="69.853 198.659 75.853 186.659 81.853 198.659 69.853 198.659"
+            style={{
+              fill: "#44b5f4",
+            }}
+          />
+        </g>
       </g>
-      <g>
+      <g id="Items">
         <rect
           id="Container"
           x={75}
-          y={98.45}
+          y={98.453}
           width={158}
           height={87}
-          rx={5.12}
+          rx={5.119}
           style={{
             fill: "#7b728f",
           }}
         />
         <rect
           id="Item1"
-          x={156.32}
-          y={114.95}
-          width={71.54}
+          x={156.319}
+          y={114.953}
+          width={71.538}
           height={67}
-          rx={7}
+          rx={6.998}
           style={{
             fill: "#f4ae44",
           }}
@@ -590,11 +574,11 @@ function SvgFlexbox({ name, axis, size, startend }) {
         <rect
           id="Item1-2"
           data-name="Item1"
-          x={80.58}
-          y={114.95}
-          width={71.54}
+          x={80.584}
+          y={114.953}
+          width={71.538}
           height={67}
-          rx={7}
+          rx={6.998}
           style={{
             fill: "#f4ae44",
           }}
@@ -602,7 +586,7 @@ function SvgFlexbox({ name, axis, size, startend }) {
       </g>
       <g className={`flexbox-term-name Name-${name}`}>
         <text
-          transform="translate(79.65 112.71)"
+          transform="translate(79.65 112.711)"
           style={{
             fontSize: 16,
             fontFamily: "Bungee-Regular, Bungee",
@@ -610,7 +594,7 @@ function SvgFlexbox({ name, axis, size, startend }) {
         >
           {"FLEX-"}
           <tspan
-            x={49.98}
+            x={49.983}
             y={0}
             style={{
               letterSpacing: "-0.0050048828125em",
@@ -618,11 +602,11 @@ function SvgFlexbox({ name, axis, size, startend }) {
           >
             {"C"}
           </tspan>
-          <tspan x={59.95} y={0}>
+          <tspan x={59.951} y={0}>
             {"ON"}
           </tspan>
           <tspan
-            x={83.79}
+            x={83.791}
             y={0}
             style={{
               letterSpacing: "-0.03997802734375em",
@@ -630,33 +614,33 @@ function SvgFlexbox({ name, axis, size, startend }) {
           >
             {"T"}
           </tspan>
-          <tspan x={93.65} y={0}>
+          <tspan x={93.647} y={0}>
             {"AINER"}
           </tspan>
         </text>
         <text
-          transform="translate(167.1 162.71)"
+          transform="translate(167.096 162.711)"
           style={{
             fontSize: 16,
             fontFamily: "Bungee-Regular, Bungee",
           }}
         >
           {"flex-"}
-          <tspan x={-4.03} y={16}>
+          <tspan x={-4.032} y={16}>
             {"item 2"}
           </tspan>
         </text>
         <text
           id="flex-_item_1"
           data-name="flex- item 1"
-          transform="translate(91.36 162.71)"
+          transform="translate(91.362 162.711)"
           style={{
             fontSize: 16,
             fontFamily: "Bungee-Regular, Bungee",
           }}
         >
           {"flex-"}
-          <tspan x={-3.73} y={16}>
+          <tspan x={-3.728} y={16}>
             {"item 1 "}
           </tspan>
         </text>

@@ -1,29 +1,21 @@
-.StartEnd-false {
+.startEnd-false {
   opacity: 0;
 }
 
-.Size-false {
+.size-false {
   opacity: 0;
 }
 
-.Axis-false {
+.axis-false {
   opacity: 0;
 }
 
-.Name-false {
+.name-false {
   opacity: 0;
 }
 
 .svg-flexbox {
   height: 100%;
-}
-
-.size-right {
-  opacity: 0;
-}
-
-.size-up {
-  opacity: 0;
 }
 
 .startend-left {

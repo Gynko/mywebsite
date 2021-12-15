@@ -1,6 +1,56 @@
+import { useEffect } from "react";
+
 import "./SvgFlexbox.styles.css";
 
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { Draggable } from "gsap/Draggable";
+import { EaselPlugin } from "gsap/EaselPlugin";
+import { MotionPathPlugin } from "gsap/MotionPathPlugin";
+import { PixiPlugin } from "gsap/PixiPlugin";
+import { TextPlugin } from "gsap/TextPlugin";
+import { Flip } from "gsap/Flip";
+import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
+import { GSDevTools } from "gsap/GSDevTools";
+import { InertiaPlugin } from "gsap/InertiaPlugin";
+import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
+import { MotionPathHelper } from "gsap/MotionPathHelper";
+import { Physics2DPlugin } from "gsap/Physics2DPlugin";
+import { PhysicsPropsPlugin } from "gsap/PhysicsPropsPlugin";
+import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
+import { SplitText } from "gsap/SplitText";
+
+gsap.registerPlugin(
+  ScrollTrigger,
+  ScrollToPlugin,
+  Draggable,
+  EaselPlugin,
+  MotionPathPlugin,
+  PixiPlugin,
+  TextPlugin,
+  Flip,
+  DrawSVGPlugin,
+  GSDevTools,
+  InertiaPlugin,
+  MorphSVGPlugin,
+  MotionPathHelper,
+  Physics2DPlugin,
+  PhysicsPropsPlugin,
+  ScrambleTextPlugin,
+  SplitText
+);
+
 function SvgFlexbox({ name, axis, size, startend }) {
+  useEffect(() => {
+    gsap.set(".flexbox-term-size", { transformOrigin: "50% 50%" });
+    gsap.from(".flexbox-term-size", {
+      duration: 1,
+      x: 30,
+      ease: "elastic",
+    });
+  });
+
   return (
     <svg
       id="Layer_1"
@@ -10,7 +60,7 @@ function SvgFlexbox({ name, axis, size, startend }) {
       className="svg-flexbox"
       preserveAspectRatio="xMidYMid meet"
     >
-      <g className={`Size-${size}`}>
+      <g className={`flexbox-term-size Size-${size}`}>
         <polyline
           id="Size-Text-Cross"
           points="235.9 98.95 244.85 98.95 244.85 184.95 235.85 184.95"
@@ -122,7 +172,7 @@ function SvgFlexbox({ name, axis, size, startend }) {
           </tspan>
         </text>
       </g>
-      <g className={`Axis-${axis}`}>
+      <g className={`flexbox-term-axis Axis-${axis}`}>
         <polygon
           id="CrossStartEnd_Arrow-Down"
           points="299 135.71 299 148.27 308.34 142.21 299 135.71"
@@ -226,7 +276,7 @@ function SvgFlexbox({ name, axis, size, startend }) {
           {"axis"}
         </text>
       </g>
-      <g className={`StartEnd-${startend}`}>
+      <g className={`flexbox-term-startend StartEnd-${startend}`}>
         <text
           id="CrossStartEnd_Text_CrossEnd"
           transform="translate(2.39 94.41)"
@@ -550,7 +600,7 @@ function SvgFlexbox({ name, axis, size, startend }) {
           }}
         />
       </g>
-      <g className={`Name-${name}`}>
+      <g className={`flexbox-term-name Name-${name}`}>
         <text
           transform="translate(79.65 112.71)"
           style={{

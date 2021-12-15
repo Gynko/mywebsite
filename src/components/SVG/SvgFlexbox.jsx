@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
 
 import "./SvgFlexbox.styles.css";
 
@@ -7,7 +7,7 @@ import { gsap } from "gsap";
 
 function SvgFlexbox({ name, axis, size, startend }) {
   const tl = gsap.timeline();
-  useEffect(() => {
+  useLayoutEffect(() => {
     gsap.set(".size-up", { opacity: 0 });
     gsap.set(".size-right", { opacity: 0 });
     tl.to(".size-up", {
@@ -19,6 +19,8 @@ function SvgFlexbox({ name, axis, size, startend }) {
       opacity: 1,
     });
     return function cleanup() {
+      gsap.set(".size-up", { opacity: 0 });
+      gsap.set(".size-right", { opacity: 0 });
       tl.kill();
     };
   }, [size]);

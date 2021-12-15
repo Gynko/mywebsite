@@ -54,14 +54,14 @@
     margin: 0;
     padding: 0;
     width: 100vw;
-    height: 5.5rem;
+    height: var(--header-mobile-height);
   }
   .header-mobile-nav {
     margin: 0;
     padding: 0;
     width: 100vw;
     max-width: 600px;
-    height: 5.5rem;
+    height: var(--header-mobile-height);
   }
   .header-mobile-ul {
     margin: 0;

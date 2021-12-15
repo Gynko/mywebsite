@@ -8,7 +8,6 @@
     flex-direction: column;
     width: 100vw;
     min-height: Calc(100vh - var(--header-mobile-height));
-    justify-content: center;
   }
 }
 

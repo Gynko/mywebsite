@@ -6,24 +6,59 @@ import "./SvgFlexbox.styles.css";
 import { gsap } from "gsap";
 
 function SvgFlexbox({ name, axis, size, startend }) {
-  const tl = gsap.timeline();
+  const tlSize = gsap.timeline();
+  const tlStartEnd = gsap.timeline();
+
+  function animSize() {
+    gsap.set(".size-up", { opacity: 0, y: -50 });
+    gsap.set(".size-right", { opacity: 0, x: 50 });
+    tlSize.to(".size-up", {
+      duration: 0.3,
+      opacity: 1,
+      y: 0,
+      ease: "bounce",
+    });
+    tlSize.to(".size-right", {
+      duration: 0.3,
+      opacity: 1,
+      x: 0,
+      ease: "bounce",
+    });
+  }
+  function animStartEnd() {
+    gsap.set(".startend-left", { opacity: 0, x: -50 });
+    gsap.set(".startend-down", { opacity: 0, y: 50 });
+    tlStartEnd.to(".startend-left", {
+      duration: 0.3,
+      opacity: 1,
+      x: 0,
+      ease: "bounce",
+    });
+    tlStartEnd.to(".startend-down", {
+      duration: 0.3,
+      opacity: 1,
+      y: 0,
+      ease: "bounce",
+    });
+  }
+
   useLayoutEffect(() => {
-    gsap.set(".size-up", { opacity: 0 });
-    gsap.set(".size-right", { opacity: 0 });
-    tl.to(".size-up", {
-      duration: 0.5,
-      opacity: 1,
-    });
-    tl.to(".size-right", {
-      duration: 0.5,
-      opacity: 1,
-    });
+    animSize();
     return function cleanup() {
-      gsap.set(".size-up", { opacity: 0 });
+      gsap.set(".size-up", { opacity: 0, y: -50 });
       gsap.set(".size-right", { opacity: 0 });
-      tl.kill();
+      tlSize.kill();
     };
   }, [size]);
+
+  useLayoutEffect(() => {
+    animStartEnd();
+    return function cleanup() {
+      gsap.set(".startend-left", { opacity: 0, x: -50 });
+      gsap.set(".startend-down", { opacity: 0, y: 50 });
+      tlStartEnd.kill();
+    };
+  }, [startend]);
 
   return (
     <svg
@@ -259,7 +294,7 @@ function SvgFlexbox({ name, axis, size, startend }) {
         </g>
       </g>
       <g className={`flexbox-term-startend StartEnd-${startend}`}>
-        <g id="Startend-left">
+        <g className="startend-left">
           <text
             id="CrossStartEnd_Text_CrossEnd"
             transform="translate(2.389 94.412)"
@@ -442,7 +477,7 @@ function SvgFlexbox({ name, axis, size, startend }) {
             {"end"}
           </text>
         </g>
-        <g id="Startend-down">
+        <g className="startend-down">
           <text
             id="CrossStartEnd-Text-MainStart"
             transform="translate(208.367 263.742)"

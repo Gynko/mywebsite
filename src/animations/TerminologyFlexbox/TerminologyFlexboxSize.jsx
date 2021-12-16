@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { useLayoutEffect } from "react/cjs/react.development";
+import { useLayoutEffect } from "react";
 import { gsap } from "gsap";
 
 import "./TerminologyFlexboxSize.styles.css";

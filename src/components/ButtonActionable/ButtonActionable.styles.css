@@ -1,7 +1,7 @@
 .button-actionable {
   background-color: var(--color-button-actionable-bg);
   border: 2px var(--color-button-actionable-bg) solid;
-  font-family: "Bungee-Regular";
+  font-family: "Bungee-Regular", cursive;
 }
 
 .button-actionable---color-button-yellow {

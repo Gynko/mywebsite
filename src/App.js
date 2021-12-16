@@ -1,5 +1,5 @@
 import "./GlobalStyles.styles.css";
-import "./GlobalFonts.styles.css";
+/* import "./GlobalFonts.styles.css"; */
 import "./GlobalVariables.styles.css";
 
 import "./assets/fonts/OpenSans-Regular.ttf";

@@ -1,5 +1,10 @@
 .titleheader-container {
   background-color: #bb3585;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .titleheader-title {
@@ -16,7 +21,7 @@
   }
   .titleheader-title {
     line-height: 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
 }
 

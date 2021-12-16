@@ -13,7 +13,12 @@
 
 @media screen and (min-width: 45em) {
   .page-container {
-    padding-top: var(--header-desktop-height);
+    margin-top: var(--header-desktop-height);
+    min-height: Calc(
+      100vh - var(--header-desktop-height) - var(--footer-desktop-height)
+    );
     width: 100vw;
+    display: flex;
+    justify-content: center;
   }
 }

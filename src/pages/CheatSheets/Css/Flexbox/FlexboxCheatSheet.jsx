@@ -3,7 +3,7 @@ import { useState } from "react";
 import ButtonActionable from "../../../../components/ButtonActionable/ButtonActionable";
 import Footer from "../../../../components/Footer/Footer";
 import PageContainer from "../../../../components/PageContainer/PageContainer";
-import SvgFlexbox from "../../../../components/SVG/SvgFlexbox";
+import TerminologyFlexbox from "../../../../animations/TerminologyFlexbox/TerminologyFlexbox";
 import TitleHeader from "../../../../components/TitleHeader/TitleHeader";
 import "./FlexboxCheatSheet.styles.css";
 
@@ -78,7 +78,7 @@ function FlexboxCheatSheet() {
         </div>
         {terminologyCat === false ? null : (
           <div className="cheat-sheet-svg">
-            <SvgFlexbox
+            <TerminologyFlexbox
               name={termiName}
               axis={termiAxis}
               size={termiSize}

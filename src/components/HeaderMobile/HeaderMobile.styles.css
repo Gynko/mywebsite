@@ -25,7 +25,7 @@
 
 .header-mobile-searchinput {
   background-color: #b4a8bc;
-  font-family: "OpenSans-Bold";
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   color: #1f1c18;
   border: none;
@@ -49,32 +49,34 @@
     padding: 0;
     margin: 0;
     height: var(--header-mobile-height);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
   }
   .header-mobile-header {
     margin: 0;
     padding: 0;
     width: 100vw;
-    height: var(--header-mobile-height);
   }
   .header-mobile-nav {
     margin: 0;
     padding: 0;
     width: 100vw;
     max-width: 600px;
-    height: var(--header-mobile-height);
   }
   .header-mobile-ul {
     margin: 0;
     padding: 0;
     width: 100vw;
-    height: 100%;
   }
   .header-mobile-li {
     margin: 0;
     padding: 0;
   }
   .header-mobile-searchinput {
-    height: 2rem;
+    min-height: 2rem;
     margin: 0 1rem;
     width: 8rem;
   }

@@ -4,7 +4,7 @@
 }
 .home-title {
   color: var(--color-title-pink);
-  font-family: var(--font-title-main);
+  font-family: "Milonga", cursive;
   text-align: center;
 }
 .home-logo-title-container {
@@ -25,20 +25,20 @@
   align-items: center;
 }
 .home-undertext-accentcolor {
-  font-family: var(--font-title-secondary);
+  font-family: "Sniglet", cursive;
   color: var(--color-text-accent);
 }
 .home-undertext-normal {
-  font-family: var(--font-title-secondary);
+  font-family: "Sniglet", cursive;
   color: var(--color-text-yellow);
 }
 .home-undertext-big {
-  font-family: var(--font-title-secondary);
+  font-family: "Sniglet", cursive;
   color: var(--color-text-yellow);
   text-transform: uppercase;
 }
 .home-undertext-1 {
-  font-family: var(--font-text);
+  font-family: "Open Sans", sans-serif;
 }
 .home-undertext-2 {
   color: var(--color-text-yellow);

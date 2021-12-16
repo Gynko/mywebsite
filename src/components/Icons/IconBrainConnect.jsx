@@ -4,8 +4,8 @@ function IconBrainConnect() {
       id="Layer_1"
       data-name="Layer 1"
       xmlns="http://www.w3.org/2000/svg"
-      width="68"
-      height="68"
+      width="35"
+      height="100%"
       viewBox="0 0 68 68"
     >
       <path

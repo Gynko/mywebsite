@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "Sniglet-ExtraBold", cursive;
   font-weight: 400;
   src: local("Sniglet-ExtraBold"),
@@ -29,3 +29,6 @@
   src: local("Bungee-Regular"),
     url("./assets/fonts/Bungee-Regular.ttf") format("truetype");
 }
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Milonga&family=Open+Sans:wght@400;700&family=Sniglet:wght@800&display=swap");

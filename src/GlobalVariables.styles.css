@@ -1,8 +1,8 @@
 :root {
-  --font-title-main: "Milonga-Regular";
-  --font-text: "OpenSans-Regular";
-  --font-title-secondary: "Sniglet-ExtraBold";
-  --font-uppercase: "Bungee-Regular";
+  --font-title-main: "Milonga";
+  --font-text: "Open Sans";
+  --font-title-secondary: "Sniglet";
+  --font-uppercase: "Bungee";
 
   --color-title-pink: #f554b5;
   --color-text-yellow: #f4ae44;
@@ -16,7 +16,7 @@
   --color-button-green: #31df4d;
   --color-button-blue: #52c1ff;
 
-  --header-mobile-height: 4.5rem;
+  --header-mobile-height: 3.5rem;
   --header-desktop-height: 5.5rem;
 
   --content-desktop-height: 5.5rem;

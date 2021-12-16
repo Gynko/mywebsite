@@ -2,7 +2,7 @@
   text-decoration: none;
   border: none;
   border-radius: 5px;
-  font-family: var(--font-uppercase);
+  font-family: "Bungee", cursive;
   background: var(--color-title-pink);
   color: var(--color-background);
 }

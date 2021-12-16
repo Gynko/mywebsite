@@ -4,8 +4,8 @@ function IconFlowchart() {
       id="Layer_1"
       data-name="Layer 1"
       xmlns="http://www.w3.org/2000/svg"
-      width="91"
-      height="87.29"
+      width="35"
+      height="100%"
       viewBox="0 0 91 87.29"
     >
       <path

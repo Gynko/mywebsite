@@ -31,7 +31,7 @@
   align-content: center;
 }
 .header-desktop-li {
-  font-family: "Bungee-Regular";
+  font-family: "Bungee", cursive;
   font-weight: 400;
   color: #f4ae44;
 }
@@ -43,7 +43,7 @@
 }
 .header-desktop-searchinput {
   background-color: #b4a8bc;
-  font-family: "OpenSans-Bold";
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   color: #1f1c18;
   border: none;

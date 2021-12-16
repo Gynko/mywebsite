@@ -1,5 +1,5 @@
 .topics-container {
-  margin-top: Calc((100vh - var(--header-mobile-height) - 5rem) / 2);
+  margin-top: calc((100vh - var(--header-mobile-height) - 5rem) / 2);
   display: flex;
   flex-direction: column;
   justify-content: center;

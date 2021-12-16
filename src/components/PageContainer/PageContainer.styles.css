@@ -7,14 +7,14 @@
     display: flex;
     flex-direction: column;
     width: 100vw;
-    min-height: Calc(100vh - var(--header-mobile-height));
+    min-height: calc(100vh - var(--header-mobile-height));
   }
 }
 
 @media screen and (min-width: 45em) {
   .page-container {
     margin-top: var(--header-desktop-height);
-    min-height: Calc(
+    min-height: calc(
       100vh - var(--header-desktop-height) - var(--footer-desktop-height)
     );
     width: 100vw;

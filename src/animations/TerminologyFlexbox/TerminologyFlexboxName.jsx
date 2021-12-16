@@ -8,16 +8,32 @@ function TerminologyFlexboxName({ name }) {
   const tlName = gsap.timeline();
 
   function animName() {
-    gsap.set(".flex-container", { opacity: 0 });
+    gsap.set(".flex-container", { opacity: 0, transformOrigin: "50% 50%" });
     gsap.set(".flex-item1", {
       opacity: 0,
       transformOrigin: "50% 50%",
     });
     gsap.set(".flex-item2", { opacity: 0, transformOrigin: "50% 50%" });
-    tlName.to(".flex-container", {
-      duration: 0.3,
-      opacity: 1,
-    });
+    tlName.to(
+      ".flex-container",
+      {
+        duration: 0.3,
+        opacity: 1,
+        scaleY: 6,
+        scaleX: 2,
+      },
+      "first"
+    );
+    tlName.to(
+      ".flex-container",
+      {
+        duration: 0.3,
+        opacity: 1,
+        scaleY: 1.0,
+        scaleX: 1,
+      },
+      "first"
+    );
     tlName.to(
       ".flex-item1",
       {
@@ -25,7 +41,7 @@ function TerminologyFlexboxName({ name }) {
         opacity: 1,
         scaleX: 1.2,
       },
-      "start"
+      "second"
     );
     tlName.to(
       ".flex-item2",
@@ -35,7 +51,7 @@ function TerminologyFlexboxName({ name }) {
         scaleX: 1.2,
         ease: "bounce",
       },
-      "start"
+      "second"
     );
     tlName.to(
       ".flex-item1",
@@ -45,7 +61,7 @@ function TerminologyFlexboxName({ name }) {
         scaleX: 1,
         ease: "bounce",
       },
-      "second"
+      "third"
     );
     tlName.to(
       ".flex-item2",
@@ -55,7 +71,7 @@ function TerminologyFlexboxName({ name }) {
         scaleX: 1,
         ease: "bounce",
       },
-      "second"
+      "third"
     );
   }
 

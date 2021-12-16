@@ -14,7 +14,7 @@
 
 @media screen and (min-width: 20em) {
   .cheat-sheet-container {
-    height: Calc(100vh - var(--header-mobile-height));
+    height: calc(100vh - var(--header-mobile-height));
     width: 100vw;
     align-self: center;
   }
@@ -45,7 +45,7 @@
     align-content: center;
     align-items: center;
     justify-content: center;
-    height: Calc(
+    height: calc(
       100vh - var(--header-mobile-height) -
         var(--button-actionable-mobile-height) * 3 - 0.3rem
     );
@@ -54,7 +54,7 @@
 
 @media screen and (min-width: 45em) {
   .cheat-sheet-container {
-    min-height: Calc(100vh - var(--header-desktop-height));
+    min-height: calc(100vh - var(--header-desktop-height));
     max-width: 100rem;
     align-self: center;
   }
@@ -77,7 +77,7 @@
     align-items: center;
     justify-content: center;
     padding: 1rem 0;
-    max-height: Calc(
+    max-height: calc(
       100vh - var(--header-desktop-height) - var(--footer-desktop-height) -
         (var(--button-actionable-mobile-height) * 3) - 0.8rem
     );

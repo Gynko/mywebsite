@@ -24,7 +24,7 @@
   .titleheader-container {
     height: 3rem;
     width: 40rem;
-    max-width: Calc(100vw - 12rem);
+    max-width: calc(100vw - 12rem);
   }
   .titleheader-title {
     line-height: 0.5rem;

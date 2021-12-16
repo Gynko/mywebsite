@@ -10,10 +10,10 @@ function TerminologyFlexboxAxis({ axis }) {
     gsap.set(".axis-cross-arrow", { y: -250 });
     gsap.set(".axis-main-line", { scaleX: 0 });
     gsap.set(".axis-main-arrow", { x: -300 });
-    tlAxis.to(".axis-cross-line", { duration: 0.4, scaleY: 1 }, "first");
-    tlAxis.to(".axis-cross-arrow", { duration: 0.4, y: 0 }, "first");
-    tlAxis.to(".axis-main-line", { duration: 0.4, scaleX: 1 }, "second");
-    tlAxis.to(".axis-main-arrow", { duration: 0.4, x: 0 }, "second");
+    tlAxis.to(".axis-cross-line", { duration: 0.3, scaleY: 1 }, "first");
+    tlAxis.to(".axis-cross-arrow", { duration: 0.3, y: 0 }, "first");
+    tlAxis.to(".axis-main-line", { duration: 0.3, scaleX: 1 }, "first");
+    tlAxis.to(".axis-main-arrow", { duration: 0.3, x: 0 }, "first");
   }
 
   useLayoutEffect(() => {

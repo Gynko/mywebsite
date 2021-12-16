@@ -48,14 +48,17 @@
 @media screen and (min-width: 20em) {
   .home-allbutfooter-container {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: flex-start;
+    justify-content: center;
     align-items: center;
+    align-content: center;
+    height: calc(100vh - var(--header-mobile-height));
   }
   .home-undertext-main {
     padding: 0;
     margin-bottom: 0.8rem;
+  }
+  .icon-rabbit-hole {
+    width: 9rem;
   }
   .home-title {
     padding: 0;

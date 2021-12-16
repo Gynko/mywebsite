@@ -5,10 +5,10 @@ function IconRabbitHole() {
       id="Layer_1"
       xmlns="http://www.w3.org/2000/svg"
       height="auto"
-      width="60%"
+      width="auto"
       viewBox="0 0 120 94"
     >
-      <g fill="#F8C8C8">
+      <g className="icon-rabbit-hole" fill="#F8C8C8">
         <path
           d="M72.6,84.5c-0.3,0-0.5,0-0.7-0.1L61.5,81c-0.8-0.3-1.4-1.1-1.3-2c0.1-0.9,0.7-1.6,1.6-1.8l12.7-2.1c0.6-0.1,1.3,0,1.9,0.1
         l11.8,3.9c0.6,0.2,1.1,0.8,1,1.5c-0.1,0.7-0.6,1.2-1.2,1.3l-15,2.5C72.8,84.5,72.7,84.5,72.6,84.5L72.6,84.5z M65.3,79.4l7.3,2.4

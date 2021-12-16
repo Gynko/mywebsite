@@ -9,7 +9,9 @@ function PageHome() {
     <PageContainer>
       <div className="home-allbutfooter-container">
         <div className="home-logo-title-container">
-          <IconRabbitHole />
+          <div className="icon-rabbit-hole">
+            <IconRabbitHole />
+          </div>
           <h1 className="home-title">
             Cheat Sheets <br />
             Wonderland

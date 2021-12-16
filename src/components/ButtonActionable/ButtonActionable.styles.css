@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Milonga&family=Open+Sans:wght@400;700&family=Sniglet:wght@800&display=swap");
+
 .button-actionable {
   background-color: var(--color-button-actionable-bg);
   border: 2px var(--color-button-actionable-bg) solid;
-  font-family: "Bungee-Regular", cursive;
+  font-family: "Bungee", cursive;
 }
 
 .button-actionable---color-button-yellow {

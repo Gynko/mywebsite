@@ -1,37 +1,31 @@
 @font-face {
-  font-family: "Sniglet-ExtraBold";
+  font-family: "Sniglet-ExtraBold", cursive;
   font-weight: 400;
   src: local("Sniglet-ExtraBold"),
     url("./assets/fonts/Sniglet-ExtraBold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Berkshire Swash";
-  src: local("Berkshire Swash"),
-    url("./assets/fonts/BerkshireSwash-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "OpenSans-Regular";
+  font-family: "OpenSans-Regular", sans-serif;
   src: local("OpenSans-Regular"),
     url("./assets/fonts/OpenSans-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "OpenSans-Bold";
+  font-family: "OpenSans-Bold", sans-serif;
   src: local("OpenSans-Bold"),
     url("./assets/fonts/OpenSans-Bold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Milonga-Regular";
+  font-family: "Milonga-Regular", cursive;
   font-weight: 400;
   src: local("Milonga-Regular"),
     url("./assets/fonts/Milonga-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Bungee-Regular";
+  font-family: "Bungee-Regular", cursive;
   src: local("Bungee-Regular"),
     url("./assets/fonts/Bungee-Regular.ttf") format("truetype");
 }

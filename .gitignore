@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+.npmrc
 
 # testing
 /coverage
@@ -11,8 +12,6 @@
 # production
 /build
 
-# gsap
-/gsap
 
 # misc
 .DS_Store

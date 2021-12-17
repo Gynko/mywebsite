@@ -23,10 +23,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    height: calc(
-      100vh - var(--header-mobile-height) -
-        env(safe-area-inset-bottom - env(safe-area-inset-top))
-    );
+    height: calc(100vh - var(--header-mobile-height));
     width: 100vw;
   }
   .cheat-sheet-container {

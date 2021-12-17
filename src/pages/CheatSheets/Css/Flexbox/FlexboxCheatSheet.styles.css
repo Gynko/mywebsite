@@ -4,6 +4,11 @@
   justify-content: flex-start;
   align-items: center;
 }
+.cheat-sheet-flexbox-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
 .cheat-sheet-options-container {
   display: flex;
   flex-direction: row;
@@ -13,6 +18,9 @@
 }
 
 @media screen and (min-width: 20em) {
+  .cheat-sheet-flexbox-container {
+    height: calc(100vh - var(--header-mobile-height));
+  }
   .cheat-sheet-container {
     min-height: calc(100vh - var(--header-mobile-height));
     width: 100vw;

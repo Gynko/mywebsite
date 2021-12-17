@@ -31,7 +31,7 @@ function FlexboxCheatSheet() {
   }
 
   return (
-    <PageContainer>
+    <div className="cheat-sheet-flexbox-container">
       <div className="cheat-sheet-container">
         <TitleHeader title="flexbox" />
         <div className="cheat-sheet-title-options">

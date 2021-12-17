@@ -58,7 +58,7 @@
     align-items: center;
     justify-content: center;
     height: calc(
-      100vh - var(--button-actionable-mobile-height) * 2 -
+      100vh - (var(--button-actionable-mobile-height) * 2) -
         var(--title-header-mobile-height) - env(safe-area-inset-bottom)
     );
   }

@@ -10,7 +10,10 @@
     position: absolute;
     top: var(--header-mobile-height);
     right: 0;
-    height: calc(100vh - var(--header-mobile-height));
+    height: calc(
+      100vh - var(--header-mobile-height) - env(safe-area-inset-bottom, 0.5vh) -
+        env(safe-area-inset-top, 20px)
+    );
     width: 100vw;
   }
 }

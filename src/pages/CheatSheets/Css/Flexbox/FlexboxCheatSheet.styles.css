@@ -52,7 +52,7 @@
     height: calc(
       var(--vh, 1vh) * 100 - var(--header-mobile-height) -
         var(--title-mobile-height) - var(--button-actionable-mobile-height) * 2 -
-        1.2rem
+        1.2rem - 0.25rem
     );
   }
 }

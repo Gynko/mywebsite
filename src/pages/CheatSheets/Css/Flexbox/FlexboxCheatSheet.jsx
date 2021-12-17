@@ -5,13 +5,14 @@ import Footer from "../../../../components/Footer/Footer";
 import TerminologyFlexbox from "../../../../animations/TerminologyFlexbox/TerminologyFlexbox";
 import TitleHeader from "../../../../components/TitleHeader/TitleHeader";
 import "./FlexboxCheatSheet.styles.css";
+import PageContainerNoScroll from "../../../../components/PageContainerNoScroll/PageContainerNoScroll";
 
 function FlexboxCheatSheet() {
-  const [terminologyCat, setTerminologyCatOn] = useState(false);
-  const [termiName, setTermiName] = useState(false);
-  const [termiAxis, setTermiAxis] = useState(false);
-  const [termiSize, setTermiSize] = useState(false);
-  const [termiStartEnd, setTermiStartEnd] = useState(false);
+  const [terminologyCat, setTerminologyCatOn] = useState(true);
+  const [termiName, setTermiName] = useState(true);
+  const [termiAxis, setTermiAxis] = useState(true);
+  const [termiSize, setTermiSize] = useState(true);
+  const [termiStartEnd, setTermiStartEnd] = useState(true);
 
   function terminology() {
     setTerminologyCatOn(!terminologyCat);
@@ -30,10 +31,10 @@ function FlexboxCheatSheet() {
   }
 
   return (
-    <div className="cheat-sheet-flexbox-container">
+    <PageContainerNoScroll>
       <div className="cheat-sheet-container">
         <TitleHeader title="flexbox" />
-        <div className="cheat-sheet-title-options">
+        <div className="cheat-sheet-main-options">
           <div className="cheat-sheet-options-container">
             <ButtonActionable
               value="terminology"
@@ -87,7 +88,7 @@ function FlexboxCheatSheet() {
         )}
       </div>
       <Footer />
-    </div>
+    </PageContainerNoScroll>
   );
 }
 

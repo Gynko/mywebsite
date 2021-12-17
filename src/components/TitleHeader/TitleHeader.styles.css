@@ -21,13 +21,15 @@
   }
   .titleheader-title {
     line-height: 0.5rem;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
   }
 }
 
 @media screen and (min-width: 45em) {
   .titleheader-container {
-    height: 3rem;
+    height: var(--title-desktop-height);
     width: 40rem;
     max-width: calc(100vw - 12rem);
   }

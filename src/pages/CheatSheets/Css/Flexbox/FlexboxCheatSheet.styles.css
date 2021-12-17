@@ -4,12 +4,6 @@
   justify-content: flex-start;
   align-items: center;
 }
-.cheat-sheet-flexbox-container {
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  background-color: var(--color-background);
-}
 .cheat-sheet-options-container {
   display: flex;
   flex-direction: row;
@@ -19,18 +13,13 @@
 }
 
 @media screen and (min-width: 20em) {
-  .cheat-sheet-flexbox-container {
-    position: absolute;
-    top: var(--header-mobile-height);
-    right: 0;
-    height: calc(100vh - var(--header-mobile-height));
-    width: 100vw;
-  }
+  /*Contains everything but footer - useful for desktop media queries where footer is visible*/
   .cheat-sheet-container {
-    height: 100%;
     width: 100%;
+    height: 100%;
   }
-  .cheat-sheet-title-options {
+  /*Contains all the interactable buttons: row 1 and 2 */
+  .cheat-sheet-main-options {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,18 +33,20 @@
     margin: 0.3rem 0;
     height: var(--button-actionable-mobile-height);
   }
+  /* Contains the second row of 4 buttons */
   .cheat-sheet-sub-options-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     height: var(--button-actionable-mobile-height);
   }
+  /* Contains the svg flexbox */
   .cheat-sheet-svg {
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - (var(--button-actionable-mobile-height) * 2) - 10rem);
+    height: 100%;
   }
 }
 
@@ -65,7 +56,7 @@
     max-width: 100rem;
     align-self: center;
   }
-  .cheat-sheet-title-options {
+  .cheat-sheet-main-options {
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -15,8 +15,8 @@
 @media screen and (min-width: 20em) {
   /*Contains everything but footer - useful for desktop media queries where footer is visible*/
   .cheat-sheet-container {
-    width: 100%;
-    height: 100%;
+    height: calc(100vh - var(--header-mobile-height));
+    width: 100vw;
   }
   /*Contains all the interactable buttons: row 1 and 2 */
   .cheat-sheet-all-buttons {

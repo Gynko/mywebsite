@@ -47,7 +47,9 @@
     align-content: center;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: calc(
+      100% - env(safe-area-inset-bottom, 0.5vh) - env(safe-area-inset-top, 20px)
+    );
   }
 }
 

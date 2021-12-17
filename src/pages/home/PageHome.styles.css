@@ -57,8 +57,7 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    height: 90vh;
-    margin-top: var(--header-mobile-height);
+    height: var(--content-full-page);
   }
   .home-undertext-main {
     padding: 0;
@@ -70,7 +69,7 @@
   .home-title {
     padding: 0;
     margin: 0.5rem 0 0 0;
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .home-undertext-1 {
     padding: 0;
@@ -80,13 +79,13 @@
   .home-undertext-2 {
     padding: 0;
     margin: 0;
-    font-size: 1.8rem;
-    line-height: 1.5rem;
+    font-size: 2.4rem;
+    line-height: 2rem;
   }
   .home-undertext-3 {
     padding: 0;
-    margin: 0;
-    font-size: 1.8rem;
+    margin: 0 0 1rem 0;
+    font-size: 2.4rem;
     line-height: 2rem;
   }
 }

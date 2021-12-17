@@ -35,6 +35,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     margin: 0.3rem 0;
+    width: 100vw;
   }
   /* Contains the second row of 4 buttons */
   .cheat-sheet-sub-options-container {
@@ -42,6 +43,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     margin: 0 0 0.3rem 0;
+    width: 100vw;
   }
   /* Contains the svg flexbox */
   .cheat-sheet-svg {

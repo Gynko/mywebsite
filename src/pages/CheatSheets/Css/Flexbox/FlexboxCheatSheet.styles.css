@@ -29,18 +29,19 @@
     flex-direction: row;
     justify-content: space-evenly;
     margin: 0.3rem 0;
-    height: 3rem;
+    height: var(--button-actionable-mobile-height);
   }
   .cheat-sheet-sub-options-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    height: 3rem;
+    height: var(--button-actionable-mobile-height);
   }
   .cheat-sheet-svg {
     height: calc(
       100vh - var(--header-mobile-height) -
-        var(--button-actionable-mobile-height) * 3
+        var(--button-actionable-mobile-height) * 2 -
+        var(--title-header-mobile-height) - 0.6rem
     );
     display: flex;
     align-content: center;

@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: "Sniglet", cursive;
-  src: url("../../assets/fonts/Sniglet-ExtraBold.woff2"),
-    local("Sniglet-ExtraBold") format("woff2");
+  src: url("../../assets/fonts/Sniglet-ExtraBold.woff"),
+    local("Sniglet-ExtraBold") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;

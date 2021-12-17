@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import IconBrainConnect from "../Icons/IconBrainConnect";
 import IconMail from "../Icons/IconMail";
 import "./HeaderMobile.styles.css";
@@ -9,7 +10,9 @@ function HeaderMobile() {
         <nav className="header-mobile-nav">
           <ul className="header-mobile-ul">
             <li className="header-mobile-li">
-              <IconBrainConnect />
+              <Link to="/">
+                <IconBrainConnect />
+              </Link>
             </li>
             <li className="header-mobile-li">
               <input

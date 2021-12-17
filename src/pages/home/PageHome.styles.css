@@ -7,7 +7,7 @@
     url("../../assets//fonts/Sniglet-ExtraBold.ttf") format("ttf");
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
+  font-display: auto;
 }
 
 .home-allbutfooter-container {
@@ -37,15 +37,15 @@
   align-items: center;
 }
 .home-undertext-accentcolor {
-  font-family: "Sniglet", cursive;
+  font-family: "Sniglet";
   color: var(--color-text-accent);
 }
 .home-undertext-normal {
-  font-family: "Sniglet", cursive;
+  font-family: "Sniglet";
   color: var(--color-text-yellow);
 }
 .home-undertext-big {
-  font-family: "Sniglet", cursive;
+  font-family: "Sniglet";
   color: var(--color-text-yellow);
   text-transform: uppercase;
 }

@@ -21,7 +21,7 @@
   --header-desktop-height: 5.5rem;
 
   /*Mobile Content -> the rest of the page*/
-  --content-full-page: 90vh;
+  --content-full-page: calc(var(--vh, 1vh) * 90);
 
   /* Footer */
   --footer-desktop-height: 5.5rem;

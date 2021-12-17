@@ -23,18 +23,23 @@
     display: flex;
     flex-direction: column;
     width: 20rem;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
   }
   /* Contains the first row of 4 buttons */
   .cheat-sheet-options-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin: 0.3rem 0;
   }
   /* Contains the second row of 4 buttons */
   .cheat-sheet-sub-options-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin: 0 0 0.3rem 0;
   }
   /* Contains the svg flexbox */
   .cheat-sheet-svg {

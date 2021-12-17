@@ -17,6 +17,8 @@
   .cheat-sheet-container {
     height: calc(100vh - var(--header-mobile-height));
     width: 100vw;
+    display: flex;
+    flex-direction: column;
   }
   /*Contains all the interactable buttons: row 1 and 2 */
   .cheat-sheet-all-buttons {
@@ -47,7 +49,6 @@
     align-content: center;
     align-items: center;
     justify-content: center;
-    height: 100%;
   }
 }
 

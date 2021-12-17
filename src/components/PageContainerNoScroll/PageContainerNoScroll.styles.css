@@ -1,14 +1,12 @@
 .page-container-noscroll {
-  display: flex;
-  flex-direction: column;
   width: 100vw;
   background-color: var(--color-background);
 }
 
 @media screen and (min-width: 20em) {
   .page-container-noscroll {
-    position: absolute;
-    top: calc(var(--header-mobile-height) - env(safe-area-inset-bottom, 0.5vh));
+    position: relative;
+    top: var(--header-mobile-height);
     right: 0;
     height: 90vh;
     width: 100vw;

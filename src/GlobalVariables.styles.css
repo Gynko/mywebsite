@@ -26,5 +26,7 @@
   /* Pages */
   --title-mobile-height: 2rem;
   --title-desktop-height: 3rem;
+
+  /* Buttons */
   --button-actionable-mobile-height: 3rem;
 }

@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   width: 100vw;
+  background-color: var(--color-background);
 }
 .cheat-sheet-options-container {
   display: flex;
@@ -22,7 +23,7 @@
     height: calc(100vh - var(--header-mobile-height));
   }
   .cheat-sheet-container {
-    min-height: calc(100vh - var(--header-mobile-height));
+    height: calc(100vh - var(--header-mobile-height));
     width: 100vw;
   }
   .cheat-sheet-title-options {

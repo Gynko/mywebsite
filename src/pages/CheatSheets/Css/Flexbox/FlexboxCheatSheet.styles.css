@@ -23,7 +23,9 @@
     position: absolute;
     top: 0;
     right: 0;
-    height: calc(100vh - var(--header-mobile-height));
+    height: calc(
+      100vh - var(--header-mobile-height) - env(safe-area-inset-bottom)
+    );
     width: 100vw;
   }
   .cheat-sheet-container {
@@ -57,7 +59,7 @@
     justify-content: center;
     height: calc(
       100vh - var(--button-actionable-mobile-height) * 2 -
-        var(--title-header-mobile-height) - 6rem
+        var(--title-header-mobile-height) - env(safe-area-inset-bottom)
     );
   }
 }

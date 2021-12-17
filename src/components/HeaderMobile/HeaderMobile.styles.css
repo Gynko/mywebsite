@@ -52,7 +52,7 @@
     position: fixed;
     left: 0;
     top: 0;
-    height: var(--header-mobile-height);
+    height: calc(var(--vh, 1vh) * 10);
   }
   .header-mobile-header {
     margin: 0;

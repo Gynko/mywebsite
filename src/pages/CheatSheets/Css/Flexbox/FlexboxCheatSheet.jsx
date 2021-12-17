@@ -88,7 +88,7 @@ function FlexboxCheatSheet() {
         )}
       </div>
       <Footer />
-    </PageContainer>
+    </div>
   );
 }
 

@@ -41,6 +41,6 @@
 @media screen and (min-width: 20em) {
   .button-actionable {
     font-size: 1rem;
-    height: var(--button-actionable-mobile-height);
+    min-height: var(--button-actionable-mobile-height);
   }
 }

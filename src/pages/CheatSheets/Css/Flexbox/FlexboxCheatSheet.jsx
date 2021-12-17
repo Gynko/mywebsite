@@ -68,7 +68,7 @@ function FlexboxCheatSheet() {
                 isActivated={termiSize}
               />
               <ButtonActionable
-                value="start-end"
+                value="start end"
                 color="--color-button-blue"
                 onClick={termiStartEndToggle}
                 isActivated={termiStartEnd}

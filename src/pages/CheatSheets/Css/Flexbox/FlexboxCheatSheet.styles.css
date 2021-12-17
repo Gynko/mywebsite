@@ -23,21 +23,18 @@
     display: flex;
     flex-direction: column;
     width: 20rem;
-    height: calc(var(--button-actionable-mobile-height) * 2 + 1.2rem);
   }
   /* Contains the first row of 4 buttons */
   .cheat-sheet-options-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 3px 0;
   }
   /* Contains the second row of 4 buttons */
   .cheat-sheet-sub-options-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 3px 0;
   }
   /* Contains the svg flexbox */
   .cheat-sheet-svg {
@@ -45,9 +42,6 @@
     align-content: center;
     align-items: center;
     justify-content: center;
-    height: calc(
-      100% - (var(--button-actionable-mobile-height) * 2) - 2.5rem - 16px - 4rem
-    );
   }
 }
 

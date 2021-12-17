@@ -3,8 +3,9 @@
 @font-face {
   font-family: "Sniglet";
   src: url("../../assets/fonts/Sniglet-ExtraBold.woff") format("woff"),
-    url("../../assets//fonts/Sniglet-ExtraBold.woff2") format("woff2"),
-    url("../../assets//fonts/Sniglet-ExtraBold.ttf") format("truetype");
+    url("../../assets/fonts/Sniglet-ExtraBold.woff2") format("woff2"),
+    url("../../assets/fonts/Sniglet-ExtraBold.ttf") format("truetype"),
+    url("../../assets/fonts/Sniglet-ExtraBold.svg") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: auto;

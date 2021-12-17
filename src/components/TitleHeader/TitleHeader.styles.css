@@ -28,7 +28,7 @@
 
 @media screen and (min-width: 45em) {
   .titleheader-container {
-    height: var(--title-desktop-height);
+    min-height: var(--title-desktop-height);
     width: 40rem;
     max-width: calc(100vw - 12rem);
   }

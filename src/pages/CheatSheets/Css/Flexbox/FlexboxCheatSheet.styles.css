@@ -55,7 +55,7 @@
     align-content: center;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - (var(--button-actionable-mobile-height) * 2) - 9rem);
+    height: calc(100vh - (var(--button-actionable-mobile-height) * 2) - 10rem);
   }
 }
 

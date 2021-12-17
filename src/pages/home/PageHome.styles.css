@@ -58,6 +58,7 @@
     align-items: center;
     align-content: center;
     height: calc(100vh - var(--header-mobile-height));
+    margin-top: var(--header-mobile-height);
   }
   .home-undertext-main {
     padding: 0;

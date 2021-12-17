@@ -8,6 +8,7 @@
     flex-direction: column;
     width: 100vw;
     min-height: calc(100vh - var(--header-mobile-height));
+    margin-top: var(--header-mobile-height);
   }
 }
 

@@ -1,8 +1,13 @@
 :root {
+  /* Colors */
+  /* Title */
   --color-title-pink: #f554b5;
+  /* Text */
   --color-text-yellow: #f4ae44;
   --color-text-accent: #ef4a4a;
+  /* Background */
   --color-background: #251f32;
+  /*Buttons*/
   --color-button-actionable-bg: #322e3c;
   --color-button-black: #1c1a1c;
   --color-button-white: white;
@@ -11,11 +16,14 @@
   --color-button-green: #31df4d;
   --color-button-blue: #52c1ff;
 
+  /* Headers mobile and desktop*/
   --header-mobile-height: 3rem;
   --header-desktop-height: 5.5rem;
 
+  /* Footer */
   --footer-desktop-height: 5.5rem;
 
-  --title-header-mobile-height: 2rem;
+  /* Pages */
+  --title-mobile-height: 2rem;
   --button-actionable-mobile-height: 3rem;
 }

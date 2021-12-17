@@ -50,7 +50,7 @@
     height: calc(
       100vh - var(--header-mobile-height) -
         var(--button-actionable-mobile-height) * 2 -
-        var(--title-header-mobile-height) - 0.6rem
+        var(--title-header-mobile-height) - 3.6rem
     );
     display: flex;
     align-content: center;

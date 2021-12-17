@@ -52,9 +52,8 @@
   }
   .cheat-sheet-svg {
     height: calc(
-      100vh - var(--header-mobile-height) -
-        var(--button-actionable-mobile-height) * 2 -
-        var(--title-header-mobile-height) - 4.6rem
+      100% - var(--button-actionable-mobile-height) * 2 -
+        var(--title-header-mobile-height) - 0.6rem
     );
     display: flex;
     align-content: center;

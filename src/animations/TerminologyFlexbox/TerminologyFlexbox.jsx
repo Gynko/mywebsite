@@ -13,7 +13,6 @@ function TerminologyFlexbox({ name, axis, size, startend }) {
       data-name="Layer 1"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 308.34 294.4"
-      height="100%"
       className="svg-flexbox"
       preserveAspectRatio="xMidYMid meet"
     >

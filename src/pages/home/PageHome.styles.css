@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Milonga&family=Open+Sans:wght@400;700&family=Sniglet:wght@800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bungee&family=Milonga&family=Open+Sans:wght@400;700&display=swap");
 
 @font-face {
   font-family: "Sniglet", cursive;
-  src: local("Sniglet ExtraBold"), local("Sniglet-ExtraBold");
+  src: url("../../assets/fonts/Sniglet-ExtraBold.woff2"),
+    local("Sniglet-ExtraBold") format("woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap;

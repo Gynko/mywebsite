@@ -22,6 +22,11 @@
   );
   --header-desktop-height: 5.5rem;
 
+  /*Mobile Content -> the rest of the page*/
+  --content-full-page: calc(
+    var(--vh, 1vh) * 90 - env(safe-area-inset-bottom, 0.5vh)
+  );
+
   /* Footer */
   --footer-desktop-height: 5.5rem;
 

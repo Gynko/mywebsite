@@ -8,7 +8,7 @@
     position: absolute;
     top: var(--header-mobile-height);
     right: 0;
-    height: calc(var(--vh, 1vh) * 90 - env(safe-area-inset-bottom, 0.5vh));
+    height: var(--content-full-page);
     width: 100vw;
   }
 }

@@ -34,7 +34,7 @@ function FlexboxCheatSheet() {
     <PageContainerNoScroll>
       <div className="cheat-sheet-container">
         <TitleHeader title="flexbox" />
-        <div className="cheat-sheet-main-options">
+        <div className="cheat-sheet-all-buttons">
           <div className="cheat-sheet-options-container">
             <ButtonActionable
               value="terminology"

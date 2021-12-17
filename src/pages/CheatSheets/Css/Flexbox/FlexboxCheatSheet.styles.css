@@ -19,11 +19,9 @@
     height: 100%;
   }
   /*Contains all the interactable buttons: row 1 and 2 */
-  .cheat-sheet-main-options {
+  .cheat-sheet-all-buttons {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: flex-start;
     width: 20rem;
     height: calc(var(--button-actionable-mobile-height) * 2 + 1.2rem);
   }
@@ -32,14 +30,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 0.3rem 0;
+    margin: 3px 0;
   }
   /* Contains the second row of 4 buttons */
   .cheat-sheet-sub-options-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 0.3rem 0;
+    margin: 3px 0;
   }
   /* Contains the svg flexbox */
   .cheat-sheet-svg {
@@ -48,7 +46,8 @@
     align-items: center;
     justify-content: center;
     height: calc(
-      100% - env(safe-area-inset-bottom, 0.5vh) - env(safe-area-inset-top, 20px)
+      100% - env(safe-area-inset-bottom, 0.5vh) - env(safe-area-inset-top, 20px) -
+        12px - var(--button-actionable-mobile-height) * 2
     );
   }
 }

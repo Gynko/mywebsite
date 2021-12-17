@@ -5,7 +5,7 @@
 
 @media screen and (min-width: 20em) {
   .page-container-noscroll {
-    position: relative;
+    position: absolute;
     top: var(--header-mobile-height);
     right: 0;
     height: calc(var(--vh, 1vh) * 90);

@@ -51,15 +51,10 @@
     height: var(--button-actionable-mobile-height);
   }
   .cheat-sheet-svg {
-    height: calc(
-      100% - var(--button-actionable-mobile-height) * 2 -
-        var(--title-header-mobile-height) - 0.6rem
-    );
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: center;
-    margin-top: 0.3rem;
   }
 }
 

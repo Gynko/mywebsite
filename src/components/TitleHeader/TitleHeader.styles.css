@@ -17,7 +17,7 @@
 @media screen and (min-width: 20em) {
   .titleheader-container {
     width: 100vw;
-    height: var(--title-mobile-height);
+    height: 90vh;
   }
   .titleheader-title {
     line-height: 0.5rem;

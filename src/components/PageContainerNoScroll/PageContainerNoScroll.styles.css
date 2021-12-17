@@ -10,7 +10,7 @@
     position: absolute;
     top: var(--header-mobile-height);
     right: 0;
-    height: calc(100vh - var(--header-mobile-height));
+    height: 90vh;
     width: 100vw;
   }
 }

@@ -59,7 +59,8 @@
     justify-content: center;
     height: calc(
       100vh - (var(--button-actionable-mobile-height) * 2) -
-        var(--title-header-mobile-height) - env(safe-area-inset-bottom)
+        var(--title-header-mobile-height) - env(safe-area-inset-bottom, 0.5vh) -
+        env(safe-area-inset-top, 20px)
     );
   }
 }

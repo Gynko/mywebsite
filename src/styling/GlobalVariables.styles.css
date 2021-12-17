@@ -17,7 +17,7 @@
   --color-button-blue: #52c1ff;
 
   /* Headers mobile and desktop*/
-  --header-mobile-height: 10vh;
+  --header-mobile-height: calc(var(--vh, 1vh) * 10);
   --header-desktop-height: 5.5rem;
 
   /*Mobile Content -> the rest of the page*/

@@ -55,7 +55,10 @@
     align-content: center;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: calc(
+      100vh - var(--button-actionable-mobile-height) * 2 -
+        var(--title-header-mobile-height) - 6rem
+    );
   }
 }
 

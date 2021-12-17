@@ -15,7 +15,7 @@
 @media screen and (min-width: 20em) {
   /*Contains everything but footer - useful for desktop media queries where footer is visible*/
   .cheat-sheet-container {
-    height: calc(100vh - var(--header-mobile-height));
+    height: calc(var(--vh, 1vh) * 90);
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -49,6 +49,7 @@
     align-content: center;
     align-items: center;
     justify-content: center;
+    height: 100%;
   }
 }
 

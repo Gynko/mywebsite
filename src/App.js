@@ -5,12 +5,18 @@ import Routing from "./Routing/Routing";
 import { useEffect } from "react";
 
 function App() {
+  const onResize = (e) => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+  };
+
   useEffect(() => {
-    window.addEventListener("resize", () => {
-      var vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty("--vh", `${vh}px`);
-    });
-  });
+    onResize();
+    window && window.addEventListener("resize", onResize);
+    return () => {
+      window && window.removeEventListener("resize", onResize);
+    };
+  }, []);
 
   return <Routing />;
 }

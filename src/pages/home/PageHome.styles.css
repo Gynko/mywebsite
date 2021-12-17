@@ -2,7 +2,9 @@
 
 @font-face {
   font-family: "Sniglet";
-  src: url("../../assets/fonts/Sniglet-ExtraBold.woff") format("woff"),
+  src: url("../../assets/fonts/Sniglet-ExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../assets/fonts/Sniglet-ExtraBold.woff") format("woff"),
     url("../../assets/fonts/Sniglet-ExtraBold.woff2") format("woff2"),
     url("../../assets/fonts/Sniglet-ExtraBold.ttf") format("truetype"),
     url("../../assets/fonts/Sniglet-ExtraBold.svg") format("svg");

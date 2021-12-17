@@ -2,7 +2,6 @@ import { useState } from "react";
 
 import ButtonActionable from "../../../../components/ButtonActionable/ButtonActionable";
 import Footer from "../../../../components/Footer/Footer";
-import PageContainer from "../../../../components/PageContainer/PageContainer";
 import TerminologyFlexbox from "../../../../animations/TerminologyFlexbox/TerminologyFlexbox";
 import TitleHeader from "../../../../components/TitleHeader/TitleHeader";
 import "./FlexboxCheatSheet.styles.css";

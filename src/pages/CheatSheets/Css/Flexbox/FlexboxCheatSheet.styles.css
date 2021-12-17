@@ -24,7 +24,8 @@
     top: 0;
     right: 0;
     height: calc(
-      100vh - var(--header-mobile-height) - env(safe-area-inset-bottom)
+      100vh - var(--header-mobile-height) -
+        env(safe-area-inset-bottom - env(safe-area-inset-top))
     );
     width: 100vw;
   }
@@ -59,8 +60,8 @@
     justify-content: center;
     height: calc(
       100vh - (var(--button-actionable-mobile-height) * 2) -
-        var(--title-header-mobile-height) - env(safe-area-inset-bottom, 0.5vh) -
-        env(safe-area-inset-top, 20px)
+        var(--title-header-mobile-height) - env(safe-area-inset-bottom) -
+        env(safe-area-inset-top)
     );
   }
 }

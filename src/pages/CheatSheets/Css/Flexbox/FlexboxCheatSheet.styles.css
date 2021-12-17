@@ -14,9 +14,8 @@
 
 @media screen and (min-width: 20em) {
   .cheat-sheet-container {
-    height: calc(100vh - var(--header-mobile-height));
+    min-height: calc(100vh - var(--header-mobile-height));
     width: 100vw;
-    align-self: center;
   }
   .cheat-sheet-title-options {
     display: flex;
@@ -36,19 +35,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-
     height: 3rem;
   }
   .cheat-sheet-svg {
-    min-width: 20em;
+    height: calc(
+      100vh - var(--header-mobile-height) -
+        var(--button-actionable-mobile-height) * 3
+    );
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: center;
-    height: calc(
-      100vh - var(--header-mobile-height) -
-        var(--button-actionable-mobile-height) * 3 - 0.3rem
-    );
+    margin-top: 0.3rem;
   }
 }
 
@@ -71,15 +69,5 @@
     max-width: 30rem;
   }
   .cheat-sheet-svg {
-    max-width: 100rem;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0;
-    max-height: calc(
-      100% - var(--header-desktop-height) - var(--footer-desktop-height) -
-        (var(--button-actionable-mobile-height) * 3)
-    );
   }
 }

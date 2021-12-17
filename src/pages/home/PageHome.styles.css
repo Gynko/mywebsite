@@ -2,12 +2,8 @@
 
 @font-face {
   font-family: "Sniglet";
-  src: url("../../assets/fonts/Sniglet-ExtraBold.eot"),
-    url("../../assets/fonts/Sniglet-ExtraBold.woff") format("woff"),
-    url("../../assets/fonts/Sniglet-ExtraBold.woff2") format("woff2"),
-    url("../../assets/fonts/Sniglet-ExtraBold.ttf") format("truetype"),
-    url("../../assets/fonts/Sniglet-ExtraBold.svg") format("svg");
-  font-weight: 400;
+  src: url("../../assets/fonts/Sniglet-ExtraBold.woff") format("woff"),
+    url("../../assets/fonts/Sniglet-ExtraBold.woff2") format("woff2");
 }
 
 .home-allbutfooter-container {
@@ -38,7 +34,6 @@
 }
 .home-undertext-accentcolor {
   font-family: "Sniglet", Fallback, sans-serif;
-
   color: var(--color-text-accent);
 }
 .home-undertext-normal {

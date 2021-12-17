@@ -57,7 +57,7 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    height: calc(100vh - var(--header-mobile-height));
+    height: 90vh;
     margin-top: var(--header-mobile-height);
   }
   .home-undertext-main {

@@ -2,39 +2,21 @@ import "./styling/GlobalStyles.styles.css";
 import "./styling/GlobalVariables.styles.css";
 
 import Routing from "./Routing/Routing";
-import { useEffect, useState, useCallback } from "react";
+import { useEffect } from "react";
 
 function App() {
-  const getActualVh = () => {
-    let vh = (window.innerHeight * 0.01).toFixed(2);
+  const onResize = () => {
+    let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty("--vh", `${vh}px`);
   };
 
-  let count = 0;
-
-  const [vh, setVh] = useState(getActualVh());
-  const updateVh = useCallback(() => {
-    const newVh = getActualVh();
-
-    document.documentElement.style.setProperty("--vh", `${newVh}px`);
-    setVh(newVh);
-  }, [setVh]);
-
   useEffect(() => {
-    count += 1;
-
-    updateVh();
-
-    window.addEventListener("resize", updateVh);
-
+    onResize();
+    window && window.addEventListener("resize", onResize);
     return () => {
-      window.removeEventListener("resize", updateVh);
-
-      count -= 1;
-
-      if (count === 0) document.documentElement.style.removeProperty(vh);
+      window && window.removeEventListener("resize", onResize);
     };
-  }, [updateVh]);
+  });
 
   return <Routing />;
 }

@@ -21,9 +21,9 @@
   --header-desktop-height: 5.5rem;
 
   /*Mobile Content -> min-height = the rest of the page*/
-  --content-full-page: calc(var(--vh, 1vh) * 100);
+  --content-full-page: calc(var(--vh, 1vh) * 100 - var(--header-mobile-height));
 
-  /* Footer */
+  /* Footer - only on desktop */
   --footer-desktop-height: 5.5rem;
 
   /* Title */

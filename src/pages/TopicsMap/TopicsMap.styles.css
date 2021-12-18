@@ -5,6 +5,12 @@
   justify-content: space-around;
   align-items: center;
   align-content: center;
-  height: calc(40vh - var(--header-mobile-height));
-  width: 100%;
+}
+
+@media screen and (min-width: 20em) {
+  .topics-container {
+    height: --content-full-page;
+    width: 100%;
+    gap: 1rem;
+  }
 }

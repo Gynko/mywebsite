@@ -8,7 +8,7 @@
     position: absolute;
     top: var(--header-mobile-height);
     right: 0;
-    height: var(--content-full-page);
+    min-height: var(--content-full-page);
     width: 100vw;
   }
 }

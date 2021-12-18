@@ -16,7 +16,7 @@ function App() {
     return () => {
       window && window.removeEventListener("resize", onResize);
     };
-  }, []);
+  });
 
   return <Routing />;
 }

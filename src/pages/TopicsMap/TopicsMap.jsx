@@ -1,11 +1,11 @@
 import ButtonLink from "../../components/ButtonLink/ButtonLink";
 import Footer from "../../components/Footer/Footer";
-import PageContainerNoScroll from "../../components/PageContainerNoScroll/PageContainerNoScroll";
+import PageContainer from "../../components/PageContainer/PageContainer";
 import "./TopicsMap.styles.css";
 
 function TopicsMap() {
   return (
-    <PageContainerNoScroll>
+    <PageContainer>
       <div className="topics-container">
         <ButtonLink
           name="Hello"
@@ -16,7 +16,7 @@ function TopicsMap() {
         />
       </div>
       <Footer />
-    </PageContainerNoScroll>
+    </PageContainer>
   );
 }
 

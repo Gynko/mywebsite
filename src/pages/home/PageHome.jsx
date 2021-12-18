@@ -2,11 +2,11 @@ import "./PageHome.styles.css";
 import IconRabbitHole from "../../components/Icons/IconRabbitHole";
 import Footer from "../../components/Footer/Footer";
 import ButtonLink from "../../components/ButtonLink/ButtonLink";
-import PageContainerNoScroll from "../../components/PageContainerNoScroll/PageContainerNoScroll";
+import PageContainer from "../../components/PageContainer/PageContainer";
 
 function PageHome() {
   return (
-    <PageContainerNoScroll>
+    <PageContainer>
       <div className="home-allbutfooter-container">
         <div className="home-logo-title-container">
           <div className="icon-rabbit-hole">
@@ -39,7 +39,7 @@ function PageHome() {
         </div>
       </div>
       <Footer />
-    </PageContainerNoScroll>
+    </PageContainer>
   );
 }
 

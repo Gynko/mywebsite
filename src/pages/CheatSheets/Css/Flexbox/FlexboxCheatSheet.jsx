@@ -5,7 +5,7 @@ import Footer from "../../../../components/Footer/Footer";
 import TerminologyFlexbox from "../../../../animations/TerminologyFlexbox/TerminologyFlexbox";
 import TitleHeader from "../../../../components/TitleHeader/TitleHeader";
 import "./FlexboxCheatSheet.styles.css";
-import PageContainerNoScroll from "../../../../components/PageContainerNoScroll/PageContainerNoScroll";
+import PageContainer from "../../../../components/PageContainer/PageContainer";
 
 function FlexboxCheatSheet() {
   const [terminologyCat, setTerminologyCatOn] = useState(true);
@@ -31,7 +31,7 @@ function FlexboxCheatSheet() {
   }
 
   return (
-    <PageContainerNoScroll>
+    <PageContainer>
       <div className="cheat-sheet-container">
         <TitleHeader title="flexbox" />
         <div className="cheat-sheet-all-buttons">
@@ -88,7 +88,7 @@ function FlexboxCheatSheet() {
         )}
       </div>
       <Footer />
-    </PageContainerNoScroll>
+    </PageContainer>
   );
 }
 

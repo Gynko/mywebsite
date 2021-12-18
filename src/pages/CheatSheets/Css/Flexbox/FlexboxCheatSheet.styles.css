@@ -52,7 +52,7 @@
     align-items: center;
     justify-content: center;
     min-height: calc(
-      var(--content-full-page) - var(--button-actionable-mobile-margin) * 3 -
+      100% - var(--button-actionable-mobile-margin) * 3 -
         var(--title-mobile-height) - var(--button-actionable-mobile-height) * 2
     );
   }

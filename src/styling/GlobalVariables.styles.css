@@ -17,11 +17,11 @@
   --color-button-blue: #52c1ff;
 
   /* Headers mobile and desktop*/
-  --header-mobile-height: calc(var(--vh, 1vh) * 10);
+  --header-mobile-height: 5.5rem;
   --header-desktop-height: 5.5rem;
 
-  /*Mobile Content -> the rest of the page*/
-  --content-full-page: calc(var(--vh, 1vh) * 90);
+  /*Mobile Content -> min-height = the rest of the page*/
+  --content-full-page: calc(var(--vh, 1vh) * 100 - var(--header-mobile-height));
 
   /* Footer */
   --footer-desktop-height: 5.5rem;

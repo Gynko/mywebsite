@@ -11,15 +11,3 @@
     margin-top: var(--header-mobile-height);
   }
 }
-
-@media screen and (min-width: 45em) {
-  .page-container {
-    margin-top: var(--header-desktop-height);
-    min-height: calc(
-      100vh - var(--header-desktop-height) - var(--footer-desktop-height)
-    );
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-  }
-}

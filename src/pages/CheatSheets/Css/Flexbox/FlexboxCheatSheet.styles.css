@@ -53,23 +53,3 @@
     justify-content: center;
   }
 }
-
-@media screen and (min-width: 45em) {
-  .cheat-sheet-container {
-    min-height: calc(100vh - var(--header-desktop-height));
-    max-width: 100rem;
-    align-self: center;
-  }
-  .cheat-sheet-main-options {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 100%;
-  }
-  .cheat-sheet-options-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    max-width: 30rem;
-  }
-}

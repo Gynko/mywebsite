@@ -79,9 +79,3 @@
     width: 8rem;
   }
 }
-
-@media screen and (min-width: 45em) {
-  .header-mobile-container {
-    display: none;
-  }
-}

@@ -1,6 +1,7 @@
 import ButtonLink from "../../components/ButtonLink/ButtonLink";
 import Footer from "../../components/Footer/Footer";
 import PageContainer from "../../components/PageContainer/PageContainer";
+
 import "./TopicsMap.styles.css";
 
 function TopicsMap() {

@@ -32,4 +32,5 @@
 
   /* Buttons */
   --button-actionable-mobile-height: 3rem;
+  --button-actionable-mobile-margin: 0.3rem;
 }

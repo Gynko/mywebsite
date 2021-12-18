@@ -34,7 +34,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 0.3rem 0;
+    margin: var(--button-actionable-mobile-margin) 0;
     width: 100vw;
   }
   /* Contains the second row of 4 buttons */
@@ -42,7 +42,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 0 0 0.3rem 0;
+    margin: 0 0 var(--button-actionable-mobile-margin) 0;
     width: 100vw;
   }
   /* Contains the svg flexbox */
@@ -51,6 +51,11 @@
     align-content: center;
     align-items: center;
     justify-content: center;
+    min-height: calc(
+      var(--content-full-page) - var(--title-mobile-height) -
+        var(--button-actionable-mobile-height) * 2 -
+        var(--button-actionable-mobile-margin) * 3
+    );
   }
 }
 

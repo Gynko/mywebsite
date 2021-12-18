@@ -52,7 +52,7 @@
     position: fixed;
     left: 0;
     top: 0;
-    height: var(--header-mobile-height);
+    min-height: var(--header-mobile-height);
   }
   .header-mobile-header {
     margin: 0;

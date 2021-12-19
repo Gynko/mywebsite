@@ -69,7 +69,7 @@
   .home-title {
     padding: 0;
     margin: 0.5rem 0 0 0;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .home-undertext-1 {
     padding: 0;
@@ -78,7 +78,7 @@
   }
   .home-undertext-2 {
     padding: 0;
-    margin: 0;
+    margin: 0 0 0.4rem 0;
     font-size: 2.4rem;
     line-height: 2rem;
   }

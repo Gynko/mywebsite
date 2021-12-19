@@ -51,6 +51,10 @@
     align-content: center;
     align-items: center;
     justify-content: center;
-    min-height: -webkit-fill-available;
+    min-height: calc(
+      var(--vh, 1vh) * 100 - var(--header-mobile-height) -
+        var(--button-actionable-mobile-margin) * 3 - var(--title-mobile-height) -
+        var(--button-actionable-mobile-height) * 2
+    );
   }
 }

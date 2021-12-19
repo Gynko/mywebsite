@@ -13,7 +13,8 @@ function PageHome() {
             <IconRabbitHole />
           </div>
           <h1 className="home-title">
-            Cheat Sheets <br />
+            Cheat Sheets
+            <br />
             Wonderland
           </h1>
         </div>

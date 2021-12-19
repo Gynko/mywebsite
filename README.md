@@ -6,6 +6,7 @@ Cheat Sheets Wonderland is a website that contains learning materials about vari
 - [1. Base Features](#1-base-features)
 - [2. Future features](#2-future-features)
 - [3. Packages](#3-packages)
+- [4. Dependencies](#4-dependencies)
 
 ## 1. Base Features
 
@@ -28,7 +29,9 @@ Cheat Sheets Wonderland is a website that contains learning materials about vari
 1. "Vanilla" Css
 2. React Router v6
 3. Typescript
-4. useVH: https://github.com/dimazuien/react-viewport-height
 
+## 4. Dependencies
+
+1. react-vh: to correctly calculate the viewport height on mobile using the css property vh
 
 

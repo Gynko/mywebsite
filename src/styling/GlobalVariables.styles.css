@@ -23,7 +23,7 @@
   /*Mobile Content -> min-height = the rest of the page*/
   --content-full-page: calc(
     var(--vh, 1vh) * 100 - var(--header-mobile-height) -
-      env(safe-area-inset-bottom, 0.5vh) - env(safe-area-inset-top, 20px) ;
+      env(safe-area-inset-bottom) - env(safe-area-inset-top) ;
   );
 
   /* Footer - only on desktop*/

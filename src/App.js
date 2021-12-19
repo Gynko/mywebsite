@@ -2,7 +2,7 @@ import "./styling/GlobalStyles.styles.css";
 import "./styling/GlobalVariables.styles.css";
 
 import Routing from "./Routing/Routing";
-import useVH from "react-viewport-height/useVH";
+import useVH from "react-viewport-height";
 
 function App() {
   useVH();

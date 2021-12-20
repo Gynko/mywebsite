@@ -12,7 +12,7 @@
   line-height: 0.5rem;
 }
 
-@media screen and (min-width: 20em) {
+@media screen and (min-width: 20em) and (max-height: 34em) {
   /*Contains everything but footer - useful for desktop media queries where footer is visible*/
   .cheat-sheet-container {
     min-height: var(--content-full-page);
@@ -51,6 +51,20 @@
     align-content: center;
     align-items: center;
     justify-content: center;
+    min-height: calc(
+      var(--content-full-page) - var(--button-actionable-mobile-margin) * 3 -
+        var(--title-mobile-height) - var(--button-actionable-mobile-height) * 2
+    );
+  }
+}
+
+@media screen and (min-width: 20em) and (max-height: 50em) {
+  .cheat-sheet-svg {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     min-height: calc(
       var(--content-full-page) - var(--button-actionable-mobile-margin) * 3 -
         var(--title-mobile-height) - var(--button-actionable-mobile-height) * 2

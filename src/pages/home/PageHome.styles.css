@@ -99,7 +99,8 @@
     height: var(--content-desktop-full-page);
   }
   .icon-rabbit-hole {
-    width: 10rem;
+    width: 13rem;
+    margin: 0 0 1rem 0;
   }
   .home-title {
     font-size: 4rem;

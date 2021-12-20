@@ -53,72 +53,57 @@
 
 @media screen and (min-width: 47em) {
   .header-desktop-container {
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    height: var(--header-desktop-height);
+    width: 100vw;
+    position: absolute;
+  }
+  .header-desktop-header {
     height: var(--header-desktop-height);
     width: 100vw;
   }
-  .header-desktop-header {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-  }
   .header-desktop-nav {
+    height: var(--header-desktop-height);
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     align-content: center;
-    align-items: center;
-    justify-content: center;
-    width: var(--max-width-desktop-content);
   }
-  .header-desktop-all-but-mail-icon {
+  .allbut {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    align-content: center;
     width: var(--max-width-desktop-content);
+    height: var(--header-desktop-height);
   }
   .header-desktop-ul {
+    width: calc(var(--max-width-desktop-content) - 12rem - 20rem);
     display: flex;
-    height: 100%;
-    width: var(--max-width-desktop-content);
+    justify-content: space-between;
     margin: 0;
     padding: 0;
-    justify-content: space-between;
+  }
+  .header-desktop-searchinput {
+    width: 20rem;
+    height: 2rem;
+  }
+  .header-desktop-li {
+    margin: 0;
+    padding: 0;
   }
   .header-desktop-icons-container {
     width: 3rem;
   }
-  .header-desktop-li {
-    margin: 0;
-  }
   .header-desktop-icons {
-    min-width: 4rem;
-  }
-  .header-desktop-searchinput {
-    height: 3rem;
-    margin: 0;
-    padding: 0;
-    min-width: 20rem;
+    width: 1rem;
   }
   .icon-mail-desktop {
-    position: absolute;
-    right: 3.5rem;
     width: 3rem;
-  }
-  .header-desktop-searchinput::placeholder {
-    padding-left: 16px;
-    font-size: 1.2rem;
-    margin: 0;
+    margin-left: 0 auto;
+    position: absolute;
+    right: 1rem;
   }
 }

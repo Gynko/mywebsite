@@ -38,11 +38,11 @@
 
   /* Title */
   --title-mobile-height: 2rem;
-  --title-desktop-height: 4rem;
+  --title-desktop-height: 3rem;
 
   /* Buttons */
   --button-actionable-mobile-height: 3rem;
   --button-actionable-mobile-margin: 0.3rem;
-  --button-actionable-desktop-height: 6rem;
+  --button-actionable-desktop-height: 3rem;
   --button-actionable-desktop-margin: 0.8rem;
 }

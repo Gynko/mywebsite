@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 import ButtonActionable from "../../../../components/ButtonActionable/ButtonActionable";
-import Footer from "../../../../components/Footer/Footer";
 import TerminologyFlexbox from "../../../../animations/TerminologyFlexbox/TerminologyFlexbox";
 import TitleHeader from "../../../../components/TitleHeader/TitleHeader";
 import "./FlexboxCheatSheet.styles.css";
@@ -87,7 +86,6 @@ function FlexboxCheatSheet() {
           </div>
         )}
       </div>
-      <Footer />
     </PageContainer>
   );
 }

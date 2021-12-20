@@ -10,7 +10,7 @@ function HeaderDesktop() {
     <div className="header-desktop-container">
       <header className="header-desktop-header">
         <nav className="header-desktop-nav">
-          <div className="header-desktop-all-but-mail-icon">
+          <div className="allbut">
             <ul className="header-desktop-ul">
               <li className="header-desktop-icons-container">
                 <Link className="header-desktop-icons" to="/">
@@ -29,15 +29,13 @@ function HeaderDesktop() {
               <li className="header-desktop-li">
                 <HeaderLink label="More" to="/" />
               </li>
-              <li className="header-desktop-li">
-                <input
-                  className="header-desktop-searchinput"
-                  type="search"
-                  name="Search"
-                  placeholder="search"
-                ></input>
-              </li>
             </ul>
+            <input
+              className="header-desktop-searchinput"
+              type="search"
+              name="Search"
+              placeholder="search"
+            ></input>
           </div>
           <address className="icon-mail-desktop">
             <IconMail />

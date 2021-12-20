@@ -47,7 +47,7 @@
 
 @media screen and (min-width: 47em) {
   .button-actionable {
-    font-size: 2rem;
+    font-size: 1.2rem;
     height: var(--button-actionable-desktop-height);
     padding: 0 1rem;
   }

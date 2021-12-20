@@ -76,18 +76,18 @@
     align-items: center;
     justify-content: space-between;
     align-content: center;
-    width: var(--max-width-desktop-content);
+    max-width: 30rem;
     height: var(--header-desktop-height);
   }
   .header-desktop-ul {
     width: calc(var(--max-width-desktop-content) - 12rem - 20rem);
     display: flex;
     justify-content: space-between;
-    margin: 0;
+    margin: 0 1rem 0 0;
     padding: 0;
   }
   .header-desktop-searchinput {
-    width: 20rem;
+    max-width: 8rem;
     height: 2rem;
   }
   .header-desktop-li {

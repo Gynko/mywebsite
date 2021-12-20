@@ -1,14 +1,27 @@
-html {
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+html {
   margin: 0;
   height: -webkit-fill-available;
 }
 
 body {
-  margin: 0;
   background-color: var(--color-background);
   min-height: 100vh;
   min-height: -webkit-fill-available;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
 }
 
 [hidden] {

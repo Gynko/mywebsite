@@ -2,6 +2,7 @@
   font-family: "Bungee", cursive;
   font-weight: 400;
   color: #f4ae44;
+  text-decoration: none;
 }
 .header-link:hover {
   text-decoration: underline;
@@ -12,6 +13,6 @@
 
 @media screen and (min-width: 47em) {
   .header-link {
-    font-size: 1.2rem;
+    font-size: 1.052rem;
   }
 }

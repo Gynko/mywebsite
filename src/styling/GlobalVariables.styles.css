@@ -1,15 +1,12 @@
 :root {
-  /* Media queries*/
-
-  /* Colors */
-  /* Title */
+  --color-header-mobile: #211728;
   --color-title-pink: #f554b5;
-  /* Text */
+
   --color-text-yellow: #f4ae44;
   --color-text-accent: #ef4a4a;
-  /* Background */
+
   --color-background: #251f32;
-  /*Buttons*/
+
   --color-button-actionable-bg: #322e3c;
   --color-button-black: #1c1a1c;
   --color-button-white: white;
@@ -22,11 +19,7 @@
   --header-mobile-height: 4.1rem;
   --header-desktop-height: 4.5rem;
 
-  /*Mobile Content -> min-height = the rest of the page*/
-  --content-full-page: calc(
-    var(--vh, 1vh) * 100 - var(--header-mobile-height) -
-      env(safe-area-inset-bottom, 0.5vh) - env(safe-area-inset-top, 20px)
-  );
+  --content-full-page: calc(var(--vh, 1vh) * 100 - var(--header-mobile-height));
   --content-desktop-full-page: calc(
     var(--vh, 1vh) * 100 - var(--header-desktop-height) -
       var(--footer-desktop-height)

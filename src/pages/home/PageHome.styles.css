@@ -66,6 +66,7 @@
   .icon-rabbit-hole {
     width: 9rem;
   }
+
   .home-title {
     padding: 0;
     margin: 0.5rem 0 0 0;
@@ -86,7 +87,7 @@
     padding: 0;
     margin: 0 0 1rem 0;
     font-size: 2.4rem;
-    line-height: 2rem;
+    line-height: 1.2rem;
   }
 }
 

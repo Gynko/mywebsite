@@ -9,7 +9,7 @@ function HeaderMobile() {
       <header className="header-mobile-header">
         <nav className="header-mobile-nav">
           <ul className="header-mobile-ul">
-            <li className="header-mobile-li">
+            <li className="header-mobile-li header-mobile-iconbrain">
               <Link to="/">
                 <IconBrainConnect />
               </Link>
@@ -22,7 +22,7 @@ function HeaderMobile() {
                 placeholder="search"
               ></input>
             </li>
-            <li className="header-mobile-li">
+            <li className="header-mobile-li header-mobile-iconmail">
               <IconMail />
             </li>
           </ul>

@@ -90,9 +90,19 @@
   }
 }
 
-@media screen and (min-width: 45em) {
+@media screen and (min-width: 47em) {
+  .home-allbutfooter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: var(--content-desktop-full-page);
+  }
+  .icon-rabbit-hole {
+    width: 20rem;
+  }
   .home-title {
-    font-size: 4rem;
+    font-size: 6rem;
   }
   .home-undertext-main {
     margin-bottom: 1.3rem;
@@ -102,19 +112,20 @@
     padding: 0;
   }
   .home-undertext-1 {
-    margin: 1rem 0;
-    font-size: 1.27rem;
+    margin: 3rem 0;
+    font-size: 2.5rem;
   }
   .home-undertext-2 {
     padding: 0;
-    margin: 0;
-    font-size: 3.2rem;
+    margin: 0 0 2.5rem 0;
+    font-size: 6rem;
     line-height: 3rem;
   }
   .home-undertext-3 {
     padding: 0;
     margin: 0;
-    font-size: 3.8rem;
+    font-size: 6.8rem;
     line-height: 3rem;
+    margin: 0 0 4rem 0;
   }
 }

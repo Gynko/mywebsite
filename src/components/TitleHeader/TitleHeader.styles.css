@@ -26,3 +26,16 @@
     padding: 0;
   }
 }
+
+@media screen and (min-width: 45em) {
+  .titleheader-container {
+    width: 60rem;
+    height: var(--title-desktop-height);
+  }
+  .titleheader-title {
+    line-height: 0.5rem;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+  }
+}

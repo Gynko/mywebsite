@@ -12,3 +12,14 @@
     margin-top: var(--header-mobile-height);
   }
 }
+
+@media screen and (min-width: 47em) {
+  .page-container {
+    position: absolute;
+    margin-top: var(--header-desktop-height);
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: var(--content-desktop-full-page);
+  }
+}

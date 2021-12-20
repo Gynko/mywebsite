@@ -1,4 +1,6 @@
 :root {
+  /* Media queries*/
+
   /* Colors */
   /* Title */
   --color-title-pink: #f554b5;
@@ -18,22 +20,28 @@
 
   /* Headers mobile and desktop*/
   --header-mobile-height: 4.1rem;
-  --header-desktop-height: 5.5rem;
+  --header-desktop-height: 8.5rem;
 
   /*Mobile Content -> min-height = the rest of the page*/
   --content-full-page: calc(
     var(--vh, 1vh) * 100 - var(--header-mobile-height) -
       env(safe-area-inset-bottom, 0.5vh) - env(safe-area-inset-top, 20px)
   );
+  --content-desktop-full-page: calc(
+    var(--vh, 1vh) * 100 - var(--header-desktop-height) -
+      var(--footer-desktop-height)
+  );
 
   /* Footer - only on desktop*/
-  --footer-desktop-height: 5.5rem;
+  --footer-desktop-height: 8rem;
 
   /* Title */
   --title-mobile-height: 2rem;
-  --title-desktop-height: 3rem;
+  --title-desktop-height: 4rem;
 
   /* Buttons */
   --button-actionable-mobile-height: 3rem;
   --button-actionable-mobile-margin: 0.3rem;
+  --button-actionable-desktop-height: 6rem;
+  --button-actionable-desktop-margin: 0.8rem;
 }

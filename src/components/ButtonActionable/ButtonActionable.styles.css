@@ -44,3 +44,11 @@
     height: var(--button-actionable-mobile-height);
   }
 }
+
+@media screen and (min-width: 47em) {
+  .button-actionable {
+    font-size: 2rem;
+    height: var(--button-actionable-desktop-height);
+    padding: 0 1rem;
+  }
+}

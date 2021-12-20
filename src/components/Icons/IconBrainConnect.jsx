@@ -1,11 +1,11 @@
 function IconBrainConnect() {
   return (
     <svg
-      id="Layer_1"
+      className="icon-brain-connect"
       data-name="Layer 1"
       xmlns="http://www.w3.org/2000/svg"
-      width="50"
-      height="100%"
+      width={"auto"}
+      height={"auto"}
       viewBox="0 0 68 68"
     >
       <path

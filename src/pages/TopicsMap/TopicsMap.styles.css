@@ -13,3 +13,11 @@
     gap: 1rem;
   }
 }
+
+@media screen and (min-width: 47em) {
+  .topics-container {
+    min-height: var(--content-desktop-full-page);
+    width: 100%;
+    gap: 1rem;
+  }
+}

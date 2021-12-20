@@ -4,8 +4,8 @@ function IconMail() {
       id="Layer_1"
       data-name="Layer 1"
       xmlns="http://www.w3.org/2000/svg"
-      width="50"
-      height="100%"
+      width={"auto"}
+      height={"auto"}
       viewBox="0 0 20 16"
     >
       <path

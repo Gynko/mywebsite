@@ -79,25 +79,25 @@
     align-content: center;
     align-items: center;
     justify-content: center;
-    width: 60rem;
+    width: var(--max-width-desktop-content);
   }
   .header-desktop-all-but-mail-icon {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 60rem;
+    width: var(--max-width-desktop-content);
   }
   .header-desktop-ul {
     display: flex;
     height: 100%;
-    width: 60rem;
+    width: var(--max-width-desktop-content);
     margin: 0;
     padding: 0;
     justify-content: space-between;
   }
   .header-desktop-icons-container {
-    width: 5rem;
+    width: 3rem;
   }
   .header-desktop-li {
     margin: 0;
@@ -114,10 +114,11 @@
   .icon-mail-desktop {
     position: absolute;
     right: 3.5rem;
-    width: 6rem;
+    width: 3rem;
   }
   .header-desktop-searchinput::placeholder {
     padding-left: 16px;
-    font-size: 2rem;
+    font-size: 1.2rem;
+    margin: 0;
   }
 }

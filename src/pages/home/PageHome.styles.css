@@ -99,10 +99,10 @@
     height: var(--content-desktop-full-page);
   }
   .icon-rabbit-hole {
-    width: 20rem;
+    width: 10rem;
   }
   .home-title {
-    font-size: 6rem;
+    font-size: 4rem;
   }
   .home-undertext-main {
     margin-bottom: 1.3rem;
@@ -112,20 +112,20 @@
     padding: 0;
   }
   .home-undertext-1 {
-    margin: 3rem 0;
-    font-size: 2.5rem;
+    margin: 1rem 0;
+    font-size: 1.5rem;
   }
   .home-undertext-2 {
     padding: 0;
-    margin: 0 0 2.5rem 0;
-    font-size: 6rem;
+    margin: 0 0 0.2rem 0;
+    font-size: 3rem;
     line-height: 3rem;
   }
   .home-undertext-3 {
     padding: 0;
     margin: 0;
-    font-size: 6.8rem;
+    font-size: 3.4rem;
     line-height: 3rem;
-    margin: 0 0 4rem 0;
+    margin: 0 0 1rem 0;
   }
 }

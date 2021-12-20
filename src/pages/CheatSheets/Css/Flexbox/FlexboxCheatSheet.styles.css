@@ -59,6 +59,31 @@
 }
 
 @media screen and (min-width: 20em) and (max-height: 50em) {
+  /*Contains all the interactable buttons: row 1 and 2 */
+  .cheat-sheet-all-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 20rem;
+  }
+  /* Contains the first row of 4 buttons */
+  .cheat-sheet-options-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: var(--button-actionable-mobile-margin) 0;
+    max-width: 100%;
+  }
+  /* Contains the second row of 4 buttons */
+  .cheat-sheet-sub-options-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 0 var(--button-actionable-mobile-margin) 0;
+    width: 100%;
+  }
   .cheat-sheet-svg {
     display: flex;
     align-content: center;

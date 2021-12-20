@@ -58,7 +58,7 @@
   }
 }
 
-@media screen and (min-width: 20em) and (max-height: 50em) {
+@media screen and (min-width: 20em) and (min-height: 38em) {
   .cheat-sheet-container {
     min-height: var(--content-full-page);
     width: 100vw;

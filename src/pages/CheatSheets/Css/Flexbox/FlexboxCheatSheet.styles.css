@@ -14,7 +14,7 @@
   }
   /*Contains all the interactable buttons: row 1 and 2 */
   .cheat-sheet-all-buttons {
-    width: 100%;
+    width: 20rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,7 +25,7 @@
   .cheat-sheet-options-container {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
   /* Contains the second row of 4 buttons */
   .cheat-sheet-sub-options-container {

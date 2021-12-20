@@ -12,7 +12,7 @@
   line-height: 0.5rem;
 }
 
-@media screen and (min-width: 20em) and (max-height: 38em) {
+@media screen and (min-width: 20em) and (max-height: 39em) {
   /*Contains everything but footer - useful for desktop media queries where footer is visible*/
   .cheat-sheet-container {
     min-height: var(--content-full-page);
@@ -58,7 +58,7 @@
   }
 }
 
-@media screen and (min-width: 20em) and (min-height: 38em) {
+@media screen and (min-width: 20em) and (min-height: 39em) {
   .cheat-sheet-container {
     min-height: var(--content-full-page);
     width: 100vw;

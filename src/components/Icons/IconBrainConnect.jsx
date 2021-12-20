@@ -4,7 +4,7 @@ function IconBrainConnect() {
       id="Layer_1"
       data-name="Layer 1"
       xmlns="http://www.w3.org/2000/svg"
-      width="60"
+      width="50"
       height="100%"
       viewBox="0 0 68 68"
     >

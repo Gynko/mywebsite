@@ -13,7 +13,6 @@ html {
 body {
   background-color: var(--color-background);
   min-height: calc(var(--vh, 1vh) * 100);
-  min-height: -webkit-fill-available;
   padding: env(safe-area-inset-top, 20px) env(safe-area-inset-right, 20px)
     env(safe-area-inset-bottom, 20px) env(safe-area-inset-left, 20px);
 }

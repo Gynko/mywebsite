@@ -3,20 +3,11 @@ import "./styling/GlobalVariables.styles.css";
 
 import Routing from "./Routing/Routing";
 import useVH from "react-vh";
-import { Helmet } from "react-helmet";
 
 function App() {
   useVH();
 
-  return (
-    <>
-      <Helmet>
-        <title>Wonderland</title>
-        <meta name="viewport" content="viewport-fit=cover" />
-      </Helmet>
-      <Routing />
-    </>
-  );
+  return <Routing />;
 }
 
 export default App;

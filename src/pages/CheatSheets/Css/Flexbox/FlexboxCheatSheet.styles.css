@@ -1,8 +1,3 @@
-/* height: 505px*/
-.cheat-sheet-svg {
-  border: 1px black solid;
-}
-
 @media screen and (min-width: 20em) and (max-height: 31.5625em) {
   /*Contains everything but footer - useful for desktop media queries where footer is visible*/
   .cheat-sheet-container {

@@ -4,6 +4,7 @@ import ButtonActionable from "../../../../components/ButtonActionable/ButtonActi
 import TerminologyFlexbox from "../../../../animations/TerminologyFlexbox/TerminologyFlexbox";
 import TitleHeader from "../../../../components/TitleHeader/TitleHeader";
 import "./FlexboxCheatSheet.styles.css";
+import Footer from "../../../../components/Footer/Footer";
 
 function FlexboxCheatSheet() {
   const [terminologyCat, setTerminologyCatOn] = useState(true);
@@ -80,6 +81,7 @@ function FlexboxCheatSheet() {
           />
         </div>
       )}
+      <Footer />
     </div>
   );
 }

@@ -1,5 +1,9 @@
 /* height: 505px*/
-@media screen and (min-width: 20em) {
+.cheat-sheet-svg {
+  border: 1px black solid;
+}
+
+@media screen and (min-width: 20em) and (max-height: 31.5625em) {
   /*Contains everything but footer - useful for desktop media queries where footer is visible*/
   .cheat-sheet-container {
     position: fixed;
@@ -44,13 +48,60 @@
       var(--content-full-page) - var(--button-actionable-mobile-margin) * 3 -
         var(--title-mobile-height) - var(--button-actionable-mobile-height) * 2
     );
-    width: clamp(20rem, 100%, 29.5rem);
   }
 }
 
-@media screen and (min-height: 44.5em) {
+@media screen and (min-width: 20em) and (min-height: 31.5626em) {
   .cheat-sheet-container {
-    min-height: calc(var(--content-full-page) - var(--footer-desktop-height));
+    position: fixed;
+    top: var(--header-mobile-height);
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: var(--content-full-page);
+    width: 100vw;
+  }
+  /*Contains all the interactable buttons: row 1 and 2 */
+  .cheat-sheet-all-buttons {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: var(--button-actionable-mobile-margin) 0;
+  }
+  /* Contains the first row of 2 buttons */
+  .cheat-sheet-options-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  /* Contains the second row of 4 buttons */
+  .cheat-sheet-sub-options-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: var(--button-actionable-mobile-margin);
+    justify-content: space-evenly;
+  }
+  /* Contains the svg flexbox */
+  .cheat-sheet-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(
+      var(--content-full-page) - var(--button-actionable-mobile-margin) * 3 -
+        var(--title-mobile-height) - var(--button-actionable-mobile-height) * 2
+    );
+  }
+}
+
+/* When there is enough height to have the footer, 586px = 36.625rem*/
+@media screen and (min-width: 20em) and (min-height: 36.625em) {
+  .cheat-sheet-container {
+    min-height: var(--content-full-page - var(--footer-desktop-height));
   }
   .cheat-sheet-svg {
     min-height: calc(
@@ -58,5 +109,19 @@
         var(--title-mobile-height) - var(--button-actionable-mobile-height) * 2 -
         var(--footer-desktop-height)
     );
+  }
+}
+
+/* 
+FROM When there is available height for cheat-Sheet-svg, make the width be equal to the height + 1.047%
+*/
+@media screen and (min-width: 39.06em) and (min-height: 36.625em) {
+  .cheat-sheet-svg {
+    width: calc(
+      var(--content-full-page) - var(--button-actionable-mobile-margin) * 3 -
+        var(--title-mobile-height) - var(--button-actionable-mobile-height) * 2 -
+        var(--footer-desktop-height)
+    );
+    max-width: 46.125rem;
   }
 }

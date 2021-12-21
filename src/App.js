@@ -13,8 +13,8 @@ function App() {
       <Helmet>
         <title>Wonderland</title>
         <meta name="viewport" content="viewport-fit=cover" />
-        <Routing />
       </Helmet>
+      <Routing />
     </>
   );
 }

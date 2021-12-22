@@ -10,13 +10,12 @@
 .button-link:visited {
   text-decoration: none;
   color: var(--color-background);
-  margin: 0;
 }
 
 @media screen and (min-width: 20em) {
   .button-link {
     font-size: 1rem;
-    padding: 0.2 0.2rem;
+    padding: 0.15rem 0.2rem;
     margin: 0;
   }
 }

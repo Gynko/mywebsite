@@ -29,14 +29,14 @@ function PageHome() {
             </p>
             <p className="home-undertext-big home-undertext-3">Rabbit hole</p>
           </main>
-          <ButtonLink
-            name="Hello"
-            value="he"
-            label="Choose a topic"
-            link="true"
-            to="/topics-map"
-          />
         </div>
+        <ButtonLink
+          name="Hello"
+          value="he"
+          label="Choose a topic"
+          link="true"
+          to="/topics-map"
+        />
       </div>
       <Footer />
     </div>

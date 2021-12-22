@@ -6,128 +6,85 @@
     url("../../assets/fonts/Sniglet-ExtraBold.woff2") format("woff2");
 }
 
-.home-allbutfooter-container {
-  display: flex;
-  flex-direction: column;
-}
 .home-title {
   color: var(--color-title-pink);
   font-family: "Milonga", cursive;
   text-align: center;
 }
-.home-logo-title-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.home-undertext-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-.home-undertext-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 .home-undertext-accentcolor {
   font-family: "Sniglet", Fallback, sans-serif;
   color: var(--color-text-accent);
+  text-align: center;
 }
 .home-undertext-normal {
   font-family: "Sniglet", Fallback, sans-serif;
   color: var(--color-text-yellow);
+  text-align: center;
 }
 .home-undertext-big {
   font-family: "Sniglet", Fallback, sans-serif;
   color: var(--color-text-yellow);
   text-transform: uppercase;
+  text-align: center;
 }
 .home-undertext-1 {
   font-family: "Open Sans", sans-serif;
+  text-align: center;
 }
 .home-undertext-2 {
   color: var(--color-text-yellow);
+  text-align: center;
 }
-@media screen and (min-width: 20em) {
-  .home-allbutfooter-container {
+/*
+Mobile - Without footer
+*/
+@media screen and (min-width: 20em) and (max-height: 36.5625em) {
+  .home-page-container {
+    position: absolute;
+    min-height: var(--content-full-page);
+    margin-top: var(--header-mobile-height);
     display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+  .home-allbutfooter-container {
+    min-height: var(--content-full-page);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-content: center;
-    height: var(--content-full-page);
-  }
-  .home-undertext-main {
-    padding: 0;
-    margin-bottom: 0.8rem;
   }
   .icon-rabbit-hole {
     width: 9rem;
   }
-
   .home-title {
-    padding: 0;
-    margin: 0.5rem 0 0 0;
     font-size: 2.5rem;
+    margin: 0.6rem 0;
   }
-  .home-undertext-1 {
-    padding: 0;
-    margin: 1rem 0;
-    font-size: 1rem;
-  }
-  .home-undertext-2 {
-    padding: 0;
-    margin: 0 0 0.4rem 0;
-    font-size: 2.4rem;
-    line-height: 2rem;
-  }
-  .home-undertext-3 {
-    padding: 0;
-    margin: 0 0 1rem 0;
-    font-size: 2.4rem;
-    line-height: 1.2rem;
-  }
-}
-
-@media screen and (min-width: 47em) {
-  .home-allbutfooter-container {
+  .home-logo-title-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-content: center;
-    height: var(--content-desktop-full-page);
   }
-  .icon-rabbit-hole {
-    width: 13rem;
-    margin: 0 0 1rem 0;
-  }
-  .home-title {
-    font-size: 4rem;
-  }
-  .home-undertext-main {
-    margin-bottom: 1.3rem;
-  }
-  .home-undertext-normal {
-    margin: 0;
-    padding: 0;
+  .home-undertext-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .home-undertext-1 {
-    margin: 1rem 0;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    margin-bottom: 0.84rem;
   }
   .home-undertext-2 {
-    padding: 0;
-    margin: 0 0 0.2rem 0;
-    font-size: 3rem;
-    line-height: 3rem;
+    font-size: 2rem;
+    line-height: 1.2rem;
   }
   .home-undertext-3 {
-    padding: 0;
-    margin: 0;
-    font-size: 3.4rem;
-    line-height: 3rem;
-    margin: 0 0 1rem 0;
+    font-size: 2.3rem;
+    margin-bottom: 0.4rem;
   }
 }

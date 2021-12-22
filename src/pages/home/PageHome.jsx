@@ -14,10 +14,21 @@ function PageHome() {
     var tl = gsap.timeline({ repeat: -1, yoyo: true }),
       mySplitText = new SplitText(refMaze.current, { type: "chars" }),
       chars = mySplitText.chars; //an array of all the divs that wrap each character
-    gsap.set(refMaze.current, { scale: 1, transformOrigin: "0% bottom" });
-    tl.from(chars, {
-      duration: 0.4,
-      scaleY: 1.2,
+    gsap.set(refMaze.current, {
+      transformOrigin: "50% 50%",
+      rotation: 0,
+    });
+    tl.to(chars, {
+      duration: 0.2,
+      rotation: 10,
+
+      stagger: 0.2,
+    });
+    tl.to(chars, {
+      duration: 0.2,
+
+      rotation: -10,
+      stagger: 0.2,
     });
   }
   useEffect(() => {

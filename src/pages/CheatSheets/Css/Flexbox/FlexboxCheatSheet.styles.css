@@ -94,5 +94,6 @@ Adding the Footer at Height 586
         var(--title-mobile-height) - var(--button-actionable-mobile-height) * 2 -
         var(--footer-desktop-height)
     );
+    max-width: 35rem;
   }
 }

@@ -61,7 +61,7 @@
   }
 }
 
-@media screen and (min-width: 47em) {
+@media screen and (min-width: 40em) {
   .header-mobile-container {
     display: none;
   }

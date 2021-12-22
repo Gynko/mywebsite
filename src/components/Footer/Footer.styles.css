@@ -16,7 +16,9 @@
     display: none;
   }
 }
-
+/*
+586px height
+*/
 @media screen and (min-height: 36.625em) {
   .footer-container {
     position: fixed;

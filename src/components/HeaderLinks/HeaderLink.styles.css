@@ -11,7 +11,7 @@
   color: #f554b5;
 }
 
-@media screen and (min-width: 47em) {
+@media screen and (min-width: 40em) {
   .header-link {
     font-size: 1.052rem;
   }

@@ -6,7 +6,7 @@ function Footer() {
       <p className="footer-text">
         Made with Love and Compassion by Yoann Godiet,
       </p>
-      <p className="footer-text">Frontend Developer in Sandefjord, Norway.</p>
+      <p className="footer-text">frontend developer in Sandefjord, Norway.</p>
     </footer>
   );
 }

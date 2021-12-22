@@ -88,3 +88,53 @@ Mobile - Without footer
     margin-bottom: 0.4rem;
   }
 }
+
+@media screen and (min-width: 20em) and (min-height: 36.625em) {
+  .home-page-container {
+    position: absolute;
+    min-height: calc(var(--content-full-page) - var(--footer-desktop-height));
+    margin-top: var(--header-mobile-height);
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+  .home-allbutfooter-container {
+    min-height: calc(var(--content-full-page) - var(--footer-desktop-height));
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon-rabbit-hole {
+    width: 9rem;
+  }
+  .home-title {
+    font-size: 2.5rem;
+    margin: 0.6rem 0;
+  }
+  .home-logo-title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-undertext-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-undertext-1 {
+    font-size: 1rem;
+    margin-bottom: 0.84rem;
+  }
+  .home-undertext-2 {
+    font-size: 2rem;
+    line-height: 1.2rem;
+  }
+  .home-undertext-3 {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+  }
+}

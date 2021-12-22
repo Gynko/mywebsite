@@ -47,7 +47,11 @@ h5 {
 h6 {
   font-size: 0.67rem;
 }
-
+a {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
 /* @docs
 label: H1 Margins
 note: |

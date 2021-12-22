@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 function ButtonLink({ label, to }) {
   return (
-    <Link className="button-link" to={to}>
-      {label}
+    <Link to={to}>
+      <button className="button-link">{label}</button>
     </Link>
   );
 }

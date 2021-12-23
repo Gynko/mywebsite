@@ -21,12 +21,12 @@ function PageHome() {
     });
     tl.to(chars, {
       duration: 1,
-      scaleY: 1.5,
+      scaleY: 1.4,
       stagger: 0.25,
     });
     tl.to(chars[0], {
       duration: 2,
-      rotation: 360,
+      rotation: -360,
       ease: "power4",
     });
     tl.to(chars, {

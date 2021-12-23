@@ -7,11 +7,11 @@ import "./FlexboxCheatSheet.styles.css";
 import Footer from "../../../../components/Footer/Footer";
 
 function FlexboxCheatSheet() {
-  const [terminologyCat, setTerminologyCatOn] = useState(true);
-  const [termiName, setTermiName] = useState(true);
-  const [termiAxis, setTermiAxis] = useState(true);
-  const [termiSize, setTermiSize] = useState(true);
-  const [termiStartEnd, setTermiStartEnd] = useState(true);
+  const [terminologyCat, setTerminologyCatOn] = useState(false);
+  const [termiName, setTermiName] = useState(false);
+  const [termiAxis, setTermiAxis] = useState(false);
+  const [termiSize, setTermiSize] = useState(false);
+  const [termiStartEnd, setTermiStartEnd] = useState(false);
 
   function terminology() {
     setTerminologyCatOn(!terminologyCat);

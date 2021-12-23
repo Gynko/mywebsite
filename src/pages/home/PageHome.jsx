@@ -11,7 +11,7 @@ gsap.registerPlugin(SplitText);
 function PageHome() {
   const refMaze = useRef(null);
   function animMaze() {
-    var tl = gsap.timeline({ repeat: -1, yoyo: true, repeatDelay: 2 }),
+    var tl = gsap.timeline({ repeat: -1, repeatDelay: 2 }),
       mySplitText = new SplitText(refMaze.current, { type: "chars" }),
       chars = mySplitText.chars; //an array of all the divs that wrap each character
     gsap.set(refMaze.current, {
@@ -22,6 +22,16 @@ function PageHome() {
     tl.to(chars, {
       duration: 1,
       scaleY: 1.5,
+      stagger: 0.25,
+    });
+    tl.to(chars[0], {
+      duration: 2,
+      rotation: 360,
+      ease: "power4",
+    });
+    tl.to(chars, {
+      duration: 1,
+      scaleY: 1,
       stagger: 0.25,
     });
   }

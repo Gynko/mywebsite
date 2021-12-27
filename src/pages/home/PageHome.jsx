@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import "./PageHome.styles.css";
 import IconRabbitHole from "../../components/Icons/IconRabbitHole";
 import Footer from "../../components/Footer/Footer";
@@ -10,10 +11,12 @@ gsap.registerPlugin(SplitText);
 
 function PageHome() {
   const refMaze = useRef(null);
+
+  var tl = gsap.timeline({ repeat: -1, repeatDelay: 2 }),
+    mySplitText = new SplitText(refMaze.current, { type: "chars" }),
+    chars = mySplitText.chars;
+
   function animMaze() {
-    var tl = gsap.timeline({ repeat: -1, repeatDelay: 2 }),
-      mySplitText = new SplitText(refMaze.current, { type: "chars" }),
-      chars = mySplitText.chars; //an array of all the divs that wrap each character
     gsap.set(refMaze.current, {
       transformOrigin: "50% 100%",
       rotation: 0,
@@ -24,21 +27,11 @@ function PageHome() {
       scaleY: 1.4,
       stagger: 0.25,
     });
-    tl.to(chars[0], {
-      duration: 2,
-      rotation: -360,
-      ease: "power4",
-    });
-    tl.to(chars, {
-      duration: 1,
-      scaleY: 1,
-      stagger: 0.25,
-    });
   }
   useEffect(() => {
     animMaze();
     return function cleanup() {
-      gsap.kill();
+      tl.kill();
     };
   }, []);
 

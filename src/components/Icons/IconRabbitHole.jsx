@@ -4,8 +4,8 @@ function IconRabbitHole() {
       version="1.1"
       id="Layer_1"
       xmlns="http://www.w3.org/2000/svg"
-      height="auto"
-      width="auto"
+      height="100%"
+      width="100%"
       viewBox="0 0 120 94"
     >
       <g className="icon-rabbit-hole" fill="#F8C8C8">

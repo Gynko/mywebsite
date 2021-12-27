@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import "./PageHome.styles.css";
 import IconRabbitHole from "../../components/Icons/IconRabbitHole";
 import Footer from "../../components/Footer/Footer";
@@ -33,7 +32,7 @@ function PageHome() {
     return function cleanup() {
       tl.kill();
     };
-  }, []);
+  });
 
   return (
     <div className="home-page-container">

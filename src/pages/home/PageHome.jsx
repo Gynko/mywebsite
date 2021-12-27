@@ -24,6 +24,11 @@ function PageHome() {
       scaleY: 1.4,
       stagger: 0.25,
     });
+    tl.to(chars, {
+      duration: 1,
+      scaleY: 1,
+      stagger: 0.25,
+    });
     return function cleanup() {
       tl.kill();
     };

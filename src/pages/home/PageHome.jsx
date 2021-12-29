@@ -20,24 +20,24 @@ function PageHome() {
       scaleY: 1,
     });
     tl.to(chars, {
-      duration: 0.25,
+      duration: 0.4,
       scaleY: 1.4,
-      stagger: 0.25,
+      stagger: 0.1,
     });
     tl.to(chars[3], {
-      duration: 0.1,
+      duration: 0.15,
       scaleY: 1,
     });
     tl.to(chars[2], {
-      duration: 0.1,
+      duration: 0.15,
       scaleY: 1,
     });
     tl.to(chars[1], {
-      duration: 0.1,
+      duration: 0.15,
       scaleY: 1,
     });
     tl.to(chars[0], {
-      duration: 0.1,
+      duration: 0.15,
       scaleY: 1,
     });
     return function cleanup() {

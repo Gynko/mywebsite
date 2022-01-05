@@ -88,7 +88,9 @@ Mobile - Without footer
     margin-bottom: 0.4rem;
   }
 }
-
+/*
+With footer
+*/
 @media screen and (min-width: 20em) and (min-height: 36.625em) {
   .home-page-container {
     position: absolute;

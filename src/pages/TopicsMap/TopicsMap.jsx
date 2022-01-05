@@ -34,7 +34,7 @@ function TopicsMap() {
           value="cssproperties"
           label="Css Properties"
           link="true"
-          to="/cheatsheets/flexbox"
+          to="/cheatsheets/cssproperties"
         />
       </div>
       <Footer />

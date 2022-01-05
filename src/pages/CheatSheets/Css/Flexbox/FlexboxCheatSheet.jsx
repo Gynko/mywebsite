@@ -8,6 +8,7 @@ import Footer from "../../../../components/Footer/Footer";
 
 function FlexboxCheatSheet() {
   const [terminologyCat, setTerminologyCatOn] = useState(false);
+  const [propertiesCat, setPropertiesCatOn] = useState(false);
   const [termiName, setTermiName] = useState(false);
   const [termiAxis, setTermiAxis] = useState(false);
   const [termiSize, setTermiSize] = useState(false);
@@ -15,6 +16,11 @@ function FlexboxCheatSheet() {
 
   function terminology() {
     setTerminologyCatOn(!terminologyCat);
+    setPropertiesCatOn(false);
+  }
+  function properties() {
+    setPropertiesCatOn(!propertiesCat);
+    setTerminologyCatOn(false);
   }
   function termiNameToggle() {
     setTermiName(!termiName);
@@ -40,7 +46,12 @@ function FlexboxCheatSheet() {
             onClick={terminology}
             isActivated={terminologyCat}
           />
-          <ButtonActionable value="properties" color="--color-button-yellow" />
+          <ButtonActionable
+            value="properties"
+            color="--color-button-yellow"
+            onClick={properties}
+            isActivated={propertiesCat}
+          />
         </div>
         {terminologyCat === false ? null : (
           <div className="cheat-sheet-sub-options-container">
@@ -81,6 +92,7 @@ function FlexboxCheatSheet() {
           />
         </div>
       )}
+      {propertiesCat === false ? null : <div>Hello props</div>}
       <Footer />
     </div>
   );

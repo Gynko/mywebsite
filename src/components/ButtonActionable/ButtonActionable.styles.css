@@ -25,6 +25,9 @@
 .button-actionable-terminology-active {
   border: 2px var(--color-button-yellow) solid;
 }
+.button-actionable-properties-active {
+  border: 2px var(--color-button-yellow) solid;
+}
 .button-actionable-name-active {
   border: 2px var(--color-button-white) solid;
 }

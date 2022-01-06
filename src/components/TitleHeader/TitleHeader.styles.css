@@ -1,5 +1,5 @@
 .titleheader-container {
-  background-color: #bb3585;
+  background-color: var(--color-title-background-pink);
   display: flex;
   flex-direction: column;
   align-content: center;

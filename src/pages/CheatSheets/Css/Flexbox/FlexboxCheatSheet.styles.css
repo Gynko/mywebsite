@@ -20,6 +20,13 @@
   align-items: center;
   justify-content: center;
 }
+.flex-cont-main-cat {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  width: 20rem;
+  margin-top: 0.4rem;
+}
 /* 
 The tiniest media at which the design works. 320 x 486
 */
@@ -32,16 +39,13 @@ The tiniest media at which the design works. 320 x 486
     margin: var(--button-actionable-mobile-margin) 0;
   }
   .cheat-sheet-options-container {
-    width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    width: 20rem;
   }
   .cheat-sheet-sub-options-container {
-    width: 100%;
     display: flex;
-    flex-direction: row;
+    width: 20rem;
     margin-top: var(--button-actionable-mobile-margin);
-    justify-content: space-evenly;
   }
   .cheat-sheet-svg {
     min-height: calc(
@@ -63,9 +67,9 @@ Calculate the width and add it
     margin: var(--button-actionable-mobile-margin) 0;
   }
   .cheat-sheet-options-container {
-    width: 100%;
     display: flex;
     justify-content: space-evenly;
+    width: 20rem;
   }
   .cheat-sheet-sub-options-container {
     width: 100%;

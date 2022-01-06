@@ -5,10 +5,14 @@ import TerminologyFlexbox from "../../../../animations/TerminologyFlexbox/Termin
 import TitleHeader from "../../../../components/TitleHeader/TitleHeader";
 import "./FlexboxCheatSheet.styles.css";
 import Footer from "../../../../components/Footer/Footer";
+import LabelledIcon from "../../../../components/LabelledIcon/LabelledIcon";
+import IconFlow from "../../../../components/Icons/IconFlow";
 
 function FlexboxCheatSheet() {
   const [terminologyCat, setTerminologyCatOn] = useState(false);
   const [propertiesCat, setPropertiesCatOn] = useState(false);
+  const [containerCat, setContainerCatOn] = useState(false);
+  const [itemCat, setItemCatOn] = useState(false);
   const [termiName, setTermiName] = useState(false);
   const [termiAxis, setTermiAxis] = useState(false);
   const [termiSize, setTermiSize] = useState(false);
@@ -21,6 +25,14 @@ function FlexboxCheatSheet() {
   function properties() {
     setPropertiesCatOn(!propertiesCat);
     setTerminologyCatOn(false);
+  }
+  function container() {
+    setContainerCatOn(!containerCat);
+    setItemCatOn(false);
+  }
+  function item() {
+    setItemCatOn(!itemCat);
+    setContainerCatOn(false);
   }
   function termiNameToggle() {
     setTermiName(!termiName);
@@ -45,12 +57,14 @@ function FlexboxCheatSheet() {
             color="--color-button-yellow"
             onClick={terminology}
             isActivated={terminologyCat}
+            basis={2}
           />
           <ButtonActionable
             value="properties"
             color="--color-button-yellow"
             onClick={properties}
             isActivated={propertiesCat}
+            basis={2}
           />
         </div>
         {terminologyCat === false ? null : (
@@ -60,24 +74,28 @@ function FlexboxCheatSheet() {
               color="--color-button-white"
               onClick={termiNameToggle}
               isActivated={termiName}
+              basis={4}
             />
             <ButtonActionable
               value="axis"
               color="--color-button-redish"
               onClick={termiAxisToggle}
               isActivated={termiAxis}
+              basis={4}
             />
             <ButtonActionable
               value="size"
               color="--color-button-green"
               onClick={termiSizeToggle}
               isActivated={termiSize}
+              basis={4}
             />
             <ButtonActionable
-              value="start-end"
+              value={`start\nend`}
               color="--color-button-blue"
               onClick={termiStartEndToggle}
               isActivated={termiStartEnd}
+              basis={4}
             />
           </div>
         )}
@@ -92,7 +110,32 @@ function FlexboxCheatSheet() {
           />
         </div>
       )}
-      {propertiesCat === false ? null : <div>Hello props</div>}
+      {propertiesCat === false ? null : (
+        <div className="cheat-sheet-options-container">
+          <ButtonActionable
+            value={`flex\ncontainer`}
+            color="--color-button-yellow"
+            onClick={container}
+            isActivated={containerCat}
+            basis={2}
+          />
+          <ButtonActionable
+            value={`flex\nitem`}
+            color="--color-button-yellow"
+            onClick={item}
+            isActivated={itemCat}
+            basis={2}
+          />
+        </div>
+      )}
+      {containerCat === false ? null : (
+        <div className="flex-cont-main-cat">
+          <LabelledIcon svgFile={<IconFlow />} title="Display" />
+          <LabelledIcon svgFile={<IconFlow />} title="Flow" />
+          <LabelledIcon svgFile={<IconFlow />} title="Align" />
+          <LabelledIcon svgFile={<IconFlow />} title="gap" />
+        </div>
+      )}
       <Footer />
     </div>
   );

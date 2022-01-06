@@ -4,8 +4,15 @@
   background-color: var(--color-button-actionable-bg);
   border: 2px var(--color-button-actionable-bg) solid;
   font-family: "Bungee", cursive;
+  line-height: 1rem;
+  white-space: break-spaces;
 }
-
+.button-basis-2 {
+  flex-basis: 9rem;
+}
+.button-basis-4 {
+  flex-basis: 4.15 rem;
+}
 .button-actionable---color-button-yellow {
   color: var(--color-button-yellow);
 }
@@ -22,22 +29,19 @@
   color: var(--color-button-blue);
 }
 
-.button-actionable-terminology-active {
+.button-actionable---color-button-yellow-true {
   border: 2px var(--color-button-yellow) solid;
 }
-.button-actionable-properties-active {
-  border: 2px var(--color-button-yellow) solid;
-}
-.button-actionable-name-active {
+.button-actionable---color-button-white-true {
   border: 2px var(--color-button-white) solid;
 }
-.button-actionable-axis-active {
+.button-actionable---color-button-redish-true {
   border: 2px var(--color-button-redish) solid;
 }
-.button-actionable-size-active {
+.button-actionable---color-button-green-true {
   border: 2px var(--color-button-green) solid;
 }
-.button-actionable-start-end-active {
+.button-actionable---color-button-blue-true {
   border: 2px var(--color-button-blue) solid;
 }
 

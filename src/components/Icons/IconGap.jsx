@@ -12,7 +12,7 @@ function IconGap() {
         width={84.16}
         height={84.16}
         style={{
-          fill: "#1d1d1b",
+          fill: "white",
         }}
       />
       <rect
@@ -20,7 +20,7 @@ function IconGap() {
         width={84.16}
         height={84.16}
         style={{
-          fill: "#1d1d1b",
+          fill: "white",
         }}
       />
       <rect
@@ -28,7 +28,7 @@ function IconGap() {
         width={84.16}
         height={84.16}
         style={{
-          fill: "#1d1d1b",
+          fill: "white",
         }}
       />
       <rect
@@ -37,7 +37,7 @@ function IconGap() {
         width={84.16}
         height={84.16}
         style={{
-          fill: "#1d1d1b",
+          fill: "white",
         }}
       />
     </svg>

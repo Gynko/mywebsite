@@ -7,17 +7,26 @@ import "./FlexboxCheatSheet.styles.css";
 import Footer from "../../../../components/Footer/Footer";
 import LabelledIcon from "../../../../components/LabelledIcon/LabelledIcon";
 import IconFlow from "../../../../components/Icons/IconFlow";
+import IconGap from "../../../../components/Icons/IconGap";
+import FlexboxAlign from "./FlexboxAlign";
 
 function FlexboxCheatSheet() {
+  /* Buttons state - Menus */
   const [terminologyCat, setTerminologyCatOn] = useState(false);
   const [propertiesCat, setPropertiesCatOn] = useState(false);
   const [containerCat, setContainerCatOn] = useState(false);
   const [itemCat, setItemCatOn] = useState(false);
+  /* Buttons state - Flexbox terminology */
   const [termiName, setTermiName] = useState(false);
   const [termiAxis, setTermiAxis] = useState(false);
   const [termiSize, setTermiSize] = useState(false);
   const [termiStartEnd, setTermiStartEnd] = useState(false);
-
+  /* Buttons state - Flex Container - Align */
+  const [display, setDisplay] = useState(false);
+  const [flow, setFlow] = useState(false);
+  const [align, setAlign] = useState(false);
+  const [gap, setGap] = useState(false);
+  /* OnClick functions - Menus */
   function terminology() {
     setTerminologyCatOn(!terminologyCat);
     setPropertiesCatOn(false);
@@ -26,27 +35,60 @@ function FlexboxCheatSheet() {
     setPropertiesCatOn(!propertiesCat);
     setTerminologyCatOn(false);
   }
-  function container() {
+  function flexContainer() {
     setContainerCatOn(!containerCat);
     setItemCatOn(false);
   }
-  function item() {
+  function flexItem() {
     setItemCatOn(!itemCat);
     setContainerCatOn(false);
   }
-  function termiNameToggle() {
-    setTermiName(!termiName);
+  /* OnClick functions - Flex Container - Align */
+  function displayToggle() {
+    setDisplay(!display);
   }
-  function termiAxisToggle() {
-    setTermiAxis(!termiAxis);
+  function flowToggle() {
+    setFlow(!flow);
   }
-  function termiSizeToggle() {
-    setTermiSize(!termiSize);
+  function alignToggle() {
+    setAlign(!align);
   }
-  function termiStartEndToggle() {
-    setTermiStartEnd(!termiStartEnd);
+  function gapToggle() {
+    setGap(!gap);
   }
-
+  /* Toggle Menu Flex Container*/
+  function flexContainerMenu() {
+    if (containerCat === true && propertiesCat === true)
+      return (
+        <div className="flex-cont-main-cat">
+          <LabelledIcon
+            svgFile={<IconFlow />}
+            title="display"
+            activated={display}
+            onClick={displayToggle}
+          />
+          <LabelledIcon
+            svgFile={<IconFlow />}
+            title="flow"
+            activated={flow}
+            onClick={flowToggle}
+          />
+          <LabelledIcon
+            svgFile={<IconFlow />}
+            title="Align"
+            activated={align}
+            onClick={alignToggle}
+          />
+          <LabelledIcon
+            svgFile={<IconGap />}
+            title="gap"
+            activated={gap}
+            onClick={gapToggle}
+          />
+        </div>
+      );
+    else return null;
+  }
   return (
     <div className="cheat-sheet-container">
       <TitleHeader title="flexbox" />
@@ -63,6 +105,7 @@ function FlexboxCheatSheet() {
             value="properties"
             color="--color-button-yellow"
             onClick={properties}
+            w
             isActivated={propertiesCat}
             basis={2}
           />
@@ -72,28 +115,28 @@ function FlexboxCheatSheet() {
             <ButtonActionable
               value="name"
               color="--color-button-white"
-              onClick={termiNameToggle}
+              onClick={() => setTermiName(!termiName)}
               isActivated={termiName}
               basis={4}
             />
             <ButtonActionable
               value="axis"
               color="--color-button-redish"
-              onClick={termiAxisToggle}
+              onClick={() => setTermiAxis(!termiAxis)}
               isActivated={termiAxis}
               basis={4}
             />
             <ButtonActionable
               value="size"
               color="--color-button-green"
-              onClick={termiSizeToggle}
+              onClick={() => setTermiSize(!termiSize)}
               isActivated={termiSize}
               basis={4}
             />
             <ButtonActionable
               value={`start\nend`}
               color="--color-button-blue"
-              onClick={termiStartEndToggle}
+              onClick={() => setTermiStartEnd(!termiStartEnd)}
               isActivated={termiStartEnd}
               basis={4}
             />
@@ -115,27 +158,25 @@ function FlexboxCheatSheet() {
           <ButtonActionable
             value={`flex\ncontainer`}
             color="--color-button-yellow"
-            onClick={container}
+            onClick={flexContainer}
             isActivated={containerCat}
             basis={2}
           />
           <ButtonActionable
             value={`flex\nitem`}
             color="--color-button-yellow"
-            onClick={item}
+            onClick={flexItem}
             isActivated={itemCat}
             basis={2}
           />
         </div>
       )}
-      {containerCat === false ? null : (
-        <div className="flex-cont-main-cat">
-          <LabelledIcon svgFile={<IconFlow />} title="Display" />
-          <LabelledIcon svgFile={<IconFlow />} title="Flow" />
-          <LabelledIcon svgFile={<IconFlow />} title="Align" />
-          <LabelledIcon svgFile={<IconFlow />} title="gap" />
-        </div>
-      )}
+      {flexContainerMenu()}
+      <FlexboxAlign
+        align={align}
+        containerCat={containerCat}
+        propertiesCat={propertiesCat}
+      />
       <Footer />
     </div>
   );

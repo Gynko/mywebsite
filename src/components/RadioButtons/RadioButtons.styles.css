@@ -1,0 +1,39 @@
+.radio-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  width: 100%;
+}
+.radio-input {
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
+  width: 0;
+  height: 0;
+}
+
+.radio-label {
+  cursor: pointer;
+  background-color: var(--color-title-background-pink);
+  font-family: "Bungee", cursive;
+  white-space: pre;
+  margin: 0;
+  padding: 0.2rem 0;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1rem;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.4rem;
+}
+.radio-input:checked + .radio-label {
+  background-color: var(--color-button-yellow);
+  color: black;
+}

@@ -1,25 +1,25 @@
-.page-container {
+.page-container-column {
   background-color: var(--color-background);
 }
 
+.page-container-column-vertical-center {
+  align-items: center;
+}
+
 @media screen and (min-width: 20em) {
-  .page-container {
+  .page-container-column {
+    position: absolute;
     display: flex;
     flex-direction: column;
     width: 100vw;
-    position: absolute;
     min-height: var(--content-full-page);
     margin-top: var(--header-mobile-height);
   }
 }
 
-@media screen and (min-width: 47em) {
-  .page-container {
-    position: absolute;
-    margin-top: var(--header-desktop-height);
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
+@media screen and (min-width: 40em) {
+  .page-container-column {
     min-height: var(--content-desktop-full-page);
+    margin-top: var(--header-desktop-height);
   }
 }

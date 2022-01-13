@@ -1,14 +1,17 @@
 import { useState } from "react";
 
+import "./FlexboxCheatSheet.styles.css";
+
 import ButtonActionable from "../../../../components/ButtonActionable/ButtonActionable";
 import TerminologyFlexbox from "../../../../animations/TerminologyFlexbox/TerminologyFlexbox";
 import TitleHeader from "../../../../components/TitleHeader/TitleHeader";
-import "./FlexboxCheatSheet.styles.css";
 import Footer from "../../../../components/Footer/Footer";
 import LabelledIcon from "../../../../components/LabelledIcon/LabelledIcon";
 import IconFlow from "../../../../components/Icons/IconFlow";
 import IconGap from "../../../../components/Icons/IconGap";
-import FlexboxAlign from "./FlexboxAlign";
+import FlexboxAlign from "./Align/FlexboxAlign";
+import PageContainerColumn from "../../../../components/PageContainerColumn/PageContainerColumn";
+import ButtonActionableContainer from "../../../../components/ButtonActionableContainer/ButtonActionableContainer";
 
 function FlexboxCheatSheet() {
   /* Buttons state - Menus */
@@ -43,24 +46,36 @@ function FlexboxCheatSheet() {
     setItemCatOn(!itemCat);
     setContainerCatOn(false);
   }
-  /* OnClick functions - Flex Container - Align */
+  /* Container category onClick functions */
   function displayToggle() {
     setDisplay(!display);
+    setFlow(false);
+    setAlign(false);
+    setGap(false);
   }
   function flowToggle() {
     setFlow(!flow);
+    setDisplay(false);
+    setAlign(false);
+    setGap(false);
   }
   function alignToggle() {
     setAlign(!align);
+    setDisplay(false);
+    setFlow(false);
+    setGap(false);
   }
   function gapToggle() {
     setGap(!gap);
+    setDisplay(false);
+    setFlow(false);
+    setAlign(false);
   }
   /* Toggle Menu Flex Container*/
   function flexContainerMenu() {
     if (containerCat === true && propertiesCat === true)
       return (
-        <div className="flex-cont-main-cat">
+        <div className="flex-container-main-category">
           <LabelledIcon
             svgFile={<IconFlow />}
             title="display"
@@ -89,11 +104,13 @@ function FlexboxCheatSheet() {
       );
     else return null;
   }
+  /* TODO Toggle Menu Flex Container*/
+  function flexItemMenu() {}
   return (
-    <div className="cheat-sheet-container">
+    <PageContainerColumn verticalCenter="vertical-center">
       <TitleHeader title="flexbox" />
-      <div className="cheat-sheet-all-buttons">
-        <div className="cheat-sheet-options-container">
+      <div className="cheat-sheet-categories-buttons">
+        <ButtonActionableContainer>
           <ButtonActionable
             value="terminology"
             color="--color-button-yellow"
@@ -105,13 +122,12 @@ function FlexboxCheatSheet() {
             value="properties"
             color="--color-button-yellow"
             onClick={properties}
-            w
             isActivated={propertiesCat}
             basis={2}
           />
-        </div>
+        </ButtonActionableContainer>
         {terminologyCat === false ? null : (
-          <div className="cheat-sheet-sub-options-container">
+          <ButtonActionableContainer>
             <ButtonActionable
               value="name"
               color="--color-button-white"
@@ -140,7 +156,7 @@ function FlexboxCheatSheet() {
               isActivated={termiStartEnd}
               basis={4}
             />
-          </div>
+          </ButtonActionableContainer>
         )}
       </div>
       {terminologyCat === false ? null : (
@@ -178,7 +194,7 @@ function FlexboxCheatSheet() {
         propertiesCat={propertiesCat}
       />
       <Footer />
-    </div>
+    </PageContainerColumn>
   );
 }
 

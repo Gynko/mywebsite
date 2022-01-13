@@ -1,12 +1,12 @@
 import ButtonLink from "../../components/ButtonLink/ButtonLink";
 import Footer from "../../components/Footer/Footer";
-import PageContainer from "../../components/PageContainer/PageContainer";
+import PageContainerColumn from "../../components/PageContainerColumn/PageContainerColumn";
 
 import "./TopicsMap.styles.css";
 
 function TopicsMap() {
   return (
-    <PageContainer>
+    <PageContainerColumn justifyContentCenter="justify-content-center">
       <div className="topics-container">
         <ButtonLink
           name="flexbox"
@@ -38,7 +38,7 @@ function TopicsMap() {
         />
       </div>
       <Footer />
-    </PageContainer>
+    </PageContainerColumn>
   );
 }
 

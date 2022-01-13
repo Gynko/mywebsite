@@ -1,4 +1,4 @@
-import "./FlexboxGraph.styles.css";
+import "../FlexboxGraph.styles.css";
 import "./FlexboxGraphAlignItems.styles.css";
 
 function FlexboxGraphAlignItems({ alignItemsGraph }) {

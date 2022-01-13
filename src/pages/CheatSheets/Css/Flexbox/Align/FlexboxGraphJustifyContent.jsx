@@ -1,5 +1,5 @@
 import "./FlexboxGraphJustifyContent.styles.css";
-import "./FlexboxGraph.styles.css";
+import "../FlexboxGraph.styles.css";
 
 function FlexboxGraphJustifyContent({ justifyContentGraph }) {
   return (

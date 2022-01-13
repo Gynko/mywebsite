@@ -1,26 +1,18 @@
 /* General Styles */
-.cheat-sheet-container {
-  position: fixed;
-  top: var(--header-mobile-height);
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100vw;
-}
-.cheat-sheet-all-buttons {
+.cheat-sheet-categories-buttons {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 20rem;
+  margin-top: var(--button-actionable-mobile-margin);
 }
 .cheat-sheet-svg {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.flex-cont-main-cat {
+.flex-container-main-category {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
@@ -31,25 +23,9 @@
 The tiniest media at which the design works. 320 x 486
 */
 @media screen and (min-width: 20em) and (max-height: 30.4375em) {
-  .cheat-sheet-container {
-    min-height: var(--content-full-page);
-  }
-  .cheat-sheet-all-buttons {
-    width: 20rem;
-    margin: var(--button-actionable-mobile-margin) 0;
-  }
-  .cheat-sheet-options-container {
-    display: flex;
-    width: 20rem;
-  }
-  .cheat-sheet-sub-options-container {
-    display: flex;
-    width: 20rem;
-    margin-top: var(--button-actionable-mobile-margin);
-  }
   .cheat-sheet-svg {
     min-height: calc(
-      var(--content-full-page) - var(--button-actionable-mobile-margin) * 3 -
+      var(--content-full-page) - var(--button-actionable-mobile-margin) * 5 -
         var(--title-mobile-height) - var(--button-actionable-mobile-height) * 2
     );
   }
@@ -59,28 +35,9 @@ When the width is greater than 320 and the height is 585 -> under 586 (which is 
 Calculate the width and add it
 */
 @media screen and (min-width: 20em) and (min-height: 30.5em) {
-  .cheat-sheet-container {
-    min-height: var(--content-full-page);
-  }
-  .cheat-sheet-all-buttons {
-    width: 20rem;
-    margin: var(--button-actionable-mobile-margin) 0;
-  }
-  .cheat-sheet-options-container {
-    display: flex;
-    justify-content: space-evenly;
-    width: 20rem;
-  }
-  .cheat-sheet-sub-options-container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    margin-top: var(--button-actionable-mobile-margin);
-    justify-content: space-evenly;
-  }
   .cheat-sheet-svg {
     height: calc(
-      var(--content-full-page) - var(--button-actionable-mobile-margin) * 3 -
+      var(--content-full-page) - var(--button-actionable-mobile-margin) * 5 -
         var(--title-mobile-height) - var(--button-actionable-mobile-height) * 2
     );
   }
@@ -89,8 +46,22 @@ Calculate the width and add it
 Adding the Footer at Height 586
 */
 @media screen and (min-width: 20em) and (min-height: 36.625em) {
-  .cheat-sheet-container {
-    min-height: calc(var(--content-full-page) - var(--footer-desktop-height));
+  .cheat-sheet-categories-buttons {
+    margin: var(--button-actionable-mobile-margin) 0;
+  }
+  .cheat-sheet-svg {
+    height: calc(
+      var(--content-full-page) - var(--button-actionable-mobile-margin) * 5 -
+        var(--title-mobile-height) - var(--button-actionable-mobile-height) * 2 -
+        var(--footer-desktop-height)
+    );
+    max-width: 35rem;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .cheat-sheet-categories-buttons {
+    margin: var(--button-actionable-mobile-margin) 0;
   }
   .cheat-sheet-svg {
     height: calc(

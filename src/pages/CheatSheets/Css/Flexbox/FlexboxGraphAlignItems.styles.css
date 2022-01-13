@@ -1,0 +1,39 @@
+.flexbox-align-items-container {
+  height: 4.5rem;
+}
+
+.flexbox-align-items-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+}
+
+.flexbox-align-items-items-1 {
+  min-height: 1.5rem;
+}
+
+.flexbox-align-items-items-2 {
+  min-height: 3.5rem;
+  font-size: 1.6rem;
+}
+
+.flexbox-align-items-items-3 {
+  min-height: 3rem;
+}
+
+.align-items-flex-start {
+  align-items: flex-start;
+}
+.align-items-center {
+  align-items: center;
+}
+.align-items-flex-end {
+  align-items: flex-end;
+}
+.align-items-stretch {
+  align-items: stretch;
+}
+.align-items-baseline {
+  align-items: baseline;
+}

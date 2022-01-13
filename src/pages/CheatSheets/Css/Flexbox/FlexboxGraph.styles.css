@@ -1,0 +1,19 @@
+.flexbox-graphics-container {
+  margin: 0.4rem 0 0 0;
+  background-color: #7b728f;
+  width: 20rem;
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+}
+
+.flexbox-graphics-items {
+  background-color: #f4ae44;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bungee", cursive;
+  text-align: center;
+  border: 1px black solid;
+}

@@ -1,7 +1,10 @@
 import ButtonActionable from "../../../../components/ButtonActionable/ButtonActionable";
 import "./FlexboxAlign.styles.css";
 import { useState } from "react";
-import RadioButtons from "../../../../components/RadioButtons/RadioButtons";
+import CssPropertiesMenu from "../../../../components/CssPropertiesMenu/CssPropertiesMenu";
+import FlexboxGraphJustifyContent from "./FlexboxGraphJustifyContent";
+import FlexboxGraphAlignItems from "./FlexboxGraphAlignItems";
+import FlexboxGraphAlignContent from "./FlexboxGraphAlignContent";
 
 function FlexboxAlign({ containerCat, propertiesCat, align }) {
   const [justifyContentCat, setJustifyContentCat] = useState(false);
@@ -10,13 +13,16 @@ function FlexboxAlign({ containerCat, propertiesCat, align }) {
   const [alignContentCat, setAlignContentCat] = useState(false);
   const [justifyContentGraph, setJustifyContentGraph] = useState("flex-start");
   const [alignItemsGraph, setAlignItemsGraph] = useState("flex-start");
+  const [alignContentGraph, setAlignContentGraph] = useState("flex-start");
 
   function onJustContent(event) {
     setJustifyContentGraph(event.target.value);
   }
-
   function onAlignItems(event) {
     setAlignItemsGraph(event.target.value);
+  }
+  function onAlignContent(event) {
+    setAlignContentGraph(event.target.value);
   }
 
   function onJustifyContentCat() {
@@ -65,128 +71,62 @@ function FlexboxAlign({ containerCat, propertiesCat, align }) {
           {justifyContentCat === false ? null : (
             <>
               <div className="flexbox-options">
-                <RadioButtons
+                <CssPropertiesMenu
                   name="justify-content"
-                  value="flex-start"
-                  label={`flex\n-start`}
-                  id="justify-flex-start"
+                  listObj={[
+                    { property: "flex-start", label: `flex\n-start` },
+                    { property: "center", label: `center` },
+                    { property: "flex-end", label: `flex\n-end` },
+                    { property: "space-between", label: `space\n-between` },
+                    { property: "space-around", label: `space\n-around` },
+                    { property: "space-evenly", label: `space\n-evenly` },
+                  ]}
                   onChange={onJustContent}
-                  checked={justifyContentGraph === "flex-start"}
-                />
-                <RadioButtons
-                  name="justify-content"
-                  value="center"
-                  label={`center`}
-                  id="justify-center"
-                  onChange={onJustContent}
-                  checked={justifyContentGraph === "center"}
-                />
-                <RadioButtons
-                  name="justify-content"
-                  value="flex-end"
-                  label={`flex\n-end`}
-                  id="justify-flex-end"
-                  onChange={onJustContent}
-                  checked={justifyContentGraph === "flex-end"}
-                />
-                <RadioButtons
-                  name="justify-content"
-                  value="space-between"
-                  label={`space\n-between`}
-                  id="justify-space-between"
-                  onChange={onJustContent}
-                  checked={justifyContentGraph === "space-between"}
-                />
-                <RadioButtons
-                  name="justify-content"
-                  value="space-around"
-                  label={`space\n-around`}
-                  id="justify-space-around"
-                  onChange={onJustContent}
-                  checked={justifyContentGraph === "space-around"}
-                />
-
-                <RadioButtons
-                  name="justify-content"
-                  value="space-evenly"
-                  label={`space\n-evenly`}
-                  id="justify-space-evenly"
-                  onChange={onJustContent}
-                  checked={alignItemsGraph === "space-evenly"}
+                  graph={justifyContentGraph}
                 />
               </div>
-              <div
-                className={`flexbox-graphics-container flexbox-justify-content-container justify-content-${justifyContentGraph}`}
-              >
-                <div className="flexbox-graphics-items flexbox-justify-content-items">
-                  item 1
-                </div>
-                <div className="flexbox-graphics-items flexbox-justify-content-items">
-                  item 2
-                </div>
-                <div className="flexbox-graphics-items flexbox-justify-content-items">
-                  item 3
-                </div>
-              </div>
+              <FlexboxGraphJustifyContent
+                justifyContentGraph={justifyContentGraph}
+              />
             </>
           )}
           {alignItemsCat === false ? null : (
             <>
               <div className="flexbox-options">
-                <RadioButtons
+                <CssPropertiesMenu
                   name="align-items"
-                  value="flex-start"
-                  label={`flex\n-start`}
-                  id="align-items-flex-start"
+                  listObj={[
+                    { property: "flex-start", label: `flex\n-start` },
+                    { property: "center", label: `center` },
+                    { property: "flex-end", label: `flex\n-end` },
+                    { property: "stretch", label: `stretch` },
+                    { property: "baseline", label: `baseline` },
+                  ]}
                   onChange={onAlignItems}
-                  checked={alignItemsGraph === "flex-start"}
-                />
-                <RadioButtons
-                  name="align-items"
-                  value="center"
-                  label={`center`}
-                  id="align-items-center"
-                  onChange={onAlignItems}
-                  checked={alignItemsGraph === "center"}
-                />
-                <RadioButtons
-                  name="align-items"
-                  value="flex-end"
-                  label={`flex\n-end`}
-                  id="align-items-flex-end"
-                  onChange={onAlignItems}
-                  checked={alignItemsGraph === "flex-end"}
-                />
-                <RadioButtons
-                  name="align-items"
-                  value="stretch"
-                  label={`stretch`}
-                  id="align-items-stretch"
-                  onChange={onAlignItems}
-                  checked={alignItemsGraph === "stretch"}
-                />
-                <RadioButtons
-                  name="align-items"
-                  value="baseline"
-                  label={`baseline`}
-                  id="align-items-baseline"
-                  onChange={onAlignItems}
-                  checked={alignItemsGraph === "baseline"}
+                  graph={alignItemsGraph}
                 />
               </div>
-              <div
-                className={`flexbox-graphics-container flexbox-align-items-container align-items-${alignItemsGraph}`}
-              >
-                <div className="flexbox-graphics-items flexbox-align-items-items flexbox-align-items-items-1">
-                  item 1
-                </div>
-                <div className="flexbox-graphics-items flexbox-align-items-items flexbox-align-items-items-2">
-                  item 2
-                </div>
-                <div className="flexbox-graphics-items flexbox-align-items-items flexbox-align-items-items-3">
-                  item 3
-                </div>
+              <FlexboxGraphAlignItems alignItemsGraph={alignItemsGraph} />
+            </>
+          )}
+          {alignContentCat === false ? null : (
+            <>
+              <div className="flexbox-options">
+                <CssPropertiesMenu
+                  name="align-content"
+                  listObj={[
+                    { property: "flex-start", label: `flex\n-start` },
+                    { property: "center", label: `center` },
+                    { property: "flex-end", label: `flex\n-end` },
+                    { property: "stretch", label: `stretch` },
+                    { property: "space-around", label: `space\n-around` },
+                    { property: "space-between", label: `space\n-between` },
+                  ]}
+                  onChange={onAlignContent}
+                  graph={alignContentGraph}
+                />
               </div>
+              <FlexboxGraphAlignContent alignContentGraph={alignContentGraph} />
             </>
           )}
         </>

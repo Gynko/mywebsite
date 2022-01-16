@@ -1,6 +1,6 @@
-.button-actionable-container {
+.labelled-icon-container {
   display: flex;
   justify-content: space-between;
   width: var(--container-mobile-width);
-  height: 3rem;
+  height: 4.3rem;
 }

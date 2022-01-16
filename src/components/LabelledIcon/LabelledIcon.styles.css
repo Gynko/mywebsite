@@ -1,25 +1,19 @@
-.labelled-icon-container-true {
+.labelled-icon-container-general {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: flex-end;
-  background-color: #f4ae44;
   border-radius: 5px;
-  flex-basis: 20%;
   padding: 0 0.2rem;
   border: none;
 }
 
+.labelled-icon-container-true {
+  background-color: #f4ae44;
+}
+
 .labelled-icon-container-false {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: flex-end;
   background-color: var(--color-title-background-pink);
-  border-radius: 5px;
-  flex-basis: 20%;
-  padding: 0 0.2rem;
-  border: none;
 }
 .labelled-icon-svg {
   padding: 0.5rem 1rem;

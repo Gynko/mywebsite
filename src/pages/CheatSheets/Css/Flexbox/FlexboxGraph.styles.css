@@ -1,7 +1,6 @@
 .flexbox-graphics-container {
-  margin: 0.4rem 0 0 0;
   background-color: #7b728f;
-  width: 20rem;
+  width: 19.5rem;
   display: flex;
   flex-direction: row;
   border-radius: 5px;

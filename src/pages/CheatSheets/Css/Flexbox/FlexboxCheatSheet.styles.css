@@ -1,24 +1,9 @@
-/* General Styles */
-.cheat-sheet-categories-buttons {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 20rem;
-  margin-top: var(--button-actionable-mobile-margin);
-}
 .cheat-sheet-svg {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.flex-container-main-category {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-  width: 20rem;
-  margin-top: 0.4rem;
-}
+
 /* 
 The tiniest media at which the design works. 320 x 486
 */
@@ -46,9 +31,6 @@ Calculate the width and add it
 Adding the Footer at Height 586
 */
 @media screen and (min-width: 20em) and (min-height: 36.625em) {
-  .cheat-sheet-categories-buttons {
-    margin: var(--button-actionable-mobile-margin) 0;
-  }
   .cheat-sheet-svg {
     height: calc(
       var(--content-full-page) - var(--button-actionable-mobile-margin) * 5 -
@@ -60,9 +42,6 @@ Adding the Footer at Height 586
 }
 
 @media screen and (min-width: 40em) {
-  .cheat-sheet-categories-buttons {
-    margin: var(--button-actionable-mobile-margin) 0;
-  }
   .cheat-sheet-svg {
     height: calc(
       var(--content-full-page) - var(--button-actionable-mobile-margin) * 3 -

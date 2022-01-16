@@ -20,6 +20,7 @@
   --header-mobile-height: 4.1rem;
   --header-desktop-height: 4.5rem;
 
+  /* Content page calculation */
   --content-full-page: calc(var(--vh, 1vh) * 100 - var(--header-mobile-height));
   --content-desktop-full-page: calc(
     var(--vh, 1vh) * 100 - var(--header-desktop-height) -
@@ -34,9 +35,18 @@
   --title-mobile-height: 2rem;
   --title-desktop-height: 2.5rem;
 
+  /* Containers */
+  --container-mobile-width: 20rem;
   /* Buttons */
   --button-actionable-mobile-height: 3rem;
   --button-actionable-mobile-margin: 0.3rem;
   --button-actionable-desktop-height: 3rem;
   --button-actionable-desktop-margin: 0.8rem;
+
+  /* Margins */
+  --margin-top-small: 0.3rem;
+  --margin-top-medium: 0.6rem;
+  --margin-top-big: 0.9rem;
+
+  --margin-side-small: 0.3rem;
 }

@@ -1,9 +1,18 @@
 import RadioButtons from "../RadioButtons/RadioButtons";
 import "./CssPropertiesMenu.styles.css";
 
-function CssPropertiesMenu({ name, listObj, onChange, graph, ...otherProps }) {
+function CssPropertiesMenu({
+  name,
+  listObj,
+  onChange,
+  graph,
+  columns,
+  ...otherProps
+}) {
   return (
-    <div className="css-properties-menu-container">
+    <div
+      className={`css-properties-menu-container css-properties-columns-${columns}`}
+    >
       {listObj.map((element) => (
         <RadioButtons
           key={`${element}-${element.name}-${element.label}`}

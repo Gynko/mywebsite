@@ -1,13 +1,13 @@
 import ButtonActionable from "../../../../../components/ButtonActionable/ButtonActionable";
-import "./FlexboxAlign.styles.css";
 import { useState } from "react";
 import CssPropertiesMenu from "../../../../../components/CssPropertiesMenu/CssPropertiesMenu";
 import FlexboxGraphJustifyContent from "./FlexboxGraphJustifyContent";
 import FlexboxGraphAlignItems from "./FlexboxGraphAlignItems";
 import FlexboxGraphAlignContent from "./FlexboxGraphAlignContent";
 import ButtonActionableContainer from "../../../../../components/ButtonActionableContainer/ButtonActionableContainer";
+import MarginTop from "../../../../../components/MarginTop/MarginTop";
 
-function FlexboxAlign({ containerCat, propertiesCat, align }) {
+function FlexboxAlign({ containerCat, propertiesCat, visible }) {
   /* Setting state for categories-buttons */
   const [justifyContentCat, setJustifyContentCat] = useState(false);
   const [alignItemsCat, setAlignItemsCat] = useState(false);
@@ -43,36 +43,37 @@ function FlexboxAlign({ containerCat, propertiesCat, align }) {
   }
   /* Setting the conditional rendering depending on button selection state*/
   function setAlignCategory() {
-    if (containerCat === true && align === true && propertiesCat === true)
+    if (containerCat === true && visible === true && propertiesCat === true)
       return (
         <>
-          <div className="align-sub-categorie-container">
-            <ButtonActionableContainer>
-              <ButtonActionable
-                value={`justify-\ncontent`}
-                color="--color-button-yellow"
-                onClick={onJustifyContentCat}
-                isActivated={justifyContentCat}
-                basis={3}
-              />
-              <ButtonActionable
-                value={`align-\nitems`}
-                color="--color-button-yellow"
-                onClick={onAlignItemsCat}
-                isActivated={alignItemsCat}
-                basis={3}
-              />
-              <ButtonActionable
-                value={`align-\ncontent`}
-                color="--color-button-yellow"
-                onClick={onAlignContentCat}
-                isActivated={alignContentCat}
-                basis={3}
-              />
-            </ButtonActionableContainer>
-          </div>
+          <MarginTop size="small" />
+          <ButtonActionableContainer>
+            <ButtonActionable
+              value={`justify-\ncontent`}
+              color="--color-button-yellow"
+              onClick={onJustifyContentCat}
+              isActivated={justifyContentCat}
+              buttonsNumber={3}
+            />
+            <ButtonActionable
+              value={`align-\nitems`}
+              color="--color-button-yellow"
+              onClick={onAlignItemsCat}
+              isActivated={alignItemsCat}
+              buttonsNumber={3}
+            />
+            <ButtonActionable
+              value={`align-\ncontent`}
+              color="--color-button-yellow"
+              onClick={onAlignContentCat}
+              isActivated={alignContentCat}
+              buttonsNumber={3}
+            />
+          </ButtonActionableContainer>
+
           {justifyContentCat === false ? null : (
             <>
+              <MarginTop size="small" />
               <CssPropertiesMenu
                 name="justify-content"
                 listObj={[
@@ -85,14 +86,18 @@ function FlexboxAlign({ containerCat, propertiesCat, align }) {
                 ]}
                 onChange={onJustContent}
                 graph={justifyContentGraph}
+                columns={3}
               />
+              <MarginTop size="small" />
               <FlexboxGraphJustifyContent
                 justifyContentGraph={justifyContentGraph}
               />
             </>
           )}
+
           {alignItemsCat === false ? null : (
             <>
+              <MarginTop size="small" />
               <CssPropertiesMenu
                 name="align-items"
                 listObj={[
@@ -104,13 +109,15 @@ function FlexboxAlign({ containerCat, propertiesCat, align }) {
                 ]}
                 onChange={onAlignItems}
                 graph={alignItemsGraph}
+                columns={3}
               />
-
+              <MarginTop size="small" />
               <FlexboxGraphAlignItems alignItemsGraph={alignItemsGraph} />
             </>
           )}
           {alignContentCat === false ? null : (
             <>
+              <MarginTop size="small" />
               <CssPropertiesMenu
                 name="align-content"
                 listObj={[
@@ -123,7 +130,9 @@ function FlexboxAlign({ containerCat, propertiesCat, align }) {
                 ]}
                 onChange={onAlignContent}
                 graph={alignContentGraph}
+                columns={3}
               />
+              <MarginTop size="small" />
               <FlexboxGraphAlignContent alignContentGraph={alignContentGraph} />
             </>
           )}

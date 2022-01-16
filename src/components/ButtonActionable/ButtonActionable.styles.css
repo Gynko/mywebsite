@@ -6,15 +6,17 @@
   font-family: "Bungee", cursive;
   line-height: 1rem;
   white-space: break-spaces;
+  font-size: 1rem;
+  align-content: center;
 }
-.button-basis-2 {
-  flex-basis: 9rem;
+.button-number-2 {
+  width: calc(var(--container-mobile-width) / 2 - 0.2rem);
 }
-.button-basis-3 {
-  flex-basis: 30%;
+.button-number-3 {
+  width: calc(var(--container-mobile-width) / 3 - 0.3rem);
 }
-.button-basis-4 {
-  flex-basis: 4.15 rem;
+.button-number-4 {
+  width: calc(var(--container-mobile-width) / 4 - 0.4rem);
 }
 .button-actionable---color-button-yellow {
   color: var(--color-button-yellow);
@@ -46,11 +48,4 @@
 }
 .button-actionable---color-button-blue-true {
   border: 2px var(--color-button-blue) solid;
-}
-
-@media screen and (min-width: 20em) {
-  .button-actionable {
-    font-size: 1rem;
-    height: var(--button-actionable-mobile-height);
-  }
 }

@@ -5,13 +5,13 @@ function ButtonActionable({
   onClick,
   value,
   isActivated,
-  basis,
+  buttonsNumber,
   ...otherProps
 }) {
   return isActivated === false ? (
     <button
       onClick={onClick}
-      className={`button-actionable button-actionable-${color} button-basis-${basis}`}
+      className={`button-actionable button-actionable-${color} button-number-${buttonsNumber}`}
       value={value}
       {...otherProps}
     >
@@ -20,7 +20,7 @@ function ButtonActionable({
   ) : (
     <button
       onClick={onClick}
-      className={`button-actionable button-actionable-${color} button-actionable-${color}-${isActivated} button-basis-${basis}`}
+      className={`button-actionable button-actionable-${color} button-actionable-${color}-${isActivated} button-number-${buttonsNumber}`}
       value={value}
       {...otherProps}
     >

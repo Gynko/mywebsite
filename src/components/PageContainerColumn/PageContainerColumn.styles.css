@@ -1,17 +1,19 @@
 .page-container-column {
+  display: flex;
+  flex-direction: column;
   background-color: var(--color-background);
+  width: 100vw;
 }
 
 .page-container-column-vertical-center {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
 @media screen and (min-width: 20em) {
   .page-container-column {
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
     min-height: var(--content-full-page);
     margin-top: var(--header-mobile-height);
   }

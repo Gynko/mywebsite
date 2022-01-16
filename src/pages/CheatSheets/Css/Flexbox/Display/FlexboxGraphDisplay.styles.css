@@ -1,0 +1,29 @@
+.display-flex-div {
+  background-color: green;
+  border: none;
+}
+.flexbox-container-display {
+  justify-content: center;
+}
+.column1 {
+  background-color: pink;
+}
+.column2 {
+  background-color: yellow;
+}
+
+.display-flex-div-flex {
+  display: flex;
+  border: none;
+  flex-direction: column;
+}
+
+.display-flex-div-inline-flex {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.display-flex-text {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(0, 0, 0);
+}

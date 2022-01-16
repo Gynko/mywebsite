@@ -12,7 +12,6 @@ import IconGap from "../../../../components/Icons/IconGap";
 import FlexboxAlign from "./Align/FlexboxAlign";
 import PageContainerColumn from "../../../../components/PageContainerColumn/PageContainerColumn";
 import ButtonActionableContainer from "../../../../components/ButtonActionableContainer/ButtonActionableContainer";
-import MarginTop from "../../../../components/MarginTop/MarginTop";
 import FlexboxDisplay from "./Display/FlexboxDisplay";
 import LabelledIconContainer from "../../../../components/LabelledIconContainer/LabelledIconContainer";
 
@@ -79,8 +78,7 @@ function FlexboxCheatSheet() {
     if (containerCat === true && propertiesCat === true)
       return (
         <>
-          <MarginTop size="small" />
-          <LabelledIconContainer>
+          <LabelledIconContainer marginTop="small">
             <LabelledIcon
               svgFile={<IconFlow />}
               title="display"
@@ -100,7 +98,7 @@ function FlexboxCheatSheet() {
               onClick={alignToggle}
             />
             <LabelledIcon
-              svgFile={<IconGap />}
+              svgFile={<IconGap activated={gap} />}
               title="gap"
               activated={gap}
               onClick={gapToggle}
@@ -113,8 +111,7 @@ function FlexboxCheatSheet() {
   return (
     <PageContainerColumn verticalCenter="vertical-center">
       <TitleHeader title="flexbox" />
-      <MarginTop size="small" />
-      <ButtonActionableContainer>
+      <ButtonActionableContainer marginTop="small">
         <ButtonActionable
           value="terminology"
           color="--color-button-yellow"
@@ -133,8 +130,7 @@ function FlexboxCheatSheet() {
 
       {terminologyCat === false ? null : (
         <>
-          <MarginTop size="small" />
-          <ButtonActionableContainer>
+          <ButtonActionableContainer marginTop="small">
             <ButtonActionable
               value="name"
               color="--color-button-white"
@@ -169,7 +165,6 @@ function FlexboxCheatSheet() {
 
       {terminologyCat === false ? null : (
         <>
-          <MarginTop size="small" />
           <div className="cheat-sheet-svg">
             <TerminologyFlexbox
               name={termiName}
@@ -182,8 +177,7 @@ function FlexboxCheatSheet() {
       )}
       {propertiesCat === false ? null : (
         <>
-          <MarginTop size="small" />
-          <ButtonActionableContainer>
+          <ButtonActionableContainer marginTop="small">
             <ButtonActionable
               value={`flex\ncontainer`}
               color="--color-button-yellow"

@@ -7,7 +7,10 @@
   line-height: 1rem;
   white-space: break-spaces;
   font-size: 1rem;
+  display: flex;
   align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 .button-number-2 {
   width: calc(var(--container-mobile-width) / 2 - 0.2rem);
@@ -16,7 +19,7 @@
   width: calc(var(--container-mobile-width) / 3 - 0.3rem);
 }
 .button-number-4 {
-  width: calc(var(--container-mobile-width) / 4 - 0.4rem);
+  width: calc(var(--container-mobile-width) / 4 - 0.3rem);
 }
 .button-actionable---color-button-yellow {
   color: var(--color-button-yellow);

@@ -5,7 +5,6 @@ import FlexboxGraphJustifyContent from "./FlexboxGraphJustifyContent";
 import FlexboxGraphAlignItems from "./FlexboxGraphAlignItems";
 import FlexboxGraphAlignContent from "./FlexboxGraphAlignContent";
 import ButtonActionableContainer from "../../../../../components/ButtonActionableContainer/ButtonActionableContainer";
-import MarginTop from "../../../../../components/MarginTop/MarginTop";
 
 function FlexboxAlign({ containerCat, propertiesCat, visible }) {
   /* Setting state for categories-buttons */
@@ -46,8 +45,7 @@ function FlexboxAlign({ containerCat, propertiesCat, visible }) {
     if (containerCat === true && visible === true && propertiesCat === true)
       return (
         <>
-          <MarginTop size="small" />
-          <ButtonActionableContainer>
+          <ButtonActionableContainer marginTop="small">
             <ButtonActionable
               value={`justify-\ncontent`}
               color="--color-button-yellow"
@@ -73,7 +71,6 @@ function FlexboxAlign({ containerCat, propertiesCat, visible }) {
 
           {justifyContentCat === false ? null : (
             <>
-              <MarginTop size="small" />
               <CssPropertiesMenu
                 name="justify-content"
                 listObj={[
@@ -87,8 +84,8 @@ function FlexboxAlign({ containerCat, propertiesCat, visible }) {
                 onChange={onJustContent}
                 graph={justifyContentGraph}
                 columns={3}
+                marginTop="small"
               />
-              <MarginTop size="small" />
               <FlexboxGraphJustifyContent
                 justifyContentGraph={justifyContentGraph}
               />
@@ -97,7 +94,6 @@ function FlexboxAlign({ containerCat, propertiesCat, visible }) {
 
           {alignItemsCat === false ? null : (
             <>
-              <MarginTop size="small" />
               <CssPropertiesMenu
                 name="align-items"
                 listObj={[
@@ -110,14 +106,14 @@ function FlexboxAlign({ containerCat, propertiesCat, visible }) {
                 onChange={onAlignItems}
                 graph={alignItemsGraph}
                 columns={3}
+                marginTop="small"
               />
-              <MarginTop size="small" />
+
               <FlexboxGraphAlignItems alignItemsGraph={alignItemsGraph} />
             </>
           )}
           {alignContentCat === false ? null : (
             <>
-              <MarginTop size="small" />
               <CssPropertiesMenu
                 name="align-content"
                 listObj={[
@@ -131,8 +127,8 @@ function FlexboxAlign({ containerCat, propertiesCat, visible }) {
                 onChange={onAlignContent}
                 graph={alignContentGraph}
                 columns={3}
+                marginTop="small"
               />
-              <MarginTop size="small" />
               <FlexboxGraphAlignContent alignContentGraph={alignContentGraph} />
             </>
           )}

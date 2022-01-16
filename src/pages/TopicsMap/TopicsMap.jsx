@@ -15,27 +15,6 @@ function TopicsMap() {
           link="true"
           to="/cheatsheets/flexbox"
         />
-        <ButtonLink
-          name="jsclosures"
-          value="jsclosures"
-          label="Javascript Closures"
-          link="true"
-          to="/cheatsheets/flexbox"
-        />
-        <ButtonLink
-          name="reacthooks"
-          value="jsclosures"
-          label="React Hooks"
-          link="true"
-          to="/cheatsheets/flexbox"
-        />
-        <ButtonLink
-          name="cssproperties"
-          value="cssproperties"
-          label="Css Properties"
-          link="true"
-          to="/cheatsheets/cssproperties"
-        />
       </div>
       <Footer />
     </PageContainerColumn>

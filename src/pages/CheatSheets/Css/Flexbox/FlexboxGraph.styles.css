@@ -1,6 +1,7 @@
 .flexbox-graphics-container {
+  margin-top: var(--margin-top-small);
   background-color: #7b728f;
-  width: 19.5rem;
+  width: var(--container-mobile-width);
   display: flex;
   flex-direction: row;
   border-radius: 5px;

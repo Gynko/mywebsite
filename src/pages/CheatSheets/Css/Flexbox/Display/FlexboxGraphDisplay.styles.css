@@ -1,20 +1,19 @@
 .display-flex-div {
-  background-color: green;
-  border: none;
+  border: 3px #3d3640 solid;
 }
 .flexbox-container-display {
   justify-content: center;
 }
 .column1 {
-  background-color: pink;
+  background-color: #c3ade9;
 }
 .column2 {
-  background-color: yellow;
+  background-color: #a4c4dd;
 }
 
 .display-flex-div-flex {
   display: flex;
-  border: none;
+  border: 3px #3d3640 solid;
   flex-direction: column;
 }
 

@@ -1,5 +1,4 @@
 import { useState } from "react/cjs/react.development";
-import MarginTop from "../../../../../components/MarginTop/MarginTop";
 import CssPropertiesMenu from "../../../../../components/CssPropertiesMenu/CssPropertiesMenu";
 import FlexboxGraphDisplay from "./FlexboxGraphDisplay";
 
@@ -13,7 +12,6 @@ function FlexboxDisplay({ containerCat, propertiesCat, visible }) {
     if (containerCat === true && visible === true && propertiesCat === true) {
       return (
         <>
-          <MarginTop size="small" />
           <CssPropertiesMenu
             name="align-content"
             listObj={[
@@ -23,8 +21,8 @@ function FlexboxDisplay({ containerCat, propertiesCat, visible }) {
             onChange={onFlex}
             graph={displayFlexGraph}
             columns={2}
+            marginTop="small"
           />
-          <MarginTop size="small" />
           <FlexboxGraphDisplay property={displayFlexGraph} />
         </>
       );

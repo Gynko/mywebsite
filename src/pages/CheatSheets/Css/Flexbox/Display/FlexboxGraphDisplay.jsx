@@ -10,9 +10,9 @@ function FlexboxGraphDisplay({ property }) {
     <div className="flexbox-graphics-container flexbox-container-display">
       {" "}
       <p className="display-flex-text">
-        With its property set to "{property}"{" "}
+        With property "{property}" this div{" "}
         <div className={`display-flex-div display-flex-div-${property}`}>
-          this container with 2 flex-items <div className="column1">item1</div>
+          <div className="column1">item1</div>
           <div className="column2">item2</div>
         </div>{" "}
         behaves as {textRender()}

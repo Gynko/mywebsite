@@ -11,6 +11,9 @@
 .css-properties-columns-3 {
   grid-template-columns: repeat(3, minmax(31%, auto));
 }
+.css-properties-menu-small {
+  margin-top: var(--margin-top-small);
+}
 
 @media screen and (min-width: 20em) {
   .css-properties-menu-container {
@@ -18,7 +21,6 @@
     width: var(--container-mobile-width);
     column-gap: var(--margin-top-small);
     row-gap: var(--margin-top-small);
-    margin: 0;
   }
 }
 

@@ -7,11 +7,12 @@ function CssPropertiesMenu({
   onChange,
   graph,
   columns,
+  marginTop,
   ...otherProps
 }) {
   return (
     <div
-      className={`css-properties-menu-container css-properties-columns-${columns}`}
+      className={`css-properties-menu-container css-properties-columns-${columns} css-properties-menu-${marginTop}`}
     >
       {listObj.map((element) => (
         <RadioButtons

@@ -4,3 +4,7 @@
   width: var(--container-mobile-width);
   height: 4.3rem;
 }
+
+.labelled-icon-container-small {
+  margin-top: var(--margin-top-small);
+}

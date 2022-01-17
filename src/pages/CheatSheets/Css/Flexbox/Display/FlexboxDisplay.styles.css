@@ -1,0 +1,7 @@
+@media screen and (min-width: 20em) {
+  .flexbox-graph-display-positioning {
+    width: var(--container-mobile-width);
+    display: flex;
+    flex-direction: column;
+  }
+}

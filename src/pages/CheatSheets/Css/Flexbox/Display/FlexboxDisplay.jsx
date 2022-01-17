@@ -1,6 +1,7 @@
 import { useState } from "react/cjs/react.development";
 import CssPropertiesMenu from "../../../../../components/CssPropertiesMenu/CssPropertiesMenu";
 import FlexboxGraphDisplay from "./FlexboxGraphDisplay";
+import "./FlexboxDisplay.styles.css";
 
 function FlexboxDisplay({ containerCat, propertiesCat, visible }) {
   const [displayFlexGraph, setDisplayFlexGraph] = useState("flex");
@@ -11,7 +12,7 @@ function FlexboxDisplay({ containerCat, propertiesCat, visible }) {
   function setDisplayCategory() {
     if (containerCat === true && visible === true && propertiesCat === true) {
       return (
-        <>
+        <div className="flexbox-graph-display-positioning">
           <CssPropertiesMenu
             name="align-content"
             listObj={[
@@ -24,7 +25,7 @@ function FlexboxDisplay({ containerCat, propertiesCat, visible }) {
             marginTop="small"
           />
           <FlexboxGraphDisplay property={displayFlexGraph} />
-        </>
+        </div>
       );
     } else return null;
   }

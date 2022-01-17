@@ -1,0 +1,22 @@
+.flexbox-flow-container-wrap-nowrap {
+  flex-wrap: nowrap;
+}
+.flexbox-flow-container-wrap-wrap {
+  flex-wrap: wrap;
+}
+.flexbox-flow-container-wrap-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.flexbox-flow-container-direction-column {
+  flex-direction: column;
+}
+.flexbox-flow-container-direction-column-reverse {
+  flex-direction: column-reverse;
+}
+.flexbox-flow-container-direction-row {
+  flex-direction: row;
+}
+.flexbox-flow-container-direction-row-reverse {
+  flex-direction: row-reverse;
+}

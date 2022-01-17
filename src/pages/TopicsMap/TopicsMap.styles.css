@@ -6,18 +6,13 @@
   align-content: center;
 }
 
-@media screen and (min-width: 20em) {
-  .topics-container {
-    min-height: var(--content-full-page);
-    width: 100%;
-    gap: 1rem;
-  }
+.text {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 1rem;
+  font-size: 0.9rem;
 }
 
-@media screen and (min-width: 47em) {
-  .topics-container {
-    min-height: var(--content-desktop-full-page);
-    width: 100%;
-    gap: 1rem;
-  }
+.text-margin-none {
+  margin-top: 0;
 }

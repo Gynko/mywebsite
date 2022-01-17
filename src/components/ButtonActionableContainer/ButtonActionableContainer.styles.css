@@ -8,3 +8,9 @@
 .button-actionable-container-small {
   margin-top: var(--margin-top-small);
 }
+.button-actionable-container-medium {
+  margin-top: var(--margin-top-medium);
+}
+.button-actionable-container-big {
+  margin-top: var(--margin-top-big);
+}

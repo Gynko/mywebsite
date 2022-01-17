@@ -21,7 +21,9 @@
   --header-desktop-height: 4.5rem;
 
   /* Content page calculation */
-  --content-full-page: calc(var(--vh, 1vh) * 100 - var(--header-mobile-height));
+  --content-mobile-full-page: calc(
+    var(--vh, 1vh) * 100 - var(--header-mobile-height)
+  );
   --content-desktop-full-page: calc(
     var(--vh, 1vh) * 100 - var(--header-desktop-height) -
       var(--footer-desktop-height)
@@ -43,10 +45,14 @@
   --button-actionable-desktop-height: 3rem;
   --button-actionable-desktop-margin: 0.8rem;
 
+  --labelled-icon-mobile-height: 4.3rem;
+
+  --radio-label-mobile-height: 2.4rem;
+
   /* Margins */
-  --margin-top-small: 0.3rem;
-  --margin-top-medium: 0.6rem;
-  --margin-top-big: 0.9rem;
+  --margin-top-small: 0.5rem;
+  --margin-top-medium: 1rem;
+  --margin-top-big: 2rem;
 
   --margin-side-small: 0.3rem;
 }

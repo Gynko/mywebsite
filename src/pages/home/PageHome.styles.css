@@ -42,14 +42,14 @@ Mobile - Without footer
 @media screen and (min-width: 20em) and (max-height: 36.5625em) {
   .home-page-container {
     position: absolute;
-    min-height: var(--content-full-page);
+    min-height: var(--content-mobile-full-page);
     margin-top: var(--header-mobile-height);
     display: flex;
     flex-direction: column;
     width: 100vw;
   }
   .home-allbutfooter-container {
-    min-height: var(--content-full-page);
+    min-height: var(--content-mobile-full-page);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -94,14 +94,18 @@ With footer
 @media screen and (min-width: 20em) and (min-height: 36.625em) {
   .home-page-container {
     position: absolute;
-    min-height: calc(var(--content-full-page) - var(--footer-desktop-height));
+    min-height: calc(
+      var(--content-mobile-full-page) - var(--footer-desktop-height)
+    );
     margin-top: var(--header-mobile-height);
     display: flex;
     flex-direction: column;
     width: 100vw;
   }
   .home-allbutfooter-container {
-    min-height: calc(var(--content-full-page) - var(--footer-desktop-height));
+    min-height: calc(
+      var(--content-mobile-full-page) - var(--footer-desktop-height)
+    );
     width: 100%;
     display: flex;
     flex-direction: column;

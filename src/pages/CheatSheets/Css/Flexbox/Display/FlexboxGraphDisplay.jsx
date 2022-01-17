@@ -10,7 +10,7 @@ function FlexboxGraphDisplay({ property }) {
     <div className="flexbox-graphics-container flexbox-container-display">
       {" "}
       <p className="display-flex-text">
-        With property "{property}" this div{" "}
+        With the flex property set to "{property}" this div{" "}
         <div className={`display-flex-div display-flex-div-${property}`}>
           <div className="column1">item1</div>
           <div className="column2">item2</div>

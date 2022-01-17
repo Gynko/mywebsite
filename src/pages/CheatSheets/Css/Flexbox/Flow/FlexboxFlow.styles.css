@@ -1,0 +1,10 @@
+.flexbox-graph-flow-positioning {
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.propertyyyy {
+  color: white;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}

@@ -14,6 +14,7 @@ import PageContainerColumn from "../../../../components/PageContainerColumn/Page
 import ButtonActionableContainer from "../../../../components/ButtonActionableContainer/ButtonActionableContainer";
 import FlexboxDisplay from "./Display/FlexboxDisplay";
 import LabelledIconContainer from "../../../../components/LabelledIconContainer/LabelledIconContainer";
+import FlexboxFlow from "./Flow/FlexboxFlow";
 
 function FlexboxCheatSheet() {
   /* Buttons state - Menus */
@@ -175,6 +176,7 @@ function FlexboxCheatSheet() {
           </div>
         </>
       )}
+
       {propertiesCat === false ? null : (
         <>
           <ButtonActionableContainer marginTop="small">
@@ -203,6 +205,11 @@ function FlexboxCheatSheet() {
       />
       <FlexboxDisplay
         visible={display}
+        containerCat={containerCat}
+        propertiesCat={propertiesCat}
+      />
+      <FlexboxFlow
+        visible={flow}
         containerCat={containerCat}
         propertiesCat={propertiesCat}
       />

@@ -108,7 +108,6 @@ function FlexboxAlign({ containerCat, propertiesCat, visible }) {
                 columns={3}
                 marginTop="small"
               />
-
               <FlexboxGraphAlignItems alignItemsGraph={alignItemsGraph} />
             </>
           )}

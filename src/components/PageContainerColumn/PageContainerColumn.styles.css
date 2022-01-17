@@ -14,7 +14,7 @@
 @media screen and (min-width: 20em) {
   .page-container-column {
     position: absolute;
-    min-height: var(--content-full-page);
+    min-height: var(--content-mobile-full-page);
     margin-top: var(--header-mobile-height);
   }
 }

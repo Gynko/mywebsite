@@ -14,6 +14,12 @@
 .css-properties-menu-small {
   margin-top: var(--margin-top-small);
 }
+.css-properties-menu-medium {
+  margin-top: var(--margin-top-medium);
+}
+.css-properties-menu-big {
+  margin-top: var(--margin-top-big);
+}
 
 @media screen and (min-width: 20em) {
   .css-properties-menu-container {

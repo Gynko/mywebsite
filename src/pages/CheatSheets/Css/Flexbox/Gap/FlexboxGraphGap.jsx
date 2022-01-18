@@ -1,11 +1,9 @@
-import { useState } from "react";
-import { useEffect } from "react/cjs/react.development";
-
+import { useEffect, useState } from "react";
 import "../FlexboxGraph.styles.css";
 import "./FlexboxGraphGap.styles.css";
 
 function FlexboxGraphGap({ rowGap, columnGap }) {
-  const [style, setStyle] = useState({
+  const style = {
     marginTop: "var(--margin-top-small)",
     backgroundColor: "#7b728f",
     width: "var(--container-mobile-width)",
@@ -17,10 +15,11 @@ function FlexboxGraphGap({ rowGap, columnGap }) {
     alignContent: "flex-start",
     rowGap: `${rowGap}px`,
     columnGap: `${columnGap}px`,
-  });
-
+  };
+  const [styling, setStyling] = useState(style);
   useEffect(() => {
-    setStyle({
+    console.log(styling);
+    setStyling({
       marginTop: "var(--margin-top-small)",
       backgroundColor: "#7b728f",
       width: "var(--container-mobile-width)",
@@ -36,7 +35,7 @@ function FlexboxGraphGap({ rowGap, columnGap }) {
   }, [rowGap, columnGap]);
 
   return (
-    <div style={style}>
+    <div style={styling}>
       <div className="flexbox-graphics-items flexbox-gap-items">0</div>
       <div className="flexbox-graphics-items flexbox-gap-items">1</div>
       <div className="flexbox-graphics-items flexbox-gap-items">2</div>

@@ -18,7 +18,7 @@ function ValueSliderButton({
     <div
       className={`value-slider-container value-slider-container-margin-${marginTop}`}
     >
-      <ButtonValue id={id} label={label} placeholder={`${value}px`} />
+      <ButtonValue label={label} placeholder={`${value}px`} />
       <Slider
         min={min}
         max={max}

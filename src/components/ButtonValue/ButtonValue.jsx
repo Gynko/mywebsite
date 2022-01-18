@@ -1,15 +1,10 @@
 import "./ButtonValue.styles.css";
 
-function ButtonValue({ id, label, placeholder }) {
+function ButtonValue({ label, placeholder }) {
   return (
     <div className="button-value-container">
-      <label className="button-value-label">{label}</label>
-      <input
-        className="button-value-input"
-        type="number"
-        id={id}
-        placeholder={placeholder}
-      ></input>
+      <p className="button-value-label">{label}</p>
+      <div className="button-value">{placeholder}</div>
     </div>
   );
 }

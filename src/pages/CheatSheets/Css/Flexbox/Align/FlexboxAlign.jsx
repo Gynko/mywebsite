@@ -5,6 +5,7 @@ import FlexboxGraphJustifyContent from "./FlexboxGraphJustifyContent";
 import FlexboxGraphAlignItems from "./FlexboxGraphAlignItems";
 import FlexboxGraphAlignContent from "./FlexboxGraphAlignContent";
 import ButtonActionableContainer from "../../../../../components/ButtonActionableContainer/ButtonActionableContainer";
+import DisplayCopyProperty from "../../../../../components/DisplayCopyProperty/DisplayCopyProperty";
 
 function FlexboxAlign({ containerCat, propertiesCat, visible }) {
   /* Setting state for categories-buttons */
@@ -89,6 +90,10 @@ function FlexboxAlign({ containerCat, propertiesCat, visible }) {
               <FlexboxGraphJustifyContent
                 justifyContentGraph={justifyContentGraph}
               />
+              <DisplayCopyProperty
+                property={`display: ${justifyContentGraph}`}
+                marginTop="small"
+              />
             </>
           )}
 
@@ -109,6 +114,10 @@ function FlexboxAlign({ containerCat, propertiesCat, visible }) {
                 marginTop="small"
               />
               <FlexboxGraphAlignItems alignItemsGraph={alignItemsGraph} />
+              <DisplayCopyProperty
+                property={`display: ${alignItemsGraph}`}
+                marginTop="small"
+              />
             </>
           )}
           {alignContentCat === false ? null : (
@@ -129,6 +138,10 @@ function FlexboxAlign({ containerCat, propertiesCat, visible }) {
                 marginTop="small"
               />
               <FlexboxGraphAlignContent alignContentGraph={alignContentGraph} />
+              <DisplayCopyProperty
+                property={`display: ${alignContentGraph}`}
+                marginTop="small"
+              />
             </>
           )}
         </>

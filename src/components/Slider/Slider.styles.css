@@ -3,15 +3,22 @@
 }
 
 .slider-bar {
-  height: 0.3rem;
-  background-color: aqua;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 0.7rem;
+  outline: none;
+  opacity: 1;
+  border: 2px #58404f solid;
+  background-color: black;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
 }
 
 .slider-bar::-webkit-slider-thumb {
-  -webkit-appearance: none; /* Override default look */
+  -webkit-appearance: none;
   appearance: none;
-  width: 25px; /* Set a specific slider handle width */
-  height: 25px; /* Slider handle height */
-  background: #04aa6d; /* Green background */
-  cursor: pointer; /* Cursor on hover */
+  width: 12px;
+  height: 25px;
+  background: var(--color-button-yellow);
+  cursor: pointer;
 }

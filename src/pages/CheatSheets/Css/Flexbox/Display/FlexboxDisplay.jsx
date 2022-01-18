@@ -1,6 +1,8 @@
 import { useState } from "react/cjs/react.development";
 import CssPropertiesMenu from "../../../../../components/CssPropertiesMenu/CssPropertiesMenu";
 import FlexboxGraphDisplay from "./FlexboxGraphDisplay";
+import DisplayCopyProperty from "../../../../../components/DisplayCopyProperty/DisplayCopyProperty";
+
 import "./FlexboxDisplay.styles.css";
 
 function FlexboxDisplay({ containerCat, propertiesCat, visible }) {
@@ -22,9 +24,13 @@ function FlexboxDisplay({ containerCat, propertiesCat, visible }) {
             onChange={onFlex}
             graph={displayFlexGraph}
             columns={2}
-            marginTop="small"
+            marginTop="medium"
           />
           <FlexboxGraphDisplay property={displayFlexGraph} />
+          <DisplayCopyProperty
+            property={`display: ${displayFlexGraph}`}
+            marginTop="medium"
+          />
         </div>
       );
     } else return null;

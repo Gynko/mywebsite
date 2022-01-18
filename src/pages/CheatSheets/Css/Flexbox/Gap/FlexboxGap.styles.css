@@ -1,0 +1,4 @@
+.display-copy-property-page-container {
+  display: flex;
+  flex-flow: column nowrap;
+}

@@ -1,7 +1,7 @@
 import { gsap } from "gsap";
-import { useEffect, useRef } from "react/cjs/react.development";
+import { useEffect, useRef } from "react";
 
-function IconGap({ gap }) {
+function IconGap() {
   const tlGap = gsap.timeline({ repeat: -1 });
   const tlGapColor = gsap.timeline();
 
@@ -9,15 +9,7 @@ function IconGap({ gap }) {
   const refTopRight = useRef(null);
   const refBottomLeft = useRef(null);
   const refBottomRight = useRef(null);
-
   const refIcon = useRef(null);
-
-  gsap.set(refIcon.current, { fill: "rgb(255,255,255)" });
-
-  gsap.set(refTopLeft.current, { x: 0, y: 0 });
-  gsap.set(refTopRight.current, { x: 0, y: 0 });
-  gsap.set(refBottomLeft.current, { x: 0, y: 0 });
-  gsap.set(refBottomRight.current, { x: 0, y: 0 });
 
   function animGap() {
     tlGap.to(
@@ -177,14 +169,18 @@ function IconGap({ gap }) {
     );
     gsap.set(refIcon.current, { fill: "rgb(0,0,0)" });
   }
+
   useEffect(() => {
+    gsap.set(refIcon.current, { fill: "rgb(255,255,255)" });
+    gsap.set(refTopLeft.current, { x: 0, y: 0 });
+    gsap.set(refTopRight.current, { x: 0, y: 0 });
+    gsap.set(refBottomLeft.current, { x: 0, y: 0 });
+    gsap.set(refBottomRight.current, { x: 0, y: 0 });
     animGap();
     return function cleanup() {
       tlGap.kill();
     };
   });
-
-  function renderAnim() {}
 
   return (
     <svg

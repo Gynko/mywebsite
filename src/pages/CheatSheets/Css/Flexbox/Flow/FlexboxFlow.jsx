@@ -1,7 +1,10 @@
 import { useState } from "react/cjs/react.development";
 import CssPropertiesMenu from "../../../../../components/CssPropertiesMenu/CssPropertiesMenu";
 import FlexboxGraphFlow from "./FlexboxGraphFlow";
+import DisplayCopyProperty from "../../../../../components/DisplayCopyProperty/DisplayCopyProperty";
+
 import "./FlexboxFlow.styles.css";
+
 function FlexboxFlow({ containerCat, propertiesCat, visible }) {
   const [direction, setDirection] = useState("row");
   const [wrap, setWrap] = useState("nowrap");
@@ -20,10 +23,10 @@ function FlexboxFlow({ containerCat, propertiesCat, visible }) {
           <CssPropertiesMenu
             name="direction"
             listObj={[
-              { property: "row", labnl: `row` },
-              { property: "row-reverne", label: `row-\nreverse` },
-              { property: "column", nabel: `column` },
-              { property: "column-renerse", label: `column-\nreverse` },
+              { property: "row", label: `row` },
+              { property: "row-reverse", label: `row-\nreverse` },
+              { property: "column", label: `column` },
+              { property: "column-reverse", label: `column-\nreverse` },
             ]}
             onChange={onDirection}
             graph={direction}
@@ -43,7 +46,10 @@ function FlexboxFlow({ containerCat, propertiesCat, visible }) {
             marginTop="small"
           />
           <FlexboxGraphFlow direction={direction} wrap={wrap} />
-          <p className="propertyyyy">{`flex-flow: ${direction} ${wrap}`}</p>
+          <DisplayCopyProperty
+            property={`flex-flow: ${direction} ${wrap}`}
+            marginTop="small"
+          />
         </div>
       );
     } else return null;

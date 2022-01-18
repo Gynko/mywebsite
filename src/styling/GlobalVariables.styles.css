@@ -38,7 +38,7 @@
   --title-desktop-height: 2.5rem;
 
   /* Containers */
-  --container-mobile-width: 20rem;
+  --container-mobile-width: 19.5rem;
   /* Buttons */
   --button-actionable-mobile-height: 3rem;
   --button-actionable-mobile-margin: 0.3rem;
@@ -61,4 +61,5 @@
 
   /* Fonts */
   --button-font: "Bungee";
+  --text-font: "Open Sans";
 }

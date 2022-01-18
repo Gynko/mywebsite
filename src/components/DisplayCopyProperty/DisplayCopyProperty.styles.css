@@ -1,0 +1,38 @@
+.display-copy-property-container {
+  display: flex;
+  flex-flow: row nowrap;
+  background: var(--color-button-yellow);
+  width: var(--container-mobile-width);
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.display-copy-icon-button {
+  border: none;
+}
+.display-copy-icon-container {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+}
+.display-copy-property-button {
+  font-family: var(--text-font);
+}
+
+.display-copy-property-text {
+  font-family: var(--text-font);
+  color: black;
+  margin: 0 0.3rem;
+  font-size: 0.9rem;
+  white-space: break-spaces;
+}
+
+.display-copy-property-container-small {
+  margin-top: var(--margin-top-small);
+}
+.display-copy-property-container-medium {
+  margin-top: var(--margin-top-medium);
+}
+.display-copy-property-container-big {
+  margin-top: var(--margin-top-big);
+}

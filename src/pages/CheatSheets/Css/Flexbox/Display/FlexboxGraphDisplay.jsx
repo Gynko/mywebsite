@@ -11,11 +11,11 @@ function FlexboxGraphDisplay({ property }) {
       {" "}
       <p className="display-flex-text">
         With the flex property set to "{property}" this div{" "}
-        <div className={`display-flex-div display-flex-div-${property}`}>
-          <div className="column1">item1</div>
-          <div className="column2">item2</div>
-        </div>{" "}
-        behaves as {textRender()}
+        <span className={`display-flex-div display-flex-div-${property}`}>
+          <span className="column1">item1</span>
+          <span className="column2">item2</span>
+        </span>{" "}
+        behaves as {textRender()}.
       </p>
     </div>
   );

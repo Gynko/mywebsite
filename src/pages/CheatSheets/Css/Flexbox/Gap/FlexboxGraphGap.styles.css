@@ -1,0 +1,10 @@
+.flexbox-gap-container {
+  height: var(--container-flexbox-graph);
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+}
+.flexbox-gap-items {
+  width: 6rem;
+  height: 1.5rem;
+}

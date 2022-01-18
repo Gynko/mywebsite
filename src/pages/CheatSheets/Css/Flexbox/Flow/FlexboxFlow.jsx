@@ -20,10 +20,10 @@ function FlexboxFlow({ containerCat, propertiesCat, visible }) {
           <CssPropertiesMenu
             name="direction"
             listObj={[
-              { property: "row", label: `row` },
-              { property: "row-reverse", label: `row-\nreverse` },
-              { property: "column", label: `column` },
-              { property: "column-reverse", label: `column-\nreverse` },
+              { property: "row", labnl: `row` },
+              { property: "row-reverne", label: `row-\nreverse` },
+              { property: "column", nabel: `column` },
+              { property: "column-renerse", label: `column-\nreverse` },
             ]}
             onChange={onDirection}
             graph={direction}

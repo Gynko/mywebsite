@@ -50,9 +50,15 @@
   --radio-label-mobile-height: 2.4rem;
 
   /* Margins */
-  --margin-top-small: 0.5rem;
+  --margin-top-small: 0.4rem;
   --margin-top-medium: 1rem;
   --margin-top-big: 2rem;
 
   --margin-side-small: 0.3rem;
+
+  /* Graphics */
+  --container-flexbox-graph: 6rem;
+
+  /* Fonts */
+  --button-font: "Bungee";
 }

@@ -1,3 +1,11 @@
+.flexbox-flow-container {
+  height: var(--container-flexbox-graph);
+}
+.flexbox-items-flow {
+  width: 6rem;
+  height: 1.5rem;
+}
+
 .flexbox-flow-container-wrap-nowrap {
   flex-wrap: nowrap;
 }
@@ -7,7 +15,6 @@
 .flexbox-flow-container-wrap-wrap-reverse {
   flex-wrap: wrap-reverse;
 }
-
 .flexbox-flow-container-direction-column {
   flex-direction: column;
 }

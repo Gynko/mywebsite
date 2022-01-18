@@ -1,13 +1,12 @@
-.flexbox-justify-content-container {
-  height: 4.5rem;
-}
-
 .flexbox-justify-content-items {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 5rem;
-  height: 4.5rem;
+  width: 6rem;
+  height: var(--container-flexbox-graph);
+}
+.flexbox-graphics-container-justify-content {
+  height: var(--container-flexbox-graph);
 }
 
 .justify-content-flexstart {

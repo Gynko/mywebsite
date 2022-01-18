@@ -1,0 +1,15 @@
+.value-slider-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.value-slider-container-margin-small {
+  margin-top: var(--margin-top-small);
+}
+.value-slider-container-margin-medium {
+  margin-top: var(--margin-top-medium);
+}
+.value-slider-container-margin-big {
+  margin-top: var(--margin-top-big);
+}

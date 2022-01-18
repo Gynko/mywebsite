@@ -15,6 +15,7 @@ import ButtonActionableContainer from "../../../../components/ButtonActionableCo
 import FlexboxDisplay from "./Display/FlexboxDisplay";
 import LabelledIconContainer from "../../../../components/LabelledIconContainer/LabelledIconContainer";
 import FlexboxFlow from "./Flow/FlexboxFlow";
+import FlexboxGap from "./Gap/FlexboxGap";
 
 function FlexboxCheatSheet() {
   /* Buttons state - Menus */
@@ -94,7 +95,7 @@ function FlexboxCheatSheet() {
             />
             <LabelledIcon
               svgFile={<IconFlow />}
-              title="Align"
+              title="align"
               activated={align}
               onClick={alignToggle}
             />
@@ -213,7 +214,16 @@ function FlexboxCheatSheet() {
         containerCat={containerCat}
         propertiesCat={propertiesCat}
       />
-      <Footer />
+      <FlexboxGap
+        visible={gap}
+        containerCat={containerCat}
+        propertiesCat={propertiesCat}
+      />
+      <Footer
+        visible={gap}
+        containerCat={containerCat}
+        propertiesCat={propertiesCat}
+      />
     </PageContainerColumn>
   );
 }

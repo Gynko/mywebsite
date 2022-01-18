@@ -1,5 +1,5 @@
 .flexbox-align-items-container {
-  height: 4.5rem;
+  height: var(--container-flexbox-graph);
 }
 
 .flexbox-align-items-items {

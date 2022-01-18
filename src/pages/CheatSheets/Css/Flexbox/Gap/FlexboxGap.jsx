@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useState } from "react";
 import "./FlexboxGap.styles.css";
 import ValueSliderButton from "../../../../../components/ValueSliderButton/ValueSliderButton";
 import FlexboxGraphGap from "./FlexboxGraphGap";

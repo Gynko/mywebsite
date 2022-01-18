@@ -4,7 +4,19 @@ import "./FlexboxGraphGap.styles.css";
 function FlexboxGraphGap({ rowGap, columnGap }) {
   return (
     <div
-      key={{ rowGap, columnGap }}
+      key={{
+        marginTop: "var(--margin-top-small)",
+        backgroundColor: "#7b728f",
+        width: "var(--container-mobile-width)",
+        display: "flex",
+        flexDirection: "row",
+        borderRadius: "5px",
+        height: "var(--container-flexbox-graph)",
+        flexFlow: "row wrap",
+        alignContent: "flex-start",
+        rowGap: `${rowGap}px`,
+        columnGap: `${columnGap}px`,
+      }}
       style={{
         marginTop: "var(--margin-top-small)",
         backgroundColor: "#7b728f",

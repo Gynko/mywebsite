@@ -1,4 +1,4 @@
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 import CssPropertiesMenu from "../../../../../components/CssPropertiesMenu/CssPropertiesMenu";
 import FlexboxGraphDisplay from "./FlexboxGraphDisplay";
 import DisplayCopyProperty from "../../../../../components/DisplayCopyProperty/DisplayCopyProperty";

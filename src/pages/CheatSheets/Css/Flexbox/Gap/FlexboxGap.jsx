@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import "./FlexboxGap.styles.css";
 import ValueSliderButton from "../../../../../components/ValueSliderButton/ValueSliderButton";
 import FlexboxGraphGap from "./FlexboxGraphGap";
@@ -23,7 +23,7 @@ function FlexboxGap({ visible, containerCat, propertiesCat }) {
   function displayGapProperty() {
     if (rowGap === columnGap) {
       return (
-        <DisplayCopyProperty property={`gap: ${gap}px`} marginTop="small" />
+        <DisplayCopyProperty property={`gap: ${rowGap}px`} marginTop="small" />
       );
     } else
       return (
@@ -35,6 +35,7 @@ function FlexboxGap({ visible, containerCat, propertiesCat }) {
         </div>
       );
   }
+
   function setGapCategory() {
     if (containerCat === true && visible === true && propertiesCat === true) {
       return (

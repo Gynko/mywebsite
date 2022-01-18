@@ -7,9 +7,8 @@ function DisplayCopyProperty({ property, marginTop }) {
       className={`display-copy-property-container display-copy-property-container-${marginTop}`}
     >
       <div className="display-copy-icon-container">
-        <button className="display-copy-icon-button">
-          <IconCopy />
-        </button>
+        <button className="display-copy-icon-button"></button>
+        <IconCopy />
       </div>
       <p className="display-copy-property-text">{property}</p>
     </div>

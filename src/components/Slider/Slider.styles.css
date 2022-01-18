@@ -17,8 +17,8 @@
 .slider-bar::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 12px;
-  height: 25px;
+  width: 2rem;
+  height: 2rem;
   background: var(--color-button-yellow);
   cursor: pointer;
 }

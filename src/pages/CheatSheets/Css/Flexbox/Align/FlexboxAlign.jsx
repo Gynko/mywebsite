@@ -91,7 +91,7 @@ function FlexboxAlign({ containerCat, propertiesCat, visible }) {
                 justifyContentGraph={justifyContentGraph}
               />
               <DisplayCopyProperty
-                property={`display: ${justifyContentGraph}`}
+                property={`justify-content: ${justifyContentGraph}`}
                 marginTop="small"
               />
             </>
@@ -115,7 +115,7 @@ function FlexboxAlign({ containerCat, propertiesCat, visible }) {
               />
               <FlexboxGraphAlignItems alignItemsGraph={alignItemsGraph} />
               <DisplayCopyProperty
-                property={`display: ${alignItemsGraph}`}
+                property={`align-items: ${alignItemsGraph}`}
                 marginTop="small"
               />
             </>
@@ -139,7 +139,7 @@ function FlexboxAlign({ containerCat, propertiesCat, visible }) {
               />
               <FlexboxGraphAlignContent alignContentGraph={alignContentGraph} />
               <DisplayCopyProperty
-                property={`display: ${alignContentGraph}`}
+                property={`align-content: ${alignContentGraph}`}
                 marginTop="small"
               />
             </>

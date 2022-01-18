@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   align-content: center;
+  display: none;
 }
 .footer-text {
   color: #f8c8c8;
@@ -13,13 +14,12 @@
 
 @media screen and (max-height: 36.6249em) {
   .footer-container {
-    display: none;
   }
 }
 /*
 586px height
 */
-@media screen and (min-height: 36.625em) {
+/* @media screen and (min-height: 36.625em) {
   .footer-container {
     position: fixed;
     bottom: 0;
@@ -30,4 +30,4 @@
   .footer-text {
     font-size: 0.9rem;
   }
-}
+} */

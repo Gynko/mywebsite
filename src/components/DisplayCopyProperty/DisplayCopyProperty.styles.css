@@ -9,6 +9,10 @@
 }
 .display-copy-icon-button {
   border: none;
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  display: none;
 }
 .display-copy-icon-container {
   display: flex;

@@ -4,6 +4,7 @@ import "./FlexboxGraphGap.styles.css";
 function FlexboxGraphGap({ rowGap, columnGap }) {
   return (
     <div
+      key={{ rowGap, columnGap }}
       style={{
         marginTop: "var(--margin-top-small)",
         backgroundColor: "#7b728f",
@@ -26,9 +27,6 @@ function FlexboxGraphGap({ rowGap, columnGap }) {
       <div className="flexbox-graphics-items flexbox-gap-items">5</div>
       <div className="flexbox-graphics-items flexbox-gap-items">6</div>
       <div className="flexbox-graphics-items flexbox-gap-items">7</div>
-      {/* This last div is a hack to make React correctly update the state
-      on IOS devices - troubleshooting in progress */}
-      <div className="flexbox-graphics-items flexbox-gap-items ghost">{`${rowGap}${columnGap}`}</div>
     </div>
   );
 }

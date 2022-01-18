@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import "../FlexboxGraph.styles.css";
 import "./FlexboxGraphGap.styles.css";
 
@@ -27,6 +26,7 @@ function FlexboxGraphGap({ rowGap, columnGap }) {
       <div className="flexbox-graphics-items flexbox-gap-items">5</div>
       <div className="flexbox-graphics-items flexbox-gap-items">6</div>
       <div className="flexbox-graphics-items flexbox-gap-items">7</div>
+      <div className="flexbox-graphics-items flexbox-gap-items ghost">{`${rowGap}${columnGap}`}</div>
     </div>
   );
 }

@@ -10,5 +10,5 @@
 }
 
 .ghost {
-  display: none;
+  opacity: 0;
 }

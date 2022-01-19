@@ -1,0 +1,20 @@
+.property-title-container {
+  width: var(--container-mobile-width);
+}
+
+.property-title-paragraph {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  white-space: pre;
+}
+
+.property-title-container-margin-small {
+  margin-top: var(--margin-top-small);
+}
+.property-title-container-margin-medium {
+  margin-top: var(--margin-top-medium);
+}
+.property-title-container-margin-big {
+  margin-top: var(--margin-top-big);
+}

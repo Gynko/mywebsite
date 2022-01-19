@@ -17,6 +17,7 @@ import LabelledIconContainer from "../../../../components/LabelledIconContainer/
 import FlexboxFlow from "./Flow/FlexboxFlow";
 import FlexboxGap from "./Gap/FlexboxGap";
 import FlexboxOrder from "./Order/FlexboxOrder";
+import FlexboxFlex from "./Flex/FlexboxFlex";
 
 function FlexboxCheatSheet() {
   /* Buttons state - Menus */
@@ -96,7 +97,6 @@ function FlexboxCheatSheet() {
     setOrder(false);
     setFlex(false);
   }
-
   /* Toggle Menu Flex Container*/
   function flexContainerMenu() {
     if (containerCat === true && propertiesCat === true)
@@ -277,6 +277,11 @@ function FlexboxCheatSheet() {
       {flexItemNenu()}
       <FlexboxOrder
         visible={order}
+        itemCat={itemCat}
+        propertiesCat={propertiesCat}
+      />
+      <FlexboxFlex
+        visible={flex}
         itemCat={itemCat}
         propertiesCat={propertiesCat}
       />

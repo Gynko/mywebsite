@@ -2,3 +2,11 @@
   display: flex;
   flex-flow: column nowrap;
 }
+
+.flexbox-graph-flow-warning {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+  padding: 0;
+}

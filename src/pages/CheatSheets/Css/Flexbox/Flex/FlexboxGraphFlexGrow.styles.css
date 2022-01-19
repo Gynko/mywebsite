@@ -1,0 +1,10 @@
+.flexbox-graphics-container-flexgrow {
+  display: flex;
+}
+
+.flexbox-graphics-items-flexgrow {
+}
+
+.flexbox-graphics-items-flexgrow-blue {
+  background-color: var(--color-button-blue);
+}

@@ -40,6 +40,9 @@ function FlexboxGap({ visible, containerCat, propertiesCat }) {
     if (containerCat === true && visible === true && propertiesCat === true) {
       return (
         <>
+          <p className="flexbox-graph-flow-warning">
+            ⚠️: Doesn't work on older IOS devices.
+          </p>
           <div className="flexbox-graph-flow-positioning">
             <ValueSliderButton
               id="gap"

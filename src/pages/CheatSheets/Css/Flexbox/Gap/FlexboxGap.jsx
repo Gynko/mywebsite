@@ -16,11 +16,9 @@ function FlexboxGap({ visible, containerCat, propertiesCat }) {
   }
   function onRowChange(event) {
     setRowGap(event.target.value);
-    return () => setRowGap(event.target.value);
   }
   function onColumnChange(event) {
     setColumnGap(event.target.value);
-    return () => setColumnGap(event.target.value);
   }
   function displayGapProperty() {
     if (rowGap === columnGap) {

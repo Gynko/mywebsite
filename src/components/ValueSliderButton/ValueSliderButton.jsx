@@ -10,20 +10,23 @@ function ValueSliderButton({
   min,
   max,
   value,
+  unit,
   onChange,
   columnGap,
+  color,
   ...otherProps
 }) {
   return (
     <div
       className={`value-slider-container value-slider-container-margin-${marginTop}`}
     >
-      <ButtonValue label={label} placeholder={`${value}px`} />
+      <ButtonValue label={label} placeholder={`${value}${unit}`} />
       <Slider
         min={min}
         max={max}
         value={value}
         onChange={onChange}
+        color={color}
         {...otherProps}
       />
     </div>

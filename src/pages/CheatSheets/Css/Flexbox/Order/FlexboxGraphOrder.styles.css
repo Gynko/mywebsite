@@ -1,0 +1,4 @@
+.flexbox-graphics-container-grow {
+  display: flex;
+  justify-content: space-between;
+}

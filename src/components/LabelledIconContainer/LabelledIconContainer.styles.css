@@ -1,6 +1,6 @@
 .labelled-icon-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: calc(var(--container-mobile-width) - 1.3rem);
   height: var(--labelled-icon-mobile-height);
 }

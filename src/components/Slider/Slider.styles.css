@@ -22,3 +22,15 @@
   background: var(--color-button-yellow);
   cursor: pointer;
 }
+
+.slider-bar-green::-webkit-slider-thumb {
+  background: var(--color-button-green);
+}
+
+.slider-bar-yellow::-webkit-slider-thumb {
+  background: var(--color-button-yellow);
+}
+
+.slider-bar-red::-webkit-slider-thumb {
+  background: var(--color-button-redish);
+}

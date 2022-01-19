@@ -49,6 +49,7 @@ function FlexboxGap({ visible, containerCat, propertiesCat }) {
               min={0}
               max={12}
               value={gap}
+              unit="px"
               onChange={onGapChange}
             />
             <ValueSliderButton
@@ -59,6 +60,7 @@ function FlexboxGap({ visible, containerCat, propertiesCat }) {
               min={0}
               max={12}
               value={rowGap}
+              unit="px"
               onChange={onRowChange}
             />
             <ValueSliderButton
@@ -69,6 +71,7 @@ function FlexboxGap({ visible, containerCat, propertiesCat }) {
               min={0}
               max={12}
               value={columnGap}
+              unit="px"
               onChange={onColumnChange}
             />
           </div>

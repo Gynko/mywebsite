@@ -16,6 +16,7 @@ import FlexboxDisplay from "./Display/FlexboxDisplay";
 import LabelledIconContainer from "../../../../components/LabelledIconContainer/LabelledIconContainer";
 import FlexboxFlow from "./Flow/FlexboxFlow";
 import FlexboxGap from "./Gap/FlexboxGap";
+import FlexboxOrder from "./Order/FlexboxOrder";
 
 function FlexboxCheatSheet() {
   /* Buttons state - Menus */
@@ -33,6 +34,10 @@ function FlexboxCheatSheet() {
   const [flow, setFlow] = useState(false);
   const [align, setAlign] = useState(false);
   const [gap, setGap] = useState(false);
+  /* Buttons state - Flex Item */
+  const [order, setOrder] = useState(false);
+  const [flex, setFlex] = useState(false);
+  const [flexItemAlign, setFlexItemAlign] = useState(false);
   /* OnClick functions - Menus */
   function terminology() {
     setTerminologyCatOn(!terminologyCat);
@@ -75,6 +80,23 @@ function FlexboxCheatSheet() {
     setFlow(false);
     setAlign(false);
   }
+  /* Flex item category onClick functions */
+  function displayOrder() {
+    setOrder(!order);
+    setFlex(false);
+    setFlexItemAlign(false);
+  }
+  function displayFlex() {
+    setFlex(!flex);
+    setOrder(false);
+    setFlexItemAlign(false);
+  }
+  function displayFlexItemAlign() {
+    setFlexItemAlign(!flexItemAlign);
+    setOrder(false);
+    setFlex(false);
+  }
+
   /* Toggle Menu Flex Container*/
   function flexContainerMenu() {
     if (containerCat === true && propertiesCat === true)
@@ -109,6 +131,34 @@ function FlexboxCheatSheet() {
         </>
       );
     else return null;
+  }
+  function flexItemNenu() {
+    if (itemCat === true && propertiesCat === true) {
+      return (
+        <>
+          <LabelledIconContainer marginTop="small">
+            <LabelledIcon
+              svgFile={<IconFlow />}
+              title="order"
+              activated={order}
+              onClick={displayOrder}
+            />
+            <LabelledIcon
+              svgFile={<IconFlow />}
+              title="flex"
+              activated={flex}
+              onClick={displayFlex}
+            />
+            <LabelledIcon
+              svgFile={<IconFlow />}
+              title="align"
+              activated={flexItemAlign}
+              onClick={displayFlexItemAlign}
+            />
+          </LabelledIconContainer>
+        </>
+      );
+    }
   }
   return (
     <PageContainerColumn verticalCenter="vertical-center">
@@ -222,6 +272,12 @@ function FlexboxCheatSheet() {
       <Footer
         visible={gap}
         containerCat={containerCat}
+        propertiesCat={propertiesCat}
+      />
+      {flexItemNenu()}
+      <FlexboxOrder
+        visible={order}
+        itemCat={itemCat}
         propertiesCat={propertiesCat}
       />
     </PageContainerColumn>

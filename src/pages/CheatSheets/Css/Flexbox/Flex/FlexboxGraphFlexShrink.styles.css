@@ -1,13 +1,13 @@
-.flexbox-graphics-container-flexgrow {
+.flexbox-graphics-container-flexshrink {
   display: flex;
   height: 2rem;
 }
 
-.flexbox-graphics-items-flexgrow {
-  flex-grow: 1;
+.flexbox-graphics-items-flexshrink {
+  width: 50%;
 }
 
-.flexbox-graphics-items-flexgrow-blue {
+.flexbox-graphics-items-flexshrink-blue {
   background-color: var(--color-button-blue);
 }
 

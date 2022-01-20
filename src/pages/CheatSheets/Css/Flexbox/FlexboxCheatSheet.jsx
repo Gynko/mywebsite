@@ -18,6 +18,7 @@ import FlexboxFlow from "./Flow/FlexboxFlow";
 import FlexboxGap from "./Gap/FlexboxGap";
 import FlexboxOrder from "./Order/FlexboxOrder";
 import FlexboxFlex from "./Flex/FlexboxFlex";
+import FlexboxItemAlign from "./ItemAlign/FlexboxItemAlign";
 
 function FlexboxCheatSheet() {
   /* Buttons state - Menus */
@@ -282,6 +283,11 @@ function FlexboxCheatSheet() {
       />
       <FlexboxFlex
         visible={flex}
+        itemCat={itemCat}
+        propertiesCat={propertiesCat}
+      />
+      <FlexboxItemAlign
+        visible={flexItemAlign}
         itemCat={itemCat}
         propertiesCat={propertiesCat}
       />

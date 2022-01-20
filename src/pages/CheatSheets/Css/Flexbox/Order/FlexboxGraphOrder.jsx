@@ -29,7 +29,7 @@ function FlexboxGraphOrder({ orderItems }) {
                 backgroundColor: `var(--color-button-${item.color})`,
               },
             }}
-          >{`item 1\norder:\n${item.item}`}</div>
+          >{`item ${index}\norder:\n${item.item}`}</div>
         );
       })}
     </div>

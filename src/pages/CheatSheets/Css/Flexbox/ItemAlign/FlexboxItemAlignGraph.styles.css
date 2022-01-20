@@ -1,0 +1,19 @@
+.flexbox-alignself-container {
+  height: 6rem;
+}
+
+.flexbox-align-self-1 {
+  height: 2rem;
+}
+
+.flexbox-align-self-2 {
+  height: 4rem;
+}
+
+.flexbox-align-self-4 {
+  height: 3rem;
+}
+
+.flexbox-alignself-items {
+  font-size: 1.5rem;
+}

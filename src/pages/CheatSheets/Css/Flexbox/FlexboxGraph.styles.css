@@ -4,6 +4,7 @@
   width: var(--container-mobile-width);
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
   border-radius: 5px;
 }
 
@@ -17,4 +18,9 @@
   text-align: center;
   border: 1px black solid;
   line-height: 1rem;
+  width: 100%;
+}
+
+.flexbox-alignself-items {
+  background-color: var(--color-button-blue);
 }

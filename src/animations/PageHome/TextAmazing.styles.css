@@ -4,7 +4,6 @@
   color: var(--color-text-yellow);
 }
 .text-to-animate {
-  display: inline-block;
 }
 .text-a-maze-ing-accent {
   color: var(--color-text-accent);

@@ -42,7 +42,7 @@ We want the svg's container to fill the remaining space available.
     height: calc(
       var(--content-mobile-full-page) - var(--button-actionable-mobile-margin) *
         5 - var(--title-mobile-height) - var(--button-actionable-mobile-height) *
-        2 - var(--footer-desktop-height)
+        2
     );
     max-width: 35rem;
   }
@@ -53,7 +53,7 @@ We want the svg's container to fill the remaining space available.
     height: calc(
       var(--content-mobile-full-page) - var(--button-actionable-mobile-margin) *
         3 - var(--title-mobile-height) - var(--button-actionable-mobile-height) *
-        2 - var(--footer-desktop-height)
+        2
     );
     max-width: 35rem;
   }

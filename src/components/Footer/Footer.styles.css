@@ -19,7 +19,7 @@
   margin: 0;
 }
 
-@media screen and (min-height: 32.5em) {
+@media screen and (min-width: 20.75em) and (min-height: 32.5em) {
   .footer-container {
     display: flex;
   }

@@ -1,16 +1,14 @@
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 
 import "./FlexboxCheatSheet.styles.css";
 
 import ButtonActionable from "../../../../components/ButtonActionable/ButtonActionable";
 import TerminologyFlexbox from "../../../../animations/TerminologyFlexbox/TerminologyFlexbox";
 import TitleHeader from "../../../../components/TitleHeader/TitleHeader";
-import Footer from "../../../../components/Footer/Footer";
 import LabelledIcon from "../../../../components/LabelledIcon/LabelledIcon";
 import IconFlow from "../../../../components/Icons/IconFlow";
 import IconGap from "../../../../components/Icons/IconGap";
 import FlexboxAlign from "./Align/FlexboxAlign";
-import PageContainerColumn from "../../../../components/PageContainerColumn/PageContainerColumn";
 import ButtonActionableContainer from "../../../../components/ButtonActionableContainer/ButtonActionableContainer";
 import FlexboxDisplay from "./Display/FlexboxDisplay";
 import LabelledIconContainer from "../../../../components/LabelledIconContainer/LabelledIconContainer";
@@ -161,15 +159,9 @@ function FlexboxCheatSheet() {
       );
     }
   }
-  const [mainContainerHeight, setMainContainerHeight] = useState(undefined);
-  const container = useRef();
-  useEffect(() => {
-    const divElement = container.current;
-    setMainContainerHeight(divElement.offsetHeight);
-    console.log(mainContainerHeight);
-  });
+
   return (
-    <div ref={container} className="flexbox-cheat-sheet-container">
+    <div className="flexbox-cheat-sheet-container">
       <TitleHeader title="flexbox" />
       <ButtonActionableContainer marginTop="small">
         <ButtonActionable
@@ -277,11 +269,7 @@ function FlexboxCheatSheet() {
         containerCat={containerCat}
         propertiesCat={propertiesCat}
       />
-      <Footer
-        visible={gap}
-        containerCat={containerCat}
-        propertiesCat={propertiesCat}
-      />
+
       {flexItemNenu()}
       <FlexboxOrder
         visible={order}

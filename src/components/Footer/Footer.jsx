@@ -1,6 +1,6 @@
 import "./Footer.styles.css";
 
-function Footer() {
+function Footer({ mainContainerHeight }) {
   return (
     <footer className="footer-container">
       <p className="footer-text">By Yoann Godiet</p>

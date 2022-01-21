@@ -6,7 +6,7 @@ import "./TopicsMap.styles.css";
 
 function TopicsMap() {
   return (
-    <PageContainerColumn justifyContentCenter="justify-content-center">
+    <PageContainerColumn>
       <p className="text">Released</p>
       <div className="topics-container">
         <ButtonLink

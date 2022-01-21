@@ -1,11 +1,35 @@
 .button-link {
   border: none;
   border-radius: 5px;
-  font-family: "Bungee", cursive;
-  background-color: var(--color-title-pink);
+  font-family: var(--font-button);
   color: var(--color-background);
+  white-space: pre;
+  text-align: center;
 }
-
+.button-link-color-pink {
+  background-color: var(--color-title-pink);
+}
+.button-link-color-grey {
+  background-color: grey;
+}
+.button-link-margintop-extra-small {
+  margin-top: var(--margin-top-extra-small);
+}
+.button-link-margintop-small {
+  margin-top: var(--margin-top-small);
+}
+.button-link-margintop-medium {
+  margin-top: var(--margin-top-medium);
+}
+.button-link-margintop-large {
+  margin-top: var(--margin-top-large);
+}
+.button-link-margintop-big {
+  margin-top: var(--margin-top-big);
+}
+.button-link-margintop-huge {
+  margin-top: var(--margin-top-huge);
+}
 .button-link:visited {
   text-decoration: none;
   color: var(--color-background);

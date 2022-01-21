@@ -5,7 +5,7 @@
 }
 .header-mobile-searchinput {
   background-color: #b4a8bc;
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--font-body);
   text-align: center;
   color: #1f1c18;
   border: none;

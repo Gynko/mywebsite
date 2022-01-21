@@ -1,0 +1,22 @@
+.page-container-center {
+  width: 100vw;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+@media screen and (min-width: 20em) {
+  .page-container-center {
+    position: absolute;
+    margin-top: var(--header-mobile-height);
+    min-height: var(--content-mobile-full-page);
+  }
+}
+
+@media screen and (min-width: 20em) and (min-height: 32.5em) {
+  .page-container-center {
+    position: absolute;
+    margin-top: var(--header-mobile-height);
+    min-height: var(--content-desktop-full-page);
+  }
+}

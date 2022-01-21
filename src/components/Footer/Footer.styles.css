@@ -6,28 +6,21 @@
   align-items: center;
   align-content: center;
   display: none;
+  font-family: var(--font-body);
+  height: var(--footer-desktop-height);
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 .footer-text {
   color: #f8c8c8;
   text-align: center;
+  margin: 0;
 }
 
-@media screen and (max-height: 36.6249em) {
+@media screen and (min-height: 32.5em) {
   .footer-container {
+    display: flex;
   }
 }
-/*
-586px height
-*/
-/* @media screen and (min-height: 36.625em) {
-  .footer-container {
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    height: var(--footer-desktop-height);
-    width: 100vw;
-  }
-  .footer-text {
-    font-size: 0.9rem;
-  }
-} */

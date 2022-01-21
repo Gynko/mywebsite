@@ -4,7 +4,7 @@
 
 .property-title-paragraph {
   color: white;
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--font-body);
   text-align: center;
 }
 

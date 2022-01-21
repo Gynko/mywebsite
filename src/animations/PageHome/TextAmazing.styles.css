@@ -1,0 +1,17 @@
+.text-a-maze-ing {
+  font-family: var(--font-funny);
+  text-align: center;
+  color: var(--color-text-yellow);
+}
+.text-to-animate {
+  display: inline-block;
+}
+.text-a-maze-ing-accent {
+  color: var(--color-text-accent);
+}
+
+@media screen and (min-width: 20em) {
+  .text-a-maze-ing {
+    font-size: 2rem;
+  }
+}

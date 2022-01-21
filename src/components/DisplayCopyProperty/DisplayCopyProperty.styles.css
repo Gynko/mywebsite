@@ -20,11 +20,11 @@
   height: 2rem;
 }
 .display-copy-property-button {
-  font-family: var(--text-font);
+  font-family: var(--font-body);
 }
 
 .display-copy-property-text {
-  font-family: var(--text-font);
+  font-family: var(--font-body);
   color: black;
   margin: 0 0.3rem;
   font-size: 0.9rem;

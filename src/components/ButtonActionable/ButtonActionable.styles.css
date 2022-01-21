@@ -3,7 +3,7 @@
 .button-actionable {
   background-color: var(--color-button-actionable-bg);
   border: 2px var(--color-button-actionable-bg) solid;
-  font-family: "Bungee", cursive;
+  font-family: var(--font-button);
   line-height: 1rem;
   white-space: break-spaces;
   font-size: 1rem;

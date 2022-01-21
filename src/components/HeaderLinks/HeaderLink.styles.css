@@ -1,5 +1,5 @@
 .header-link {
-  font-family: "Bungee", cursive;
+  font-family: var(--font-button);
   font-weight: 400;
   color: #f4ae44;
   text-decoration: none;

@@ -18,7 +18,7 @@
 .radio-label {
   cursor: pointer;
   background-color: var(--color-title-background-pink);
-  font-family: "Bungee", cursive;
+  font-family: var(--font-button);
   white-space: pre;
   margin: 0;
   padding: 0.2rem 0;

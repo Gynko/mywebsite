@@ -1,8 +1,10 @@
 :root {
+  /* Colors */
   --color-header-mobile: #211728;
-  --color-title-pink: #f554b5;
 
+  --color-title-pink: #f554b5;
   --color-title-background-pink: #bb3585;
+
   --color-text-yellow: #f4ae44;
   --color-text-accent: #ef4a4a;
 
@@ -16,7 +18,7 @@
   --color-button-green: #31df4d;
   --color-button-blue: #52c1ff;
 
-  /* Headers mobile and desktop*/
+  /* Header */
   --header-mobile-height: 4.1rem;
   --header-desktop-height: 4.5rem;
 
@@ -28,17 +30,19 @@
     var(--vh, 1vh) * 100 - var(--header-desktop-height) -
       var(--footer-desktop-height)
   );
-  --max-width-desktop-content: 60rem;
 
-  /* Footer - only on desktop*/
-  --footer-desktop-height: 4rem;
+  /* Footer */
+  --footer-desktop-height: 3.7rem;
+  /* Footer: at which content size it can appear: */
+  --footer-enabled: 32.5em;
 
   /* Title */
   --title-mobile-height: 2rem;
   --title-desktop-height: 2.5rem;
 
-  /* Containers */
+  /* Content size */
   --container-mobile-width: 19.5rem;
+  --max-width-desktop-content: 60rem;
   /* Buttons */
   --button-actionable-mobile-height: 3rem;
   --button-actionable-mobile-margin: 0.3rem;
@@ -50,16 +54,25 @@
   --radio-label-mobile-height: 2.4rem;
 
   /* Margins */
+  --margin-top-extra-small: 0.1rem;
   --margin-top-small: 0.3rem;
-  --margin-top-medium: 1rem;
-  --margin-top-big: 2rem;
-
-  --margin-side-small: 0.3rem;
+  --margin-top-medium: 0.5rem;
+  --margin-top-large: 0.8rem;
+  --margin-top-big: 1.2rem;
+  --margin-top-huge: 1.8rem;
 
   /* Graphics */
   --container-flexbox-graph: 6rem;
 
   /* Fonts */
-  --button-font: "Bungee";
-  --text-font: "Open Sans";
+  --font-button: "Bungee";
+  --font-title: "Milonga";
+  --font-body: "Open Sans";
+  --font-funny: "Sniglet";
 }
+/*
+font-family: var(--font-button);
+font-family: var(--font-title);
+font-family: var(--font-body);
+font-family: var(--font-funny);
+*/

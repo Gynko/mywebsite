@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 
 function IconGap() {
   const tlGap = gsap.timeline({ repeat: -1 });
+
   const tlGapColor = gsap.timeline();
 
   const refTopLeft = useRef(null);

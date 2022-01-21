@@ -20,7 +20,7 @@
   width: 3.8rem;
 }
 .labelled-icon-title {
-  font-family: "Bungee", cursive;
+  font-family: var(--font-button);
   font-weight: 400;
   color: white;
   text-align: center;
@@ -31,7 +31,7 @@
 }
 
 .labelled-icon-title-true {
-  font-family: "Bungee", cursive;
+  font-family: var(--font-button);
   font-weight: 400;
   color: black;
   text-align: center;

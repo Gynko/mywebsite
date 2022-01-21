@@ -1,7 +1,7 @@
 .topics-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   align-content: center;
 }
@@ -11,6 +11,9 @@
   font-family: "Open Sans", sans-serif;
   margin-top: 1rem;
   font-size: 0.9rem;
+  white-space: pre-line;
+  width: 100%;
+  text-align: center;
 }
 
 .text-margin-none {

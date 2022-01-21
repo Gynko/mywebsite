@@ -1,3 +1,11 @@
+.flexbox-cheat-sheet-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-background);
+  width: 100vw;
+  align-items: center;
+}
+
 .cheat-sheet-svg {
   display: flex;
   align-items: center;
@@ -10,6 +18,11 @@ The tiniest media at which the design works. 320 x 486
 We want the svg's container to fill the remaining space available.
 */
 @media screen and (min-width: 20em) and (max-height: 30.4375em) {
+  .flexbox-cheat-sheet-container {
+    position: absolute;
+    min-height: var(--content-mobile-full-page);
+    margin-top: var(--header-mobile-height);
+  }
   .cheat-sheet-svg {
     min-height: calc(
       var(--content-mobile-full-page) - var(--button-actionable-mobile-margin) *
@@ -18,23 +31,13 @@ We want the svg's container to fill the remaining space available.
     );
   }
 }
-/*
-When the width is greater than 320 and the height is 585 -> under 586 (which is with footer)
-Calculate the width and add it
-*/
-@media screen and (min-width: 20em) and (min-height: 30.5em) {
-  .cheat-sheet-svg {
-    height: calc(
-      var(--content-mobile-full-page) - var(--button-actionable-mobile-margin) *
-        5 - var(--title-mobile-height) - var(--button-actionable-mobile-height) *
-        2
-    );
+
+@media screen and (min-width: 20em) and (min-height: 32.5em) {
+  .flexbox-cheat-sheet-container {
+    position: absolute;
+    min-height: var(--content-mobile-full-page);
+    margin-top: var(--header-mobile-height);
   }
-}
-/*
-Adding the Footer at Height 586
-*/
-@media screen and (min-width: 20em) and (min-height: 36.625em) {
   .cheat-sheet-svg {
     height: calc(
       var(--content-mobile-full-page) - var(--button-actionable-mobile-margin) *

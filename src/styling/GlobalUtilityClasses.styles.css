@@ -1,0 +1,19 @@
+/* Margins */
+.margin-top-extra-small {
+  margin-top: var(--margin-top-extra-small);
+}
+.margin-top-small {
+  margin-top: var(--margin-top-small);
+}
+.margin-top-medium {
+  margin-top: var(--margin-top-medium);
+}
+.margin-top-large {
+  margin-top: var(--margin-top-large);
+}
+.margin-top-big {
+  margin-top: var(--margin-top-big);
+}
+.margin-top-huge {
+  margin-top: var(--margin-top-huge);
+}

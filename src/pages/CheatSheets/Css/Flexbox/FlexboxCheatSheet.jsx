@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 import "./FlexboxCheatSheet.styles.css";
 
@@ -161,8 +161,15 @@ function FlexboxCheatSheet() {
       );
     }
   }
+  const [mainContainerHeight, setMainContainerHeight] = useState(undefined);
+  const container = useRef();
+  useEffect(() => {
+    const divElement = container.current;
+    setMainContainerHeight(divElement.offsetHeight);
+    console.log(mainContainerHeight);
+  });
   return (
-    <PageContainerColumn verticalCenter="vertical-center">
+    <div ref={container} className="flexbox-cheat-sheet-container">
       <TitleHeader title="flexbox" />
       <ButtonActionableContainer marginTop="small">
         <ButtonActionable
@@ -291,7 +298,7 @@ function FlexboxCheatSheet() {
         itemCat={itemCat}
         propertiesCat={propertiesCat}
       />
-    </PageContainerColumn>
+    </div>
   );
 }
 

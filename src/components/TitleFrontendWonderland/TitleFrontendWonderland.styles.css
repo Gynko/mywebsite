@@ -1,0 +1,14 @@
+.title-frontend-wonderland {
+  font-family: var(--font-title);
+  color: var(--color-title-pink);
+  white-space: pre;
+  text-align: center;
+  margin: 0;
+}
+
+@media screen and (min-width: 20em) {
+  .title-frontend-wonderland {
+    font-size: 2.5rem;
+    margin-top: var(--margin-top-medium);
+  }
+}

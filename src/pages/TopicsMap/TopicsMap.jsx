@@ -1,25 +1,25 @@
 import ButtonLink from "../../components/ButtonLink/ButtonLink";
-import Footer from "../../components/Footer/Footer";
-import PageContainerColumn from "../../components/PageContainerColumn/PageContainerColumn";
+import PageContainerCenter from "../../components/PageContainerCenter/PageContainerCenter";
+import TopicsLinks from "../../components/TopicsLinks/TopicsLinks";
 
 import "./TopicsMap.styles.css";
 
 function TopicsMap() {
   return (
-    <PageContainerColumn>
-      <p className="text">Released</p>
+    <PageContainerCenter>
       <div className="topics-container">
-        <ButtonLink
-          name="flexbox"
-          value="flexbox"
-          label={`Flexbox\nCheat Sheet`}
-          link="true"
-          to="/cheatsheets/flexbox"
-          color="pink"
+        <p className="text">Released:</p>
+        <TopicsLinks title={`Flexbox:\nCheat Sheet`} />
+      </div>
+      <p className="text">Incoming:</p>
+      <div className="topics-container">
+        <TopicsLinks theme="react" title="Flexbox Cheat Sheet" />
+        <TopicsLinks
+          theme="javascript"
+          title={`The coercion system:\nDown the rabbit hole`}
         />
       </div>
-      <Footer />
-    </PageContainerColumn>
+    </PageContainerCenter>
   );
 }
 

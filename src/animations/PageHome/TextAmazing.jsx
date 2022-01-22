@@ -11,16 +11,33 @@ function TextAmazing() {
     var tl = gsap.timeline({ repeat: -1, yoyo: true }),
       mySplitText = new SplitText(mazeText.current, { type: "words,chars" }),
       chars = mySplitText.chars;
-    tl.from(chars, {
-      duration: 1,
-      opacity: 1,
-      scale: 1,
-      y: 1,
-      rotationX: 5,
-      transformOrigin: "0% 50% -50",
-      ease: "back",
-      stagger: 0.1,
-    });
+
+    gsap.set(chars[0], { rotation: -15, y: 1 });
+    gsap.set(chars[1], { rotation: 10, y: -1 });
+    gsap.set(chars[2], { rotation: -10, y: 1 });
+    gsap.set(chars[3], { rotation: 18, y: -1 });
+    const duration = 0.45;
+    tl.to(
+      chars[0],
+      { duration: duration, rotation: 10, y: -3, x: -2, ease: "elastic" },
+      "start"
+    );
+    tl.to(
+      chars[1],
+      { duration: duration, rotation: -7, y: 3, x: -2, ease: "elastic" },
+      "start"
+    );
+    tl.to(
+      chars[2],
+      { duration: duration, rotation: 7, y: -3, x: -2, ease: "elastic" },
+      "start"
+    );
+    tl.to(
+      chars[3],
+      { duration: duration, rotation: -8, y: 3, x: -2, ease: "elastic" },
+      "start"
+    );
+
     return function cleanup() {
       tl.kill();
     };

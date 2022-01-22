@@ -9,4 +9,7 @@
     width: 100vw;
     height: 8rem;
   }
+  .page-home-buttonlink-container {
+    margin-top: var(--margin-top-medium);
+  }
 }

@@ -30,6 +30,9 @@
     var(--vh, 1vh) * 100 - var(--header-desktop-height) -
       var(--footer-desktop-height)
   );
+  --content-desktop-full-page-no-footer: calc(
+    var(--vh, 1vh) * 100 - var(--header-desktop-height)
+  );
 
   /* Footer */
   --footer-desktop-height: 3.7rem;
@@ -69,10 +72,14 @@
   --font-title: "Milonga";
   --font-body: "Open Sans";
   --font-funny: "Sniglet";
+  --font-code-bold: "Inconsolata";
 }
 /*
 font-family: var(--font-button);
 font-family: var(--font-title);
 font-family: var(--font-body);
 font-family: var(--font-funny);
+font-family: var(--font-code-regular);
+font-family: var(--font-code-bold);
+
 */

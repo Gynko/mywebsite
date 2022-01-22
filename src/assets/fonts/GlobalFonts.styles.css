@@ -25,3 +25,9 @@
     url("../../assets/fonts/Bungee-Regular.woff2") format("woff2");
   font-display: optional;
 }
+
+@font-face {
+  font-family: "Inconsolata", monospace;
+  src: url("../../assets/fonts/Inconsolata-Bold.ttf") format("truetype");
+  font-display: optional;
+}

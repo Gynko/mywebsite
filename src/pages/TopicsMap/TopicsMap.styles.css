@@ -8,12 +8,14 @@
 
 .text {
   color: white;
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--font-title);
   margin-top: 1rem;
   font-size: 0.9rem;
   white-space: pre-line;
   width: 100%;
   text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .text-margin-none {

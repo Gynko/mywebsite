@@ -34,7 +34,17 @@
   text-decoration: none;
   color: var(--color-background);
 }
-
+.button-link:hover {
+  background-color: var(--color-text-yellow);
+  transform: scale(1.1);
+  transition: transform 0.25s, background-color 0.25s;
+}
+.button-link:not(:hover) {
+  background: var(--color-title-pink);
+  color: var(--color-background);
+  transform: scale(1);
+  transition: transform 0.25s, background-color 0.25s;
+}
 @media screen and (min-width: 20em) {
   .button-link {
     font-size: 1rem;
@@ -50,16 +60,5 @@
     line-height: 1rem;
     padding: 0;
     padding: 0.5rem 0.5rem;
-  }
-  .button-link:hover {
-    background-color: var(--color-text-yellow);
-    transform: scale(1.1);
-    transition: transform 0.25s, background-color 0.25s;
-  }
-  .button-link:not(:hover) {
-    background: var(--color-title-pink);
-    color: var(--color-background);
-    transform: scale(1);
-    transition: transform 0.25s, background-color 0.25s;
   }
 }

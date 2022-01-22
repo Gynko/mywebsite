@@ -14,7 +14,7 @@ function PageHome() {
         <IconRabbitHole />
       </div>
       <TitleFrontendWonderland />
-      <main className="page-home-main margin-top-small">
+      <main className="page-home-main margin-top-medium">
         <HeadlineText>Cheat sheets and articles.</HeadlineText>
         <HeadlineText>Because web development can be quite</HeadlineText>
         <TextAmazing />

@@ -1,0 +1,21 @@
+.topics-links-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.topics-links-title {
+  font-family: var(--font-code-bold);
+  white-space: pre;
+  color: white;
+  background-color: black;
+  height: 3rem;
+  width: 20rem;
+}
+
+.topics-links-icon {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 3rem;
+  align-items: center;
+}

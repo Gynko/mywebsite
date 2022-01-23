@@ -2,6 +2,7 @@ import "./TopicsLinks.styles.css";
 import IconReact from "../Icons/IconReact";
 import IconJavascript from "../Icons/IconJavascript";
 import IconCss from "../Icons/IconCss";
+import { Link } from "react-router-dom";
 
 function TopicsLinks({ name, theme, value, title, link, to }) {
   function themeIcon() {
@@ -14,11 +15,20 @@ function TopicsLinks({ name, theme, value, title, link, to }) {
     else if (theme === "css")
       return <div className="topics-links-icon">{<IconReact />}</div>;
   }
+  function isLink() {
+    if (link === true)
+      return (
+        <Link to={to}>
+          <h3 className="topics-links-title">{title}</h3>
+        </Link>
+      );
+    else return <h3 className="topics-links-title">{title}</h3>;
+  }
 
   return (
     <div className="topics-links-container">
       {themeIcon()}
-      <h3 className="topics-links-title">{title}</h3>
+      {isLink()}
     </div>
   );
 }

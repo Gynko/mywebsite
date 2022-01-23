@@ -8,12 +8,18 @@ function TopicsMap() {
     <PageContainerCenter>
       <div className="topics-container">
         <p className="text">Released:</p>
-        <TopicsLinks theme="css" title={`Flexbox:\nCheat Sheet`} />
+        <TopicsLinks
+          theme="css"
+          title={`Flexbox:\nCheat Sheet`}
+          link={true}
+          to="/cheatsheets/flexbox"
+        />
       </div>
       <p className="text">Incoming:</p>
       <div className="topics-container">
         <TopicsLinks theme="javascript" title={`Types:\nIn depth`} />
         <TopicsLinks theme="javascript" title={`Scope:\nThe bucket game`} />
+        <TopicsLinks theme="javascript" title={`Closures`} />
         <TopicsLinks
           theme="javascript"
           title={`Variable declaration:\nWar on Var?`}
@@ -24,6 +30,8 @@ function TopicsMap() {
         />
         <TopicsLinks theme="react" title={`React Hooks:\nGeneralities`} />
         <TopicsLinks theme="react" title={`React Hooks:\nuseState`} />
+        <TopicsLinks theme="react" title={`React Hooks:\nuseEffect`} />
+        <TopicsLinks theme="react" title={`React Hooks:\nuseMemo`} />
       </div>
     </PageContainerCenter>
   );

@@ -27,7 +27,7 @@
 }
 
 @font-face {
-  font-family: "Operator Mono", monospace;
+  font-family: "Operator Mono";
   src: url("OperatorMono-Medium.woff2") format("woff2"),
     url("OperatorMono-Medium.woff") format("woff");
   font-weight: 500;

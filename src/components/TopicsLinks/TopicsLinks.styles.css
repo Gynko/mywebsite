@@ -9,7 +9,7 @@
 }
 
 .topics-links-title {
-  font-family: var(--font-code-regular);
+  font-family: var(--font-code-regular, monospace);
   white-space: pre;
   color: #e4dce9;
   width: 15rem;

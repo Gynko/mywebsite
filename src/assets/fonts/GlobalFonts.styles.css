@@ -16,14 +16,14 @@
   font-family: "Open Sans", sans-serif;
   src: url("../../assets/fonts/OpenSans-Regular.woff") format("woff"),
     url("../../assets/fonts/OpenSans-Regular.woff2") format("woff2");
-  font-display: optional;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Bungee", sans-serif;
   src: url("../../assets/fonts/Bungee-Regular.woff") format("woff"),
     url("../../assets/fonts/Bungee-Regular.woff2") format("woff2");
-  font-display: optional;
+  font-display: swap;
 }
 
 @font-face {

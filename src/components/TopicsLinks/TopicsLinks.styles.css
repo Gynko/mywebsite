@@ -2,20 +2,30 @@
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
+  justify-content: center;
+  align-content: center;
+  height: 3rem;
+  background-color: #181422;
 }
 
 .topics-links-title {
-  font-family: var(--font-code-bold);
+  font-family: var(--font-code-regular);
   white-space: pre;
-  color: white;
-  background-color: black;
-  height: 3rem;
-  width: 20rem;
+  color: #e4dce9;
+  width: 15rem;
+  margin-left: 0.4rem;
 }
 
 .topics-links-icon {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
+  height: 3rem;
   width: 3rem;
   align-items: center;
+}
+
+@media screen and (min-width: 20em) {
+  .topics-links-container {
+    max-width: var(--container-mobile-width);
+  }
 }

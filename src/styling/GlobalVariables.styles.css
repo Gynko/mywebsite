@@ -72,7 +72,7 @@
   --font-title: "Milonga";
   --font-body: "Open Sans";
   --font-funny: "Sniglet";
-  --font-code-bold: "Inconsolata";
+  --font-code-regular: "share_tech_monoregular";
 }
 /*
 font-family: var(--font-button);

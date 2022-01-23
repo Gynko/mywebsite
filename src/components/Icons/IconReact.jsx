@@ -10,7 +10,6 @@ function IconReact() {
         width: "100%",
       }}
       viewBox="0 0 841.9 595.3"
-      enableBackground="new 0 0 841.9 595.3"
       xmlSpace="preserve"
     >
       <g>

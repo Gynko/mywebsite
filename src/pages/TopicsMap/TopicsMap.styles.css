@@ -1,13 +1,5 @@
-.topics-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
 .text {
-  color: white;
+  color: var(--color-title-pink);
   font-family: var(--font-title);
   margin-top: 1rem;
   font-size: 0.9rem;
@@ -20,4 +12,13 @@
 
 .text-margin-none {
   margin-top: 0;
+}
+
+@media screen and (min-width: 20em) {
+  .topics-container {
+    display: grid;
+    max-width: var(--container-mobile-width);
+    justify-items: center;
+    row-gap: 0.4rem;
+  }
 }

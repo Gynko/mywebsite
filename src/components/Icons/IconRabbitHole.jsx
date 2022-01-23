@@ -4,8 +4,8 @@ function IconRabbitHole() {
       version="1.1"
       id="Layer_1"
       xmlns="http://www.w3.org/2000/svg"
-      width="100%"
       viewBox="0 0 120 94"
+      width="100%"
       style={{
         height: "100%",
         width: "100%",

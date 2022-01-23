@@ -27,7 +27,9 @@
 }
 
 @font-face {
-  font-family: "Inconsolata", monospace;
-  src: url("../../assets/fonts/Inconsolata-Bold.ttf") format("truetype");
-  font-display: optional;
+  font-family: "share_tech_monoregular";
+  src: url("sharetechmono-regular-webfont.woff2") format("woff2"),
+    url("sharetechmono-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }

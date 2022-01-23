@@ -5,11 +5,10 @@ import ButtonLink from "../../components/ButtonLink/ButtonLink";
 import TitleFrontendWonderland from "../../components/TitleFrontendWonderland/TitleFrontendWonderland";
 import HeadlineText from "../../components/HeadlineText/HeadlineText";
 import TextAmazing from "../../animations/PageHome/TextAmazing";
-import PageContainerCenter from "../../components/PageContainerCenter/PageContainerCenter";
 
 function PageHome() {
   return (
-    <PageContainerCenter>
+    <div className="page-home-container">
       <div className="page-home-icon-rabbit-hole">
         <IconRabbitHole />
       </div>
@@ -28,7 +27,7 @@ function PageHome() {
         />
       </div>
       <Footer />
-    </PageContainerCenter>
+    </div>
   );
 }
 

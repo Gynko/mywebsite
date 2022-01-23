@@ -1,3 +1,11 @@
+.page-home-container {
+  width: 100vw;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .topics-links-container {
   display: flex;
   flex-flow: row nowrap;
@@ -27,5 +35,19 @@
 @media screen and (min-width: 20em) {
   .topics-links-container {
     max-width: var(--container-mobile-width);
+  }
+  .page-home-container {
+    position: absolute;
+    margin-top: var(--header-mobile-height);
+    min-height: var(--content-mobile-full-page);
+  }
+}
+@media screen and (min-width: 20.75em) and (min-height: 32.5em) {
+  .page-home-container {
+    position: absolute;
+    margin-top: var(--header-mobile-height);
+    min-height: calc(
+      var(--content-mobile-full-page) - var(--footer-desktop-height)
+    );
   }
 }

@@ -15,7 +15,12 @@
   height: 3rem;
   background-color: #181422;
 }
-
+.topics-links-container-visible-true {
+  display: flex;
+}
+.topics-links-container-visible-false {
+  display: none;
+}
 .topics-links-title {
   font-family: var(--font-code-regular, monospace);
   white-space: pre;

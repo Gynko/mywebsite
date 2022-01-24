@@ -1,7 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Milonga&family=Open+Sans:wght@400;700&family=Sniglet:wght@800&display=swap");
-
 .header-desktop-container {
-  background-color: #211728;
+  background-color: var(--color-header-mobile);
 }
 .header-desktop-header {
   display: flex;
@@ -24,27 +22,13 @@
   text-decoration: underline;
   text-decoration-thickness: 3px;
   cursor: pointer;
-  color: #f554b5;
+  color: var(--color-title-pink);
 }
-.header-desktop-searchinput {
-  background-color: #b4a8bc;
-  font-family: var(--font-body);
-  text-align: center;
-  color: #1f1c18;
-  border: none;
-  border-radius: 15px;
-}
+
 .icon-mail-desktop:hover {
   cursor: pointer;
 }
-.header-desktop-searchinput::placeholder {
-  color: #1f1c18;
-  opacity: 1;
-  text-align: center;
-}
-.header-desktop-searchinput:focus {
-  outline: none;
-}
+
 @media screen and (min-width: 20em) {
   .header-desktop-container {
     display: none;
@@ -70,7 +54,7 @@
     justify-content: center;
     align-content: center;
   }
-  .allbut {
+  .header-desktop-all-but-iconmail {
     display: flex;
     flex-direction: row;
     align-items: center;

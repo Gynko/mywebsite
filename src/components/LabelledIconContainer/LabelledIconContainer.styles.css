@@ -1,10 +1,26 @@
 .labelled-icon-container {
   display: flex;
+  flex-flow: row nowrap;
   justify-content: space-around;
   width: calc(var(--container-mobile-width) - 1.3rem);
   height: var(--labelled-icon-mobile-height);
 }
 
+.labelled-icon-container-extra-small {
+  margin-top: var(--margin-top-extra-small);
+}
 .labelled-icon-container-small {
   margin-top: var(--margin-top-small);
+}
+.labelled-icon-container-medium {
+  margin-top: var(--margin-top-medium);
+}
+.labelled-icon-container-large {
+  margin-top: var(--margin-top-large);
+}
+.labelled-icon-container-big {
+  margin-top: var(--margin-top-big);
+}
+.labelled-icon-container-huge {
+  margin-top: var(--margin-top-huge);
 }

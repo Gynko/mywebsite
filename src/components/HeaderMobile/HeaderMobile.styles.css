@@ -19,6 +19,16 @@
 .header-mobile-searchinput:focus {
   outline: none;
 }
+.header-mobile-li {
+  color: var(--color-title-pink);
+  font-family: var(--font-title), sans-serif;
+  white-space: pre;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.header-mobile-title {
+  margin: 0 1.5rem;
+}
 
 @media screen and (min-width: 20em) {
   .header-mobile-container {

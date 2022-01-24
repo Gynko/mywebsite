@@ -1,16 +1,30 @@
 import "./LabelledIcon.styles.css";
 
-function LabelledIcon({ svgFile, title, activated, ...otherProps }) {
+function LabelledIcon({
+  svgFile,
+  title,
+  activated,
+  value,
+  onClick,
+  ...otherProps
+}) {
   return (
-    <button
-      className={`labelled-icon-container-general labelled-icon-container-${activated}`}
-      {...otherProps}
+    <div
+      className={`labelled-icon-main-container labelled-icon-main-container-${activated}`}
     >
       <div className="labelled-icon-svg">{svgFile}</div>
-      <p className={`labelled-icon-title labelled-icon-title-${activated}`}>
+      <span className={`labelled-icon-title labelled-icon-title-${activated}`}>
         {title}
-      </p>
-    </button>
+      </span>
+      <button
+        className="labelled-icon-button"
+        value={value}
+        onClick={onClick}
+        {...otherProps}
+      >
+        {title}
+      </button>
+    </div>
   );
 }
 

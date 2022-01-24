@@ -12,4 +12,13 @@
   .page-home-buttonlink-container {
     margin-top: var(--margin-top-medium);
   }
+  .page-home-container {
+    min-height: var(--content-mobile-full-page);
+  }
+}
+
+@media screen and (max-height: 28em) {
+  .page-home-container {
+    padding-top: 1rem;
+  }
 }

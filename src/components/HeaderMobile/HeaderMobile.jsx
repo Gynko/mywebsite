@@ -14,13 +14,8 @@ function HeaderMobile() {
                 <IconBrainConnect />
               </Link>
             </li>
-            <li className="header-mobile-li">
-              <input
-                className="header-mobile-li header-mobile-searchinput"
-                type="search"
-                name="Search"
-                placeholder="search"
-              ></input>
+            <li className="header-mobile-li header-mobile-title">
+              {`Frontend\nWonderland`}
             </li>
             <li className="header-mobile-li header-mobile-iconmail">
               <IconMail />

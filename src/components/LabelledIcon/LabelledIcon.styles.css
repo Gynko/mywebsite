@@ -1,33 +1,40 @@
-.labelled-icon-container-general {
+.labelled-icon-main-container {
+  position: relative;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: flex-end;
   border-radius: 5px;
-  padding: 0 0.2rem;
   border: none;
+  width: 4.4rem;
+  padding-top: 0.4rem;
+  height: var(--labelled-icon-mobile-height);
 }
-
-.labelled-icon-container-true {
+.labelled-icon-main-container-true {
   background-color: #f4ae44;
 }
 
-.labelled-icon-container-false {
+.labelled-icon-main-container-false {
   background-color: var(--color-title-background-pink);
 }
+.labelled-icon-button {
+  position: fixed;
+  opacity: 0;
+  width: 4.4rem;
+  height: var(--labelled-icon-mobile-height);
+}
 .labelled-icon-svg {
-  padding: 0.5rem 1rem;
-  width: 3.8rem;
+  width: 2rem;
 }
 .labelled-icon-title {
   font-family: var(--font-button);
   font-weight: 400;
   color: white;
   text-align: center;
-  padding: 0.2rem 0;
   margin: 0;
   line-height: 0.9rem;
   font-size: 0.9rem;
+  padding: 0.6rem 0 0.35rem 0;
 }
 
 .labelled-icon-title-true {
@@ -35,7 +42,6 @@
   font-weight: 400;
   color: black;
   text-align: center;
-  padding: 0.2rem 0;
   margin: 0;
   line-height: 0.9rem;
   font-size: 0.9rem;

@@ -20,5 +20,6 @@
     max-width: var(--container-mobile-width);
     justify-items: center;
     row-gap: 0.4rem;
+    margin-bottom: var(--margin-top-small);
   }
 }

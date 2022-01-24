@@ -1,5 +1,5 @@
 .title-frontend-wonderland {
-  font-family: var(--font-title);
+  font-family: var(--font-title), sans-serif;
   color: var(--color-title-pink);
   white-space: pre;
   text-align: center;

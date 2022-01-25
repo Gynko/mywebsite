@@ -12,18 +12,11 @@ import IconJavascript from "../../components/Icons/IconJavascript";
 import IconHtml from "../../components/Icons/IconHtml";
 
 function TopicsMap() {
-  const [category, setCategory] = useState({
-    react: null,
-    css: null,
-    js: null,
-    html: null,
-  });
+  const [category, setCategory] = useState(null);
 
   function onSetCategory(event) {
-    var value = event.target.value;
-    if (category[event.target.name] === null)
-      setCategory({ ...category, [event.target.name]: value });
-    else setCategory({ ...category, [event.target.name]: null });
+    if (category === event.target.value) setCategory(null);
+    else setCategory(event.target.value);
   }
 
   return (
@@ -46,7 +39,7 @@ function TopicsMap() {
             value="html"
             name="html"
             color="black"
-            activated={category["html"] === "html"}
+            activated={category === "html"}
             onClick={onSetCategory}
           />
           <LabelledIcon
@@ -55,7 +48,7 @@ function TopicsMap() {
             value="css"
             name="css"
             color="black"
-            activated={category["css"] === "css"}
+            activated={category === "css"}
             onClick={onSetCategory}
           />
           <LabelledIcon
@@ -64,7 +57,7 @@ function TopicsMap() {
             value="js"
             name="js"
             color="black"
-            activated={category["js"] === "js"}
+            activated={category === "js"}
             onClick={onSetCategory}
           />
           <LabelledIcon
@@ -73,7 +66,7 @@ function TopicsMap() {
             value="react"
             name="react"
             color="black"
-            activated={category["react"] === "react"}
+            activated={category === "react"}
             onClick={onSetCategory}
           />
         </LabelledIconContainer>
@@ -83,62 +76,62 @@ function TopicsMap() {
           <TopicsLinks
             theme="html"
             title={`Html tags:\nCheat Sheet`}
-            visible={category["html"] === "html"}
+            visible={category === "html"}
           />
           <TopicsLinks
             theme="html"
             title={`Html tags:\nAccessibility`}
-            visible={category["html"] === "html"}
+            visible={category === "html"}
           />
           <TopicsLinks
             theme="css"
             title={`Css properties:\nCheat Sheet`}
-            visible={category["css"] === "css"}
+            visible={category === "css"}
           />
           <TopicsLinks
             theme="javascript"
             title={`Types:\nIn depth`}
-            visible={category["js"] === "js"}
+            visible={category === "js"}
           />
           <TopicsLinks
             theme="javascript"
             title={`The Coercion System:\nDown the rabbit hole`}
-            visible={category["js"] === "js"}
+            visible={category === "js"}
           />
           <TopicsLinks
             theme="javascript"
             title={`Scope:\nThe bucket game`}
-            visible={category["js"] === "js"}
+            visible={category === "js"}
           />
           <TopicsLinks
             theme="javascript"
             title={`Closures`}
-            visible={category["js"] === "js"}
+            visible={category === "js"}
           />
           <TopicsLinks
             theme="javascript"
             title={`Variable declaration:\nWar on Var?`}
-            visible={category["js"] === "css"}
+            visible={category === "js"}
           />
           <TopicsLinks
             theme="react"
             title={`React Hooks:\nGeneralities`}
-            visible={category["react"] === "react"}
+            visible={category === "react"}
           />
           <TopicsLinks
             theme="react"
             title={`React Hooks:\nuseState`}
-            visible={category["react"] === "react"}
+            visible={category === "react"}
           />
           <TopicsLinks
             theme="react"
             title={`React Hooks:\nuseEffect`}
-            visible={category["react"] === "react"}
+            visible={category === "react"}
           />
           <TopicsLinks
             theme="react"
             title={`React Hooks:\nuseMemo`}
-            visible={category["react"] === "react"}
+            visible={category === "react"}
           />
         </div>
       </div>

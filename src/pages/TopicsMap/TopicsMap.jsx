@@ -59,15 +59,6 @@ function TopicsMap() {
             onClick={onSetCategory}
           />
           <LabelledIcon
-            svgFile={<IconReact />}
-            title="react"
-            value="react"
-            name="react"
-            color="black"
-            activated={category["react"] === "react"}
-            onClick={onSetCategory}
-          />
-          <LabelledIcon
             svgFile={<IconJavascript />}
             title="js"
             value="js"
@@ -76,10 +67,34 @@ function TopicsMap() {
             activated={category["js"] === "js"}
             onClick={onSetCategory}
           />
+          <LabelledIcon
+            svgFile={<IconReact />}
+            title="react"
+            value="react"
+            name="react"
+            color="black"
+            activated={category["react"] === "react"}
+            onClick={onSetCategory}
+          />
         </LabelledIconContainer>
       </div>
       <div className="topics-container">
         <div className="topics-container">
+          <TopicsLinks
+            theme="html"
+            title={`Html tags:\nCheat Sheet`}
+            visible={category["html"] === "html"}
+          />
+          <TopicsLinks
+            theme="html"
+            title={`Html tags:\nAccessibility`}
+            visible={category["html"] === "html"}
+          />
+          <TopicsLinks
+            theme="css"
+            title={`Css properties:\nCheat Sheet`}
+            visible={category["css"] === "css"}
+          />
           <TopicsLinks
             theme="javascript"
             title={`Types:\nIn depth`}
@@ -124,21 +139,6 @@ function TopicsMap() {
             theme="react"
             title={`React Hooks:\nuseMemo`}
             visible={category["react"] === "react"}
-          />
-          <TopicsLinks
-            theme="css"
-            title={`Css properties:\nCheat Sheet`}
-            visible={category["css"] === "css"}
-          />
-          <TopicsLinks
-            theme="html"
-            title={`Html tags:\nCheat Sheet`}
-            visible={category["html"] === "html"}
-          />
-          <TopicsLinks
-            theme="html"
-            title={`Html tags:\nAccessibility`}
-            visible={category["html"] === "html"}
           />
         </div>
       </div>

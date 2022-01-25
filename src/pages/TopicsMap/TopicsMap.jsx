@@ -13,10 +13,10 @@ import IconHtml from "../../components/Icons/IconHtml";
 
 function TopicsMap() {
   const [category, setCategory] = useState({
-    react: "react",
-    css: "css",
-    js: "js",
-    html: "html",
+    react: null,
+    css: null,
+    js: null,
+    html: null,
   });
 
   function onSetCategory(event) {

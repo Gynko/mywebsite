@@ -4,8 +4,12 @@ function IconFlow() {
       id="Layer_1"
       data-name="Layer 1"
       xmlns="http://www.w3.org/2000/svg"
-      width={200.2}
-      height={200.8}
+      width="100%"
+      style={{
+        height: "100%",
+        width: "100%",
+        fill: "white",
+      }}
       viewBox="0 0 200.2 200.8"
     >
       <rect

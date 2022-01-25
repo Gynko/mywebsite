@@ -28,13 +28,24 @@ function TopicsMap() {
 
   return (
     <PageContainerCenter marginTop="small">
+      <p className="text">Released:</p>
+      <TopicsLinks
+        theme="css"
+        title={`Flexbox:\nCheat Sheet`}
+        link={true}
+        visible={true}
+        to="/cheatsheets/flexbox"
+      />
+
+      <p className="text">Planned:</p>
       <div className="topics-container">
-        <LabelledIconContainer marginTop="big">
+        <LabelledIconContainer>
           <LabelledIcon
             svgFile={<IconHtml />}
             title="html"
             value="html"
             name="html"
+            color="black"
             activated={category["html"] === "html"}
             onClick={onSetCategory}
           />
@@ -43,6 +54,7 @@ function TopicsMap() {
             title="css"
             value="css"
             name="css"
+            color="black"
             activated={category["css"] === "css"}
             onClick={onSetCategory}
           />
@@ -51,6 +63,7 @@ function TopicsMap() {
             title="react"
             value="react"
             name="react"
+            color="black"
             activated={category["react"] === "react"}
             onClick={onSetCategory}
           />
@@ -59,29 +72,19 @@ function TopicsMap() {
             title="js"
             value="js"
             name="js"
+            color="black"
             activated={category["js"] === "js"}
             onClick={onSetCategory}
           />
         </LabelledIconContainer>
-        <p className="text">Released:</p>
-        <TopicsLinks
-          theme="css"
-          title={`Flexbox:\nCheat Sheet`}
-          link={true}
-          visible={category["css"] === "css"}
-          to="/cheatsheets/flexbox"
-        />
       </div>
-      <p className="text">Incoming:</p>
       <div className="topics-container">
-        <TopicsLinks
-          theme="javascript"
-          title={`Types:\nIn depth`}
-          visible={category["js"] === "js"}
-        />
-
-        <p className="text">Planned:</p>
         <div className="topics-container">
+          <TopicsLinks
+            theme="javascript"
+            title={`Types:\nIn depth`}
+            visible={category["js"] === "js"}
+          />
           <TopicsLinks
             theme="javascript"
             title={`The Coercion System:\nDown the rabbit hole`}

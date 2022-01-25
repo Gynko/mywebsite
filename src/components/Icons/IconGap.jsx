@@ -189,10 +189,13 @@ function IconGap() {
       id="gap-icon"
       data-name="Layer 1"
       xmlns="http://www.w3.org/2000/svg"
-      width={225.71}
-      height={225.25}
+      width="100%"
+      style={{
+        height: "100%",
+        width: "100%",
+        fill: "white",
+      }}
       viewBox="0 0 225.71 225.25"
-      style={{ fill: "white" }}
     >
       <rect ref={refTopLeft} width={84.16} height={84.16} />
       <rect ref={refTopRight} x={141.55} width={84.16} height={84.16} />

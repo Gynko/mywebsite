@@ -22,13 +22,25 @@
   display: none;
 }
 .topics-links-title {
-  font-family: var(--font-code-regular, monospace);
+  font-family: var(--font-code-light, monospace);
   white-space: pre;
   color: #e4dce9;
   width: 15rem;
   margin-left: 0.4rem;
 }
 
+.topics-links-title-react {
+  color: var(--color-button-react);
+}
+.topics-links-title-css {
+  color: var(--color-button-css);
+}
+.topics-links-title-html {
+  color: var(--color-button-html);
+}
+.topics-links-title-javascript {
+  color: var(--color-button-js);
+}
 .topics-links-icon {
   display: flex;
   flex-flow: row nowrap;

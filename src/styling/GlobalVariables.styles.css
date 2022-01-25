@@ -18,6 +18,11 @@
   --color-button-green: #31df4d;
   --color-button-blue: #52c1ff;
 
+  --color-button-html: #e44f26;
+  --color-button-css: #3999df;
+  --color-button-react: #61dafb;
+  --color-button-js: #f0db4f;
+
   /* Header */
   --header-mobile-height: 4.1rem;
   --header-desktop-height: 4.5rem;
@@ -73,6 +78,7 @@
   --font-body: "Open Sans";
   --font-funny: "Sniglet";
   --font-code-regular: "Operator Mono";
+  --font-code-light: "Operator Mono Light";
 }
 /*
 font-family: var(--font-button);

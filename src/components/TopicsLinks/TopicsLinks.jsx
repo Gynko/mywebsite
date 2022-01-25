@@ -23,10 +23,17 @@ function TopicsLinks({ name, theme, value, title, link, visible, to }) {
     if (link === true)
       return (
         <Link to={to}>
-          <h3 className="topics-links-title">{title}</h3>
+          <h3 className={`topics-links-title topics-links-title-${theme}`}>
+            {title}
+          </h3>
         </Link>
       );
-    else return <h3 className="topics-links-title">{title}</h3>;
+    else
+      return (
+        <h3 className={`topics-links-title topics-links-title-${theme}`}>
+          {title}
+        </h3>
+      );
   }
 
   return (

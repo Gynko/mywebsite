@@ -27,7 +27,7 @@ function HeaderDesktop() {
                 <HeaderLink label="React" to="/" />
               </li>
               <li className="header-desktop-li">
-                <HeaderLink label="More" to="/" />
+                <HeaderLink label="Html" to="/" />
               </li>
             </ul>
           </div>

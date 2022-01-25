@@ -13,18 +13,27 @@
 .labelled-icon-main-container-true {
   background-color: #f4ae44;
 }
-
+.labelled-icon-main-container-black {
+  background-color: black;
+}
 .labelled-icon-main-container-false {
+  background-color: var(--color-title-background-pink);
+}
+.labelled-icon-main-container-black-false {
+  background-color: #111112;
+}
+.labelled-icon-main-container-black-true {
+  color: #f7f7f7;
   background-color: var(--color-title-background-pink);
 }
 .labelled-icon-button {
   position: fixed;
   opacity: 0;
-  width: 4.4rem;
+  height: 4.4rem;
   height: var(--labelled-icon-mobile-height);
 }
 .labelled-icon-svg {
-  width: 2rem;
+  height: 2.1rem;
 }
 .labelled-icon-title {
   font-family: var(--font-button);
@@ -40,7 +49,7 @@
 .labelled-icon-title-true {
   font-family: var(--font-button);
   font-weight: 400;
-  color: black;
+
   text-align: center;
   margin: 0;
   line-height: 0.9rem;

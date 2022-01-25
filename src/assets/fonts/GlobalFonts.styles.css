@@ -34,3 +34,12 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Operator Mono Light";
+  src: url("OperatorMono-Light.woff2") format("woff2"),
+    url("OperatorMono-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}

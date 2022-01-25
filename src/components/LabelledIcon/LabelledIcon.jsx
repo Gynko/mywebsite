@@ -6,14 +6,17 @@ function LabelledIcon({
   activated,
   value,
   onClick,
+  color,
   ...otherProps
 }) {
   return (
     <div
-      className={`labelled-icon-main-container labelled-icon-main-container-${activated}`}
+      className={`labelled-icon-main-container labelled-icon-main-container-${activated} labelled-icon-main-container-${color} labelled-icon-main-container-${color}-${activated}`}
     >
       <div className="labelled-icon-svg">{svgFile}</div>
-      <span className={`labelled-icon-title labelled-icon-title-${activated}`}>
+      <span
+        className={`labelled-icon-title labelled-icon-title-${activated} labelled-icon-title-color-${color}`}
+      >
         {title}
       </span>
       <button

@@ -17,6 +17,12 @@ import FlexboxGap from "./Gap/FlexboxGap";
 import FlexboxOrder from "./Order/FlexboxOrder";
 import FlexboxFlex from "./Flex/FlexboxFlex";
 import FlexboxItemAlign from "./ItemAlign/FlexboxItemAlign";
+import IconFlexInline from "../../../../components/Icons/IconFlexInline";
+import IconFlexFlow from "../../../../components/Icons/IconFlexFlow";
+import IconAlign from "../../../../components/Icons/IconAlign";
+import IconOrder from "../../../../components/Icons/IconOrder";
+import IconSelfAlign from "../../../../components/Icons/IconSelfAlign";
+import IconFlexGrowShrink from "../../../../components/Icons/IconFlexGrowShrink";
 
 function FlexboxCheatSheet() {
   /* Buttons state - Menus */
@@ -103,25 +109,25 @@ function FlexboxCheatSheet() {
         <>
           <LabelledIconContainer marginTop="small">
             <LabelledIcon
-              svgFile={<IconFlow />}
+              svgFile={<IconFlexInline />}
               title="display"
               activated={display}
               onClick={displayToggle}
             />
             <LabelledIcon
-              svgFile={<IconFlow />}
+              svgFile={<IconFlexFlow />}
               title="flow"
               activated={flow}
               onClick={flowToggle}
             />
             <LabelledIcon
-              svgFile={<IconFlow />}
+              svgFile={<IconAlign />}
               title="align"
               activated={align}
               onClick={alignToggle}
             />
             <LabelledIcon
-              svgFile={<IconGap activated={gap} />}
+              svgFile={<IconGap />}
               title="gap"
               activated={gap}
               onClick={gapToggle}
@@ -137,19 +143,19 @@ function FlexboxCheatSheet() {
         <>
           <LabelledIconContainer marginTop="small">
             <LabelledIcon
-              svgFile={<IconFlow />}
+              svgFile={<IconOrder />}
               title="order"
               activated={order}
               onClick={displayOrder}
             />
             <LabelledIcon
-              svgFile={<IconFlow />}
+              svgFile={<IconFlexGrowShrink />}
               title="flex"
               activated={flex}
               onClick={displayFlex}
             />
             <LabelledIcon
-              svgFile={<IconFlow />}
+              svgFile={<IconSelfAlign />}
               title="align"
               activated={flexItemAlign}
               onClick={displayFlexItemAlign}

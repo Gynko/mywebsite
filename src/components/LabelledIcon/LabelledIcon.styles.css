@@ -29,7 +29,7 @@
 .labelled-icon-button {
   position: fixed;
   opacity: 0;
-  height: 4.4rem;
+  width: 4.4rem;
   height: var(--labelled-icon-mobile-height);
 }
 .labelled-icon-svg {
